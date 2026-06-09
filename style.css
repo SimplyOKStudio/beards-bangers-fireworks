@@ -23,6 +23,8 @@ body {
 
   /* This gives lines of text more breathing room. */
   line-height: 1.5;
+
+  padding-bottom: 150px;
 }
 
 /* This styles the top header area. */
