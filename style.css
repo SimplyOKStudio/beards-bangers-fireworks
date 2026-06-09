@@ -924,3 +924,12 @@ section {
   border: 2px solid #fff3d2;
   box-shadow: 0 4px 14px rgba(240, 183, 47, 0.35);
 }
+
+/* Prevent mobile double-tap zoom on buttons and tappable controls */
+
+button,
+.category-button,
+#floating-list-button,
+input {
+  touch-action: manipulation;
+}
