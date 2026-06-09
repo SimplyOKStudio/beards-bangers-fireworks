@@ -1,0 +1,221 @@
+<!-- This tells the browser that this file is an HTML webpage. -->
+<!DOCTYPE html>
+
+<!-- This starts the HTML document and says the page is written in English. -->
+<html lang="en">
+
+<head>
+  <!-- This helps the browser read normal letters, numbers, and symbols correctly. -->
+  <meta charset="UTF-8">
+
+  <!-- This helps the website fit correctly on phone screens. Very important for QR code customers. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This is the title that appears in the browser tab. -->
+  <title>Fireworks Stand List</title>
+
+  <!-- This connects our CSS file so we can style the page. -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header section starts here. -->
+  <header>
+    <header>
+  <!-- This shows the Beard's Bangers logo at the top of the page. -->
+  <img
+    src="images/beards-bangers-logo.webp"
+    alt="Beard's Bangers logo"
+    class="site-logo"
+  >
+
+  <!-- This is the main headline customers will see first. -->
+  <h1>We Bang 'em Loud and Proud!</h1>
+
+  <!-- This explains the purpose of the page. -->
+  <p>Pick your fireworks, Build your list, Show a team member at checkout!</p>
+</header>
+  <!-- Header section ends here. -->
+
+  <!-- Important Note section starts here. -->
+  <section>
+    <!-- This is the title for the disclaimer area. -->
+    <h2>Important Note</h2>
+
+    <!-- This paragraph explains that the website is not an online store. -->
+<p>
+  This is not an online shopping cart. We do not sell fireworks through this website.
+  This list is only a planning tool for in-person shopping.
+  Please show your list to a team member at one of our stands to complete your purchase.
+  Prices shown are estimates. Final prices, taxes, deals, and availability are confirmed at the stand.
+</p>
+  </section>
+  <!-- Important Note section ends here. -->
+
+  <!-- Featured Shopping section starts here. -->
+<section>
+  <!-- This is the title for the guided shopping area. -->
+  <h2>Start Here</h2>
+
+  <!-- This explains the purpose of the featured sections. -->
+  <p>Browse these quick-pick sections first.</p>
+</section>
+<!-- Featured Shopping section ends here. -->
+
+<!-- Popular Picks section starts here. -->
+<section>
+  <!-- This is the title for popular customer favorites. -->
+  <h2>Popular Picks</h2>
+
+  <!-- This explains what this section is for. -->
+  <p>Easy crowd-pleasers and items customers ask about often.</p>
+
+  <!-- JavaScript will place Popular Picks product cards inside this box later. -->
+  <div id="popular-picks-container">
+    <p>Popular Picks coming soon.</p>
+  </div>
+</section>
+<!-- Popular Picks section ends here. -->
+
+<!-- Bundle Packages section starts here. -->
+<section>
+  <!-- This is the title for bundle/package items. -->
+  <h2>Bundle Packages</h2>
+
+  <!-- This explains what this section is for. -->
+  <p>Simple package-style options for customers who want an easy choice.</p>
+
+  <!-- JavaScript will place Bundle Package product cards inside this box later. -->
+  <div id="bundle-packages-container">
+    <p>Bundle Packages coming soon.</p>
+  </div>
+</section>
+<!-- Bundle Packages section ends here. -->
+
+<!-- Big Show Finale section starts here. -->
+<section>
+  <!-- This is the title for large showstopper items. -->
+  <h2>Big Show Finale</h2>
+
+  <!-- This explains what this section is for. -->
+  <p>Big-ticket fireworks for customers who want a strong finale.</p>
+
+  <!-- JavaScript will place Big Show Finale product cards inside this box later. -->
+  <div id="big-show-finale-container">
+    <p>Big Show Finale coming soon.</p>
+  </div>
+</section>
+<!-- Big Show Finale section ends here. -->
+
+<!-- Full Inventory section starts here. -->
+<section id="full-inventory-section">
+  <!-- This is the title for our full inventory list. -->
+  <h2>Full Inventory</h2>
+
+  <!-- This explains what the customer should do. -->
+  <p>Tap the plus button to add fireworks to your list.</p>
+
+    <!-- This search box lets customers quickly find fireworks by name or category. -->
+  <input id="inventory-search" type="text" placeholder="Search fireworks...">
+
+    <!-- Shop by Type section starts here. -->
+<div id="shop-by-type-area">
+
+  <!-- Category filter buttons start here inside this box. -->
+  <div id="category-filter-buttons">
+    <!-- This button shows every product. -->
+    <button class="category-button active-category" onclick="setCategoryFilter('All')">All</button>
+
+    <!-- This button shows daytime-friendly items. -->
+    <button class="category-button" onclick="setCategoryFilter('Daytime Fun')">Daytime Fun</button>
+
+    <!-- This button shows novelty items. -->
+    <button class="category-button" onclick="setCategoryFilter('Novelties')">Novelties</button>
+
+    <!-- This button shows sparkler items. -->
+    <button class="category-button" onclick="setCategoryFilter('Sparklers')">Sparklers</button>
+
+    <!-- This button shows smoke items. -->
+    <button class="category-button" onclick="setCategoryFilter('Smoke')">Smoke</button>
+
+    <!-- This button shows ground spinner items. -->
+    <button class="category-button" onclick="setCategoryFilter('Ground Spinners')">Ground Spinners</button>
+
+    <!-- This button shows flying items. -->
+    <button class="category-button" onclick="setCategoryFilter('Flying Items')">Flying Items</button>
+
+    <!-- This button shows fountain items. -->
+    <button class="category-button" onclick="setCategoryFilter('Fountains')">Fountains</button>
+
+    <!-- This button shows firecracker items. -->
+    <button class="category-button" onclick="setCategoryFilter('Firecrackers')">Firecrackers</button>
+
+    <!-- This button shows roman candle items. -->
+    <button class="category-button" onclick="setCategoryFilter('Roman Candles')">Roman Candles</button>
+
+    <!-- This button shows saturn missile items. -->
+    <button class="category-button" onclick="setCategoryFilter('Saturn Missiles')">Saturn Missiles</button>
+
+    <!-- This button shows cake items. -->
+    <button class="category-button" onclick="setCategoryFilter('Cakes')">Cakes</button>
+
+    <!-- This button shows girandola items. -->
+    <button class="category-button" onclick="setCategoryFilter('Girandola')">Girandola</button>
+
+    <!-- This button shows reloadable shell items. -->
+    <button class="category-button" onclick="setCategoryFilter('Reloadable Shells')">Reloadable Shells</button>
+
+    <!-- This button shows bundle/package items. -->
+    <button class="category-button" onclick="setCategoryFilter('Bundle Packages')">Bundle Packages</button>
+
+    <!-- This button shows punks last because they are handed out last in person. -->
+    <button class="category-button" onclick="setCategoryFilter('Punks')">Punks</button>
+  </div>
+  <!-- Category filter buttons end here. -->
+</div>
+<!-- Shop by Type section ends here. -->
+
+  <!-- JavaScript will automatically place our firework cards inside this empty box. -->
+  <div id="fireworks-container"></div>
+</section>
+<!-- Full Inventory section ends here. -->
+
+  <!-- My Fireworks List section starts here. -->
+<section id="my-list-section">
+    <!-- This is the title for the customer's selected list. -->
+    <h2>My Fireworks List</h2>
+
+    <!-- This paragraph will show the selected fireworks. -->
+    <p id="customer-list-text">No fireworks selected yet.</p>
+
+    <!-- This paragraph will show the estimated subtotal. -->
+    <p id="subtotal-text">Subtotal: $0.00</p>
+
+    <!-- This paragraph will show the estimated tax. -->
+    <p id="tax-text">Estimated Tax: $0.00</p>
+
+    <!-- This paragraph will show the estimated total after tax. -->
+    <p id="total-text">Estimated Total: $0.00</p>
+  </section>
+  <!-- My Fireworks List section ends here. -->
+
+  <!-- This floating button stays on the screen so customers can jump to their list anytime. -->
+<button id="floating-list-button" onclick="scrollToCustomerList()">
+  <!-- This is the top line of the floating button. -->
+  <span id="floating-list-label">My List</span>
+
+  <!-- This tells customers the floating button can be clicked or tapped. -->
+  <span id="floating-list-help">Tap to view list</span>
+
+  <!-- This shows how many items are currently selected. -->
+  <span id="floating-item-count">0 items</span>
+
+  <!-- This shows the estimated total on the floating button. -->
+  <span id="floating-total-text">$0.00</span>
+</button>
+  <!-- This connects our JavaScript file so the buttons can do things. -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+

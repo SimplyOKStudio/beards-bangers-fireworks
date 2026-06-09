@@ -1,0 +1,924 @@
+/* This changes how the whole page behaves. */
+* {
+  /* This makes sizing easier to understand. Padding and borders stay inside the element's size. */
+  box-sizing: border-box;
+}
+
+/* This styles the whole webpage. */
+body {
+  /* This removes the browser's default outside spacing. */
+  margin: 0;
+
+  /* This sets a simple readable font. */
+  font-family: Arial, sans-serif;
+
+  /* This creates a dark fireworks-night background. */
+  background-color: #07152f;
+
+  /* This makes normal text easy to read on the dark background. */
+  color: #f8fafc;
+
+  /* This makes text larger for phones. */
+  font-size: 20px;
+
+  /* This gives lines of text more breathing room. */
+  line-height: 1.5;
+}
+
+/* This styles the top header area. */
+header {
+  /* This adds space inside the header. */
+  padding: 28px 18px;
+
+  /* This gives the header a deeper patriotic blue. */
+  background-color: #0b1f4d;
+
+  /* This makes the header text white. */
+  color: white;
+
+  /* This centers the header text. */
+  text-align: center;
+
+  /* This adds a gold line under the header. */
+  border-bottom: 4px solid #facc15;
+}
+
+/* This styles the biggest title. */
+h1 {
+  /* This removes extra space above the title. */
+  margin-top: 0;
+
+  /* This adds a little space below the title. */
+  margin-bottom: 8px;
+
+  /* This makes the title large on phones. */
+  font-size: 34px;
+
+  /* This makes the title feel more like a sign. */
+  letter-spacing: 1px;
+}
+
+/* This styles section titles. */
+h2 {
+  /* This removes extra space at the top of section titles. */
+  margin-top: 0;
+
+  /* This makes section titles easy to spot. */
+  font-size: 26px;
+
+  /* This makes section titles gold. */
+  color: #facc15;
+}
+
+/* This styles product names and selected list item names. */
+h3 {
+  /* This removes extra space above product names. */
+  margin-top: 0;
+
+  /* This adds a little space below product names. */
+  margin-bottom: 8px;
+
+  /* This makes product names readable on phones. */
+  font-size: 24px;
+
+  /* This keeps product names bright. */
+  color: #ffffff;
+}
+
+/* This styles each main section of the page. */
+section {
+  /* This adds space inside each section. */
+  padding: 18px;
+
+  /* This adds space around each section. */
+  margin: 14px;
+
+  /* This makes each section a dark blue card. */
+  background-color: #10234f;
+
+  /* This rounds the corners of each section. */
+  border-radius: 16px;
+
+  /* This adds a subtle blue border. */
+  border: 1px solid #33518f;
+
+  /* This adds depth without looking too generic. */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.inventory-card {
+  padding: 18px;
+  margin-bottom: 16px;
+  background-color: #17345f;
+  border-radius: 16px;
+  border: 1px solid #426ca3;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* This styles selected cards inside My Fireworks List. */
+.selected-list-card {
+  /* This adds space inside each selected item card. */
+  padding: 18px;
+
+  /* This adds space between selected item cards. */
+  margin-bottom: 16px;
+
+  /* This makes selected list cards feel darker and more like a checkout summary. */
+  background-color: #07152f;
+
+  /* This rounds the selected list card corners. */
+  border-radius: 16px;
+
+  /* This gives selected list cards a gold outline so they feel different from inventory cards. */
+  border: 2px solid #facc15;
+
+  /* This adds a stronger shadow for a receipt/checkout feel. */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* This styles normal paragraph text. */
+p {
+  /* This keeps paragraph spacing comfortable but not huge. */
+  margin: 8px 0;
+}
+
+/* This styles all buttons. */
+button {
+  /* This makes buttons large enough for thumbs. */
+  min-width: 48px;
+
+  /* This makes buttons tall enough for thumbs. */
+  min-height: 48px;
+
+  /* This adds space inside buttons. */
+  padding: 12px 16px;
+
+  /* This makes button text easy to read. */
+  font-size: 20px;
+
+  /* This makes button text bold. */
+  font-weight: bold;
+
+  /* This removes the default button border. */
+  border: none;
+
+  /* This rounds the button corners. */
+  border-radius: 12px;
+
+  /* This makes buttons red by default. */
+  background-color: #dc2626;
+
+  /* This makes button text white. */
+  color: white;
+
+  /* This changes the mouse cursor on computer. */
+  cursor: pointer;
+}
+
+/* This changes buttons when they are pressed. */
+button:active {
+  /* This makes the button look slightly pressed down. */
+  transform: scale(0.96);
+}
+
+/* This styles quantity numbers between minus and plus buttons. */
+span {
+  /* This makes the quantity easier to see. */
+  font-size: 24px;
+
+  /* This makes the quantity bold. */
+  font-weight: bold;
+
+  /* This adds space around the quantity. */
+  margin: 0 14px;
+
+  /* This keeps the quantity lined up nicely with buttons. */
+  display: inline-block;
+
+  /* This gives the quantity a consistent width. */
+  min-width: 28px;
+
+  /* This centers the quantity number. */
+  text-align: center;
+
+  /* This makes the quantity gold. */
+  color: #facc15;
+}
+
+/* This makes the subtotal and tax easier to read. */
+#subtotal-text,
+#tax-text {
+  /* This makes money lines bigger. */
+  font-size: 20px;
+
+  /* This makes money lines brighter. */
+  color: #e0f2fe;
+}
+
+/* This makes the estimated total stand out more. */
+#total-text {
+  /* This makes the total larger. */
+  font-size: 26px;
+
+  /* This makes the total bold. */
+  font-weight: bold;
+
+  /* This makes the total gold. */
+  color: #facc15;
+}
+
+/* This gives the customer list area a cleaner look. */
+#customer-list-text {
+  /* This removes the background from the outer customer list box. */
+  background-color: transparent;
+
+  /* This removes the border from the outer customer list box. */
+  border: none;
+
+  /* This removes extra padding from the outer customer list box. */
+  padding: 0;
+}
+
+/* This helps the page fit larger screens without getting too wide. */
+@media (min-width: 700px) {
+  /* This limits the page width on tablets/computers. */
+  body {
+    /* This keeps the content from stretching too wide. */
+    max-width: 760px;
+
+    /* This centers the page. */
+    margin: 0 auto;
+  }
+}
+
+/* This styles the floating My List button. */
+#floating-list-button {
+  /* This keeps the button stuck to the screen even while scrolling. */
+  position: fixed;
+
+  /* This places the button near the bottom of the screen. */
+  bottom: 18px;
+
+  /* This places the button near the right side of the screen. */
+  right: 18px;
+
+  /* This makes sure the button appears above other page content. */
+  z-index: 999;
+
+  /* This makes the button stack its text lines vertically. */
+  display: flex;
+
+  /* This makes the text lines go top-to-bottom. */
+  flex-direction: column;
+
+  /* This centers the text inside the button. */
+  align-items: center;
+
+  /* This gives the floating button a gold background. */
+  background-color: #facc15;
+
+  /* This makes the button text dark blue. */
+  color: #07152f;
+
+  /* This adds a dark border so the button stands out. */
+  border: 3px solid #ffffff;
+
+  /* This makes the button rounded like a floating badge. */
+  border-radius: 18px;
+
+  /* This adds a stronger shadow so it floats above the page. */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+
+    /* This makes the floating button wider and easier to read on phones. */
+  min-width: 150px;
+
+  /* This makes the floating button taller and easier to tap. */
+  min-height: 90px;
+
+  /* This adds more breathing room inside the floating button. */
+  padding: 14px 18px;
+}
+
+/* This styles the "My List" label inside the floating button. */
+#floating-list-label {
+  /* This removes the normal span spacing from our global span style. */
+  margin: 0;
+
+  /* This makes the "My List" text larger. */
+  font-size: 22px;
+
+  /* This makes the label bold. */
+  font-weight: bold;
+
+  /* This keeps the label centered. */
+  text-align: center;
+
+  /* This removes the minimum width from the global span style. */
+  min-width: 0;
+}
+
+/* This styles the item count inside the floating button. */
+#floating-item-count {
+  /* This removes the normal span spacing from our global span style. */
+  margin: 0;
+
+  /* This makes the item count easier to read. */
+  font-size: 17px;
+
+  /* This keeps the item count centered. */
+  text-align: center;
+
+  /* This removes the minimum width from the global span style. */
+  min-width: 0;
+}
+
+/* This styles the total inside the floating button. */
+#floating-total-text {
+  /* This removes the normal span spacing from our global span style. */
+  margin: 0;
+
+  /* This makes the floating total larger. */
+  font-size: 22px;
+
+  /* This makes the total bold. */
+  font-weight: bold;
+
+  /* This keeps the total centered. */
+  text-align: center;
+
+  /* This removes the minimum width from the global span style. */
+  min-width: 0;
+}
+
+/* This makes the text inside the floating My List button dark so it shows on the gold button. */
+#floating-list-button span {
+  /* This overrides the regular gold span color. */
+  color: #07152f;
+}
+
+/* This hides anything with the hidden class. */
+.hidden {
+  /* This makes the section disappear from the page. */
+  display: none;
+}
+
+/* This makes item totals inside selected list cards easier to notice. */
+.selected-list-card p:last-of-type {
+  /* This makes the item total bigger. */
+  font-size: 22px;
+
+  /* This makes the item total bold. */
+  font-weight: bold;
+
+  /* This makes the item total gold. */
+  color: #facc15;
+}
+
+/* This styles the "Tap to view list" helper text inside the floating button. */
+#floating-list-help {
+  /* This removes the normal span spacing from our global span style. */
+  margin: 0;
+
+  /* This makes the helper text readable but smaller than the main label. */
+  font-size: 15px;
+
+  /* This keeps the helper text from feeling too loud. */
+  font-weight: normal;
+
+  /* This keeps the helper text centered. */
+  text-align: center;
+
+  /* This removes the minimum width from the global span style. */
+  min-width: 0;
+
+  /* This makes sure the helper text is dark on the gold button. */
+  color: #07152f;
+}
+
+/* This styles the search box inside the Full Inventory section. */
+#inventory-search {
+  /* This makes the search box stretch across the section. */
+  width: 100%;
+
+  /* This adds space inside the search box so it is easy to tap. */
+  padding: 16px;
+
+  /* This adds space below the search box. */
+  margin-bottom: 18px;
+
+  /* This makes the text inside the search box easy to read. */
+  font-size: 20px;
+
+  /* This rounds the search box corners. */
+  border-radius: 14px;
+
+  /* This adds a bright blue border. */
+  border: 2px solid #3b82f6;
+
+  /* This makes the search box dark to match the site. */
+  background-color: #07152f;
+
+  /* This makes typed text white. */
+  color: #ffffff;
+}
+
+/* This styles the faint placeholder text inside the search box. */
+#inventory-search::placeholder {
+  /* This makes the placeholder readable but softer than typed text. */
+  color: #cbd5e1;
+}
+
+/* This styles the box that holds the category filter buttons. */
+#category-filter-buttons {
+  /* This makes the buttons wrap onto new lines on small screens. */
+  display: flex;
+
+  /* This allows buttons to move to the next line if they do not fit. */
+  flex-wrap: wrap;
+
+  /* This adds space between category buttons. */
+  gap: 12px;
+
+  /* This adds space below the category buttons. */
+  margin-bottom: 18px;
+
+  /* This removes the normal card background from this button container. */
+  background-color: transparent;
+
+  /* This removes the normal card border from this button container. */
+  border: none;
+
+  /* This removes extra padding from this button container. */
+  padding: 0;
+}
+
+/* This styles each category filter button. */
+.category-button {
+  /* This makes category buttons take up almost half the row. */
+  width: calc(50% - 6px);
+
+  /* This makes each category button much taller and easier to tap. */
+  min-height: 86px;
+
+  /* This adds lots of breathing room inside each category button. */
+  padding: 22px 14px;
+
+  /* This makes category button text much easier to read. */
+  font-size: 24px;
+
+  /* This makes category button text bold. */
+  font-weight: bold;
+
+  /* This makes category buttons blue by default. */
+  background-color: #1d4ed8;
+
+  /* This makes category button text white. */
+  color: #ffffff;
+
+  /* This gives category buttons a white border. */
+  border: 2px solid #ffffff;
+
+  /* This rounds the category button corners. */
+  border-radius: 18px;
+
+  /* This keeps the button text centered. */
+  text-align: center;
+}
+
+/* This styles the currently selected category button. */
+.active-category {
+  /* This makes the active category gold. */
+  background-color: #facc15;
+
+  /* This makes the active category text dark blue. */
+  color: #07152f;
+
+  /* This makes the active category stand out. */
+  border: 2px solid #ffffff;
+}
+
+/* This styles the whole Shop by Type area. */
+#shop-by-type-area {
+  /* This removes the normal card look from this helper area. */
+  background-color: transparent;
+
+  /* This removes the normal border from this helper area. */
+  border: none;
+
+  /* This removes extra padding from this helper area. */
+  padding: 0;
+
+  /* This adds space below the whole Shop by Type area. */
+  margin-bottom: 18px;
+}
+
+/* This styles the button that opens and closes Shop by Type. */
+#shop-by-type-toggle {
+  /* This makes the toggle button stretch across the section. */
+  width: 100%;
+
+  /* This adds space inside the button. */
+  padding: 16px;
+
+  /* This makes the button text easy to read. */
+  font-size: 22px;
+
+  /* This makes the button text bold. */
+  font-weight: bold;
+
+  /* This makes the button gold. */
+  background-color: #facc15;
+
+  /* This makes the button text dark blue. */
+  color: #07152f;
+
+  /* This gives the button a white border. */
+  border: 2px solid #ffffff;
+
+  /* This rounds the corners. */
+  border-radius: 14px;
+
+  /* This adds space below the toggle button. */
+  margin-bottom: 12px;
+}
+
+/* This makes category buttons much easier to use on phone screens. */
+@media (max-width: 699px) {
+  /* This styles each category button on mobile. */
+  .category-button {
+    /* This makes each category button take up almost half the row. */
+    width: calc(50% - 6px);
+
+    /* This makes the buttons taller and easier to tap. */
+    min-height: 72px;
+
+    /* This gives the button text more breathing room. */
+    padding: 18px 12px;
+
+    /* This makes the button text easier to read outside/in sunlight. */
+    font-size: 20px;
+
+    /* This makes the text strong and readable. */
+    font-weight: bold;
+
+    /* This keeps the button text centered. */
+    text-align: center;
+  }
+
+  /* This makes the Shop by Type toggle bigger on mobile too. */
+  #shop-by-type-toggle {
+    /* This makes the toggle button taller and easier to tap. */
+    min-height: 76px;
+
+    /* This makes the toggle button text larger. */
+    font-size: 24px;
+  }
+}
+
+/* This makes sure the Shop by Type buttons actually hide when JavaScript adds the hidden class. */
+#category-filter-buttons.hidden {
+  /* This forces the category button box to disappear when it has the hidden class. */
+  display: none;
+}
+
+/* This styles each buying option row inside a product card. */
+.buying-option-row {
+  padding: 14px;
+  margin-top: 12px;
+  background-color: #0f2a50;
+  border-radius: 14px;
+  border: 1px solid #3d6fa8;
+  text-align: center;
+}
+
+/* This styles the text area inside a buying option row. */
+.buying-option-info {
+  /* This adds a little space below the option text before the buttons. */
+  margin-bottom: 10px;
+}
+
+/* This styles the buying option label, like 1 PIECE or 1 BOX OF 36. */
+.buying-option-label {
+  /* This makes the option label easy to read. */
+  font-size: 22px;
+
+  /* This makes the option label bold. */
+  font-weight: bold;
+
+  /* This makes the option label gold. */
+  color: #facc15;
+}
+
+/* This styles the buying option price. */
+.buying-option-price {
+  /* This makes the option price readable. */
+  font-size: 22px;
+
+  /* This keeps the price bright. */
+  color: #ffffff;
+}
+
+/* This styles the button row inside a buying option. */
+.buying-option-buttons {
+  /* This keeps the minus, quantity, and plus lined up. */
+  display: flex;
+
+  /* This vertically centers the buttons and number. */
+  align-items: center;
+
+  /* This adds space between the buttons and quantity. */
+  gap: 12px;
+}
+
+/* Product card spacing polish */
+
+.product-card {
+  padding: 18px;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.product-card p {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.buying-option-row {
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.buying-option-label {
+  margin-bottom: 8px;
+}
+
+.buying-option-price {
+  margin-bottom: 10px;
+}
+
+.buying-option-buttons {
+  gap: 18px;
+}
+
+.buying-option-buttons button {
+  width: 52px;
+  height: 52px;
+}
+
+/* This styles the Beard's Bangers logo at the top of the page. */
+.site-logo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 18px;
+}
+
+/* Beard's Bangers refined navy color polish */
+
+body {
+  background-color: #07182e;
+  color: #fff3d2;
+}
+
+header {
+  background-color: #102a52;
+  border-bottom: 5px solid #f0b72f;
+}
+
+section,
+.important-note,
+.start-here,
+.list-section,
+.search-section,
+.filter-section {
+  background-color: #102a52;
+  border-color: #284d82;
+}
+
+.product-card {
+  background-color: #102f5f;
+  border-color: #315f94;
+}
+
+.buying-option-row {
+  background-color: #102f5f;
+  border-color: #3f75c6;
+}
+
+h1,
+h2,
+.section-title,
+.important-note h2,
+.start-here h2 {
+  color: #f0b72f;
+}
+
+.product-card h3 {
+  color: #fff3d2;
+}
+
+.buying-option-label,
+.quantity-number,
+.total-line strong {
+  color: #f0b72f;
+}
+
+button,
+.add-button,
+.remove-button,
+.category-button,
+.shop-type-button,
+.clear-list-button {
+  background-color: #d33a2c;
+  color: #fff3d2;
+}
+
+button:hover,
+.add-button:hover,
+.remove-button:hover,
+.category-button:hover,
+.shop-type-button:hover,
+.clear-list-button:hover {
+  background-color: #ec4a3a;
+}
+
+.category-button.active,
+.shop-type-button.active {
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+input,
+.search-input {
+  background-color: #fff3d2;
+  color: #07182e;
+  border-color: #f0b72f;
+}
+
+.site-logo {
+  background-color: #fff3d2;
+  padding: 10px;
+}
+
+/* Final button and product option cleanup */
+
+/* This makes the floating My List button match the golden yellow brand color. */
+.floating-list-button,
+#floating-list-button,
+.my-list-button {
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+/* This keeps the My List text readable. */
+.floating-list-button *,
+#floating-list-button *,
+.my-list-button * {
+  color: #07182e;
+}
+
+/* This centers the unit label, price, and plus/minus buttons inside multi-option products. */
+.buying-option-row {
+  text-align: center;
+}
+
+.buying-option-info {
+  text-align: center;
+}
+
+.buying-option-buttons {
+  justify-content: center;
+  align-items: center;
+}
+
+/* This makes the inventory/filter buttons blue instead of red. */
+.category-button,
+.shop-type-button {
+  background-color: #193b73;
+  color: #fff3d2;
+  border: 2px solid #3f75c6;
+}
+
+/* This gives filter buttons a cleaner hover color. */
+.category-button:hover,
+.shop-type-button:hover {
+  background-color: #244f91;
+}
+
+/* This makes the selected filter button golden yellow. */
+.category-button.active,
+.shop-type-button.active {
+  background-color: #f0b72f;
+  color: #07182e;
+  border-color: #fff3d2;
+}
+
+/* Beard's Bangers premium navy product card polish */
+
+.inventory-card {
+  background-color: #17345f;
+  border-color: #426ca3;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.inventory-card h3 {
+  color: #fff3d2;
+  letter-spacing: 0.5px;
+}
+
+.buying-option-row {
+  background-color: #0f2a50;
+  border-color: #3d6fa8;
+}
+
+.buying-option-label {
+  color: #f0b72f;
+}
+
+.buying-option-price {
+  color: #fff8e8;
+}
+
+section {
+  background-color: #102a52;
+  border-color: #2f5488;
+}
+
+body {
+  background-color: #06172c;
+}
+
+button,
+.add-button,
+.remove-button {
+  background-color: #d93a2e;
+  color: #fff3d2;
+}
+
+button:hover,
+.add-button:hover,
+.remove-button:hover {
+  background-color: #ef4b3d;
+}
+
+/* Premium product card finishing touch */
+
+.inventory-card {
+  background-color: #17345f;
+  border: 1px solid #516f9a;
+  border-top: 4px solid #f0b72f;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.32);
+}
+
+.inventory-card h3 {
+  color: #fff3d2;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+.buying-option-row {
+  background-color: #0d284d;
+  border: 1px solid #456b9a;
+}
+
+section {
+  border-color: #304f7e;
+}
+
+/* Inventory filter button polish */
+
+.category-button {
+  background-color: #1b4378;
+  color: #fff3d2;
+  border: 2px solid #4f83c5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.category-button:hover {
+  background-color: #25528e;
+}
+
+/* This is the selected inventory filter button. */
+.active-category {
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 2px solid #fff3d2;
+  box-shadow: 0 4px 14px rgba(240, 183, 47, 0.32);
+}
+
+/* Make selected filter buttons stay yellow immediately, even while hovered */
+
+.category-button.active-category,
+.category-button.active-category:hover,
+.category-button.active-category:focus,
+.category-button.active-category:active {
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 2px solid #fff3d2;
+  box-shadow: 0 4px 14px rgba(240, 183, 47, 0.35);
+}
