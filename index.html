@@ -23,7 +23,6 @@
 <body>
   <!-- Header section starts here. -->
   <header>
-    <header>
   <!-- This shows the Beard's Bangers logo at the top of the page. -->
   <img
     src="images/beards-bangers-logo.webp"
@@ -54,79 +53,28 @@
   </section>
   <!-- Important Note section ends here. -->
 
-  <!-- Featured Shopping section starts here. -->
+<!-- Featured Shopping section starts here. -->
 <section>
   <!-- This is the title for the guided shopping area. -->
   <h2>Start Here</h2>
 
-  <!-- This explains the purpose of the featured sections. -->
-  <p>Browse these quick-pick sections first.</p>
+  <!-- This explains the purpose of the filter buttons. -->
+  <p>Choose a section below. Popular Picks is a great place to start.</p>
 </section>
 <!-- Featured Shopping section ends here. -->
 
-<!-- Popular Picks section starts here. -->
-<section>
-  <!-- This is the title for popular customer favorites. -->
-  <h2>Popular Picks</h2>
-
-  <!-- This explains what this section is for. -->
-  <p>Easy crowd-pleasers and items customers ask about often.</p>
-
-  <!-- JavaScript will place Popular Picks product cards inside this box later. -->
-  <div id="popular-picks-container">
-    <p>Popular Picks coming soon.</p>
-  </div>
-</section>
-<!-- Popular Picks section ends here. -->
-
-<!-- Bundle Packages section starts here. -->
-<section>
-  <!-- This is the title for bundle/package items. -->
-  <h2>Bundle Packages</h2>
-
-  <!-- This explains what this section is for. -->
-  <p>Simple package-style options for customers who want an easy choice.</p>
-
-  <!-- JavaScript will place Bundle Package product cards inside this box later. -->
-  <div id="bundle-packages-container">
-    <p>Bundle Packages coming soon.</p>
-  </div>
-</section>
-<!-- Bundle Packages section ends here. -->
-
-<!-- Big Show Finale section starts here. -->
-<section>
-  <!-- This is the title for large showstopper items. -->
-  <h2>Big Show Finale</h2>
-
-  <!-- This explains what this section is for. -->
-  <p>Big-ticket fireworks for customers who want a strong finale.</p>
-
-  <!-- JavaScript will place Big Show Finale product cards inside this box later. -->
-  <div id="big-show-finale-container">
-    <p>Big Show Finale coming soon.</p>
-  </div>
-</section>
-<!-- Big Show Finale section ends here. -->
-
-<!-- Full Inventory section starts here. -->
+<!-- Browse Fireworks section starts here. -->
 <section id="full-inventory-section">
-  <!-- This is the title for our full inventory list. -->
-  <h2>Full Inventory</h2>
+  <!-- This is the title for the browsing area. -->
+  <h2>Browse Fireworks</h2>
 
   <!-- This explains what the customer should do. -->
-  <p>Tap the plus button to add fireworks to your list.</p>
-
-    <!-- This search box lets customers quickly find fireworks by name or category. -->
-  <input id="inventory-search" type="text" placeholder="Search fireworks...">
-
-    <!-- Shop by Type section starts here. -->
-<div id="shop-by-type-area">
+  <p>Tap a category, then use the plus button to build your list.</p>
 
   <!-- Category filter buttons start here inside this box. -->
   <div id="category-filter-buttons">
-    <!-- This button shows every product. -->
-    <button class="category-button active-category" onclick="setCategoryFilter('All')">All</button>
+    <!-- This button shows popular customer favorites first. -->
+    <button class="category-button active-category" onclick="setCategoryFilter('Popular Picks')">Popular Picks</button>
 
     <!-- This button shows daytime-friendly items. -->
     <button class="category-button" onclick="setCategoryFilter('Daytime Fun')">Daytime Fun</button>
@@ -161,6 +109,9 @@
     <!-- This button shows cake items. -->
     <button class="category-button" onclick="setCategoryFilter('Cakes')">Cakes</button>
 
+    <!-- This button shows big finale-style items. -->
+    <button class="category-button" onclick="setCategoryFilter('Big Show Finale')">Big Show Finale</button>
+
     <!-- This button shows girandola items. -->
     <button class="category-button" onclick="setCategoryFilter('Girandola')">Girandola</button>
 
@@ -172,15 +123,19 @@
 
     <!-- This button shows punks last because they are handed out last in person. -->
     <button class="category-button" onclick="setCategoryFilter('Punks')">Punks</button>
+
+    <!-- This button shows everything, but it is last so it does not overwhelm customers first. -->
+    <button class="category-button" onclick="setCategoryFilter('All')">All</button>
   </div>
   <!-- Category filter buttons end here. -->
-</div>
-<!-- Shop by Type section ends here. -->
+
+  <!-- This search box lets customers quickly find fireworks by name or category. -->
+  <input id="inventory-search" type="text" placeholder="Search fireworks...">
 
   <!-- JavaScript will automatically place our firework cards inside this empty box. -->
   <div id="fireworks-container"></div>
 </section>
-<!-- Full Inventory section ends here. -->
+<!-- Browse Fireworks section ends here. -->
 
   <!-- My Fireworks List section starts here. -->
 <section id="my-list-section">
