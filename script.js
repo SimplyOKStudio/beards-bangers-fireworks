@@ -5178,6 +5178,9 @@ function setCategoryFilter(categoryName) {
     // This clears the search box when the customer chooses a new category.
   inventorySearch.value = "";
 
+    // This closes the phone keyboard after choosing a category.
+  inventorySearch.blur();
+
   // This finds all category buttons.
   const categoryButtons = document.querySelectorAll(".category-button");
 
@@ -5202,6 +5205,36 @@ function setCategoryFilter(categoryName) {
 
 // This reruns the Full Inventory display every time the customer types in the search box.
 inventorySearch.addEventListener("input", displayFireworks);
+
+// This hides the My List bar while the customer is typing in the search box.
+inventorySearch.addEventListener("focus", function () {
+  // This adds a class to the page body.
+  document.body.classList.add("search-is-active");
+});
+
+// This brings the My List bar back when the customer leaves the search box.
+inventorySearch.addEventListener("blur", function () {
+  // This removes the class from the page body.
+  document.body.classList.remove("search-is-active");
+});
+
+// This closes the phone keyboard when the customer presses Enter/Search.
+inventorySearch.addEventListener("keydown", function (event) {
+  // This checks if the customer pressed the Enter key.
+  if (event.key === "Enter") {
+    // This tells the search box to stop being active.
+    inventorySearch.blur();
+  }
+});
+
+// This closes the phone keyboard when the customer scrolls down the page.
+window.addEventListener("scroll", function () {
+  // This checks if the search box is currently active.
+  if (document.activeElement === inventorySearch) {
+    // This tells the search box to stop being active.
+    inventorySearch.blur();
+  }
+});
 
 // This runs the displayFireworks function when the page loads.
 displayFireworks();
