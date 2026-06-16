@@ -5509,20 +5509,20 @@ const fireworks = [
   {
     itemNumber: 2786,
     id: "bring-the-rain-rockets",
-    name: "BRING THE RAIN ROCKETS",
+    name: "BRING THE RAIN ROCKET",
     price: 25.00,
-    unitLabel: "1 BOX",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    unitLabel: "1 PIECE",
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2787,
     id: "starshot-rockets",
-    name: "STARSHOT ROCKETS",
+    name: "STARSHOT ROCKET",
     price: 15.00,
     unitLabel: "1 PIECE",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2788,
@@ -5536,20 +5536,20 @@ const fireworks = [
   {
     itemNumber: 2789,
     id: "brothers-corona-rockets",
-    name: "BROTHERS CORONA ROCKETS",
+    name: "BROTHERS CORONA ROCKET",
     price: 15.00,
-    unitLabel: "1 PACK",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    unitLabel: "1 PIECE",
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2790,
     id: "screaming-banshee-rockets",
-    name: "SCREAMING BANSHEE ROCKETS",
+    name: "SCREAMING BANSHEE ROCKET",
     price: 20.00,
-    unitLabel: "1 PACK",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    unitLabel: "1 PIECE",
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2791,
@@ -5608,11 +5608,11 @@ const fireworks = [
   {
     itemNumber: 2797,
     id: "black-cat-bottle-rockets",
-    name: "BLACK CAT BOTTLE ROCKETS",
+    name: "BLACK CAT BOTTLE ROCKET GROSS PACK",
     price: 17.50,
     unitLabel: "1 PACK",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2798,
@@ -5620,8 +5620,8 @@ const fireworks = [
     name: "BLACK CAT WHISTLING BOTTLE ROCKETS WITH REPORT",
     price: 20.00,
     unitLabel: "1 BOX",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
   {
     itemNumber: 2799,
