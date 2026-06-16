@@ -1331,6 +1331,215 @@ const fireworks = [
     category: "Ground Spinners",
     shopTypes: ["Ground Spinners", "Daytime Fun"]
   }
+  ,
+  {
+    itemNumber: 465,
+    id: "color-spaceship-2-pack",
+    name: "2 COLOR SPACESHIP",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "color-spaceship-2-pack-piece",
+        label: "1 PIECE",
+        price: 1.50
+      },
+      {
+        id: "color-spaceship-2-pack-package",
+        label: "1 PACKAGE OF 3",
+        price: 4.50
+      }
+    ]
+  },
+  {
+    itemNumber: 470,
+    id: "two-stage-turbo-phantom",
+    name: "2 STAGE TURBO PHANTOM",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "two-stage-turbo-phantom-piece",
+        label: "1 PIECE",
+        price: 1.50
+      },
+      {
+        id: "two-stage-turbo-phantom-box",
+        label: "1 BOX OF 6",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 475,
+    id: "artificial-satellites",
+    name: "ARTIFICIAL SATELLITES",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "artificial-satellites-pack",
+        label: "1 PACK OF 12",
+        price: 2.00
+      },
+      {
+        id: "artificial-satellites-box",
+        label: "1 BOX OF 12 PACKS",
+        price: 24.00
+      }
+    ]
+  },
+  {
+    itemNumber: 480,
+    id: "drone",
+    name: "DRONE",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"]
+  },
+  {
+    itemNumber: 485,
+    id: "fanta-sea",
+    name: "FANTA SEA",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"]
+  },
+  {
+    itemNumber: 490,
+    id: "brothers-lady-bugs",
+    name: "BROTHERS LADY BUGS",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "brothers-lady-bugs-piece",
+        label: "1 PIECE",
+        price: 2.50
+      },
+      {
+        id: "brothers-lady-bugs-pack",
+        label: "1 PACK OF 3",
+        price: 7.50
+      }
+    ]
+  },
+  {
+    itemNumber: 495,
+    id: "brothers-magic-crystal",
+    name: "BROTHERS MAGIC CRYSTAL",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "brothers-magic-crystal-piece",
+        label: "1 PIECE",
+        price: 2.50
+      },
+      {
+        id: "brothers-magic-crystal-box",
+        label: "1 BOX OF 4",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 500,
+    id: "pigs-can-fly",
+    name: "PIGS CAN FLY",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "pigs-can-fly-piece",
+        label: "1 PIECE",
+        price: 3.00
+      },
+      {
+        id: "pigs-can-fly-box",
+        label: "1 BOX OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 505,
+    id: "sky-smoke",
+    name: "SKY SMOKE",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Smoke", "Daytime Fun"],
+    options: [
+      {
+        id: "sky-smoke-piece",
+        label: "1 PIECE",
+        price: 2.25
+      },
+      {
+        id: "sky-smoke-box",
+        label: "1 BOX OF 4",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 510,
+    id: "tiger-tails",
+    name: "TIGER TAILS",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "tiger-tails-piece",
+        label: "1 PIECE",
+        price: 1.50
+      },
+      {
+        id: "tiger-tails-box",
+        label: "1 BOX OF 6",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 515,
+    id: "black-cat-uav",
+    name: "BLACK CAT UAV",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "black-cat-uav-piece",
+        label: "1 PIECE",
+        price: 2.00
+      },
+      {
+        id: "black-cat-uav-pack",
+        label: "1 PACK OF 3",
+        price: 6.00
+      }
+    ]
+  },
+  {
+    itemNumber: 520,
+    id: "zips-zip-blades",
+    name: "ZIPS / ZIP BLADES",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Daytime Fun"],
+    options: [
+      {
+        id: "zips-zip-blades-pack",
+        label: "1 PACK OF 6",
+        price: 1.50
+      },
+      {
+        id: "zips-zip-blades-box",
+        label: "1 BOX OF 40 PACKS",
+        price: 60.00
+      }
+    ]
+  }
 ];
 
 // This stores the customer's selected quantities.
