@@ -5364,7 +5364,7 @@ const fireworks = [
   {
     itemNumber: 2610,
     id: "diamond-backyard-6-assortment",
-    name: "DIAMOND BACKYARD #6 ASSORTMENT",
+    name: "DIAMOND BACKYARD ASSORTMENT",
     price: 160.00,
     unitLabel: "1 PACK",
     category: "Assortments",
@@ -5373,7 +5373,7 @@ const fireworks = [
   {
     itemNumber: 2615,
     id: "party-pack-6",
-    name: "PARTY PACK 6",
+    name: "PARTY PACK ASSORTMENT - LARGE",
     price: 160.00,
     unitLabel: "1 PACK",
     category: "Bundle Packages",
@@ -5382,7 +5382,7 @@ const fireworks = [
   {
     itemNumber: 2620,
     id: "black-cat-pride-and-honor-6",
-    name: "BLACK CAT PRIDE & HONOR 6",
+  name: "BLACK CAT PRIDE & HONOR ASSORTMENT",
     price: 160.00,
     unitLabel: "1 PACK",
     category: "Bundle Packages",
@@ -5391,7 +5391,7 @@ const fireworks = [
   {
     itemNumber: 2625,
     id: "black-cat-celebrate-america-5-assortment",
-    name: "BLACK CAT CELEBRATE AMERICA #5 ASSORTMENT",
+    name: "BLACK CAT CELEBRATE AMERICA ASSORTMENT",
     price: 140.00,
     unitLabel: "1 PACK",
     category: "Assortments",
@@ -5400,7 +5400,7 @@ const fireworks = [
   {
     itemNumber: 2630,
     id: "platinum-backyard-5",
-    name: "PLATINUM BACKYARD 5",
+    name: "PLATINUM BACKYARD ASSORTMENT",
     price: 140.00,
     unitLabel: "1 PACK",
     category: "Bundle Packages",
@@ -5409,7 +5409,7 @@ const fireworks = [
   {
     itemNumber: 2635,
     id: "black-cat-heritage-4",
-    name: "BLACK CAT HERITAGE 4",
+    name: "BLACK CAT HERITAGE ASSORTMENT",
     price: 90.00,
     unitLabel: "1 PACK",
     category: "Bundle Packages",
@@ -5418,7 +5418,7 @@ const fireworks = [
   {
     itemNumber: 2640,
     id: "party-pack-4-assortment",
-    name: "PARTY PACK #4 ASSORTMENT",
+    name: "PARTY PACK ASSORTMENT - MEDIUM",
     price: 90.00,
     unitLabel: "1 PACK",
     category: "Assortments",
@@ -5520,7 +5520,7 @@ const fireworks = [
     id: "starshot-rockets",
     name: "STARSHOT ROCKETS",
     price: 15.00,
-    unitLabel: "1 BOX",
+    unitLabel: "1 PIECE",
     category: "Rockets",
     shopTypes: ["Rockets", "Flying Items"]
   },
