@@ -267,6 +267,262 @@ const fireworks = [
     category: "Firecrackers",
     shopTypes: ["Firecrackers"]
   }
+  ,
+  {
+    itemNumber: 90,
+    id: "punks-100-count-bundle",
+    name: "PUNKS - 100 COUNT BUNDLE",
+    price: 1.50,
+    unitLabel: "1 BUNDLE OF 100",
+    category: "Punks",
+    shopTypes: ["Punks", "Accessories"]
+  },
+  {
+    itemNumber: 95,
+    id: "jumbo-punks-50-count-bundle",
+    name: "JUMBO PUNKS - 50 COUNT BUNDLE",
+    price: 6.00,
+    unitLabel: "1 BUNDLE OF 50",
+    category: "Punks",
+    shopTypes: ["Punks", "Accessories"]
+  },
+  {
+    itemNumber: 100,
+    id: "extra-large-punks-50-count-bundle",
+    name: "EXTRA LARGE PUNKS - 50 COUNT BUNDLE",
+    price: 7.50,
+    unitLabel: "1 BUNDLE OF 50",
+    category: "Punks",
+    shopTypes: ["Punks", "Accessories"]
+  },
+
+  {
+    itemNumber: 105,
+    id: "x-wing-missile-4-inch",
+    name: "X-WING MISSILE - 4 INCH",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"],
+    options: [
+      {
+        id: "x-wing-missile-4-inch-piece",
+        label: "1 PIECE",
+        price: 1.75
+      },
+      {
+        id: "x-wing-missile-4-inch-box",
+        label: "1 BOX OF 12",
+        price: 21.00
+      }
+    ]
+  },
+  {
+    itemNumber: 110,
+    id: "x-wing-missile-6-inch",
+    name: "X-WING MISSILE - 6 INCH",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"],
+    options: [
+      {
+        id: "x-wing-missile-6-inch-piece",
+        label: "1 PIECE",
+        price: 1.88
+      },
+      {
+        id: "x-wing-missile-6-inch-box",
+        label: "1 BOX OF 12",
+        price: 22.50
+      }
+    ]
+  },
+  {
+    itemNumber: 115,
+    id: "assorted-missile-10-inch",
+    name: "ASSORTED MISSILE - 10 INCH",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"],
+    options: [
+      {
+        id: "assorted-missile-10-inch-piece",
+        label: "1 PIECE",
+        price: 4.25
+      },
+      {
+        id: "assorted-missile-10-inch-pack",
+        label: "1 PACK OF 6",
+        price: 25.50
+      }
+    ]
+  },
+  {
+    itemNumber: 120,
+    id: "assorted-missile-12-inch",
+    name: "ASSORTED MISSILE - 12 INCH",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"],
+    options: [
+      {
+        id: "assorted-missile-12-inch-piece",
+        label: "1 PIECE",
+        price: 4.50
+      },
+      {
+        id: "assorted-missile-12-inch-pack",
+        label: "1 PACK OF 6",
+        price: 27.00
+      }
+    ]
+  },
+  {
+    itemNumber: 125,
+    id: "strike-eagle-missile",
+    name: "STRIKE EAGLE MISSILE",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"],
+    options: [
+      {
+        id: "strike-eagle-missile-piece",
+        label: "1 PIECE",
+        price: 4.50
+      },
+      {
+        id: "strike-eagle-missile-box",
+        label: "1 BOX OF 4",
+        price: 18.00
+      }
+    ]
+  },
+  {
+    itemNumber: 130,
+    id: "neptune-missile",
+    name: "NEPTUNE MISSILE",
+    price: 4.50,
+    unitLabel: "1 PIECE",
+    category: "Missiles",
+    shopTypes: ["Missiles", "Flying Items"]
+  },
+
+  {
+    itemNumber: 135,
+    id: "single-night-parachute",
+    name: "SINGLE NIGHT PARACHUTE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"],
+    options: [
+      {
+        id: "single-night-parachute-piece",
+        label: "1 PIECE",
+        price: 1.25
+      },
+      {
+        id: "single-night-parachute-box",
+        label: "1 BOX OF 6",
+        price: 7.50
+      }
+    ]
+  },
+  {
+    itemNumber: 140,
+    id: "air-trooper-parachute",
+    name: "AIR TROOPER PARACHUTE",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"]
+  },
+  {
+    itemNumber: 145,
+    id: "giant-parachute-40-inch",
+    name: "GIANT PARACHUTE - 40 INCH",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"],
+    options: [
+      {
+        id: "giant-parachute-40-inch-piece",
+        label: "1 PIECE",
+        price: 3.75
+      },
+      {
+        id: "giant-parachute-40-inch-box",
+        label: "1 BOX OF 4",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 150,
+    id: "oh-chute-parachute",
+    name: "OH CHUTE PARACHUTE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"],
+    options: [
+      {
+        id: "oh-chute-parachute-piece",
+        label: "1 PIECE",
+        price: 5.00
+      },
+      {
+        id: "oh-chute-parachute-box",
+        label: "1 BOX OF 4",
+        price: 20.00
+      }
+    ]
+  },
+  {
+    itemNumber: 155,
+    id: "parachute-battalion-11-shot",
+    name: "PARACHUTE BATTALION - 11 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"]
+  },
+  {
+    itemNumber: 160,
+    id: "princess-parachute",
+    name: "PRINCESS PARACHUTE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"],
+    options: [
+      {
+        id: "princess-parachute-piece",
+        label: "1 PIECE",
+        price: 10.00
+      },
+      {
+        id: "princess-parachute-box",
+        label: "1 BOX OF 2",
+        price: 20.00
+      }
+    ]
+  },
+  {
+    itemNumber: 165,
+    id: "base-jump-parachute-5-shot",
+    name: "BASE JUMP PARACHUTE - 5 SHOT",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"],
+    options: [
+      {
+        id: "base-jump-parachute-5-shot-piece",
+        label: "1 PIECE",
+        price: 5.00
+      },
+      {
+        id: "base-jump-parachute-5-shot-pack",
+        label: "1 PACK OF 4",
+        price: 20.00
+      }
+    ]
+  },
+  {
+    itemNumber: 170,
+    id: "chutes-25-shot",
+    name: "CHUTES - 25 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Parachutes",
+    shopTypes: ["Parachutes", "Daytime Fun"]
+  }
 ];
 
 // This stores the customer's selected quantities.
