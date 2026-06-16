@@ -5652,6 +5652,12 @@ let activeCategory = "Popular Picks";
 
 // These are the product IDs we want to show in the Popular Picks section.
 const popularPickIds = [
+  "starshot-rockets",
+  "brothers-corona-rockets",
+  "screaming-banshee-rockets",
+  "bring-the-rain-rockets",
+  "black-cat-bottle-rockets",
+  "black-cat-whistling-bottle-rockets-with-report",
   "kevin-minion",
   "black-cat-firecracker-roll-1000",
   "magic-whip-with-boom",
@@ -5660,8 +5666,6 @@ const popularPickIds = [
   "dripping-donut-33-shot",
   "whack-job-7-shot",
   "abduction-20-shot",
-  "black-cat-bottle-rockets",
-  "bring-the-rain-rockets",
   "artillery-shell-6-shot",
   "black-cat-the-beast-assortment"
 ];
