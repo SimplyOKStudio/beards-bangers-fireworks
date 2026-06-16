@@ -1758,6 +1758,3889 @@ const fireworks = [
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   }
+  ,
+  {
+    itemNumber: 655,
+    id: "jumbo-cone-fountain-5-inch",
+    name: "JUMBO CONE FOUNTAIN - 5 INCH",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 660,
+    id: "magic-potion",
+    name: "MAGIC POTION",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 665,
+    id: "crazy-crackups-junebug",
+    name: "CRAZY CRACKUPS / JUNEBUG",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "crazy-crackups-junebug-piece",
+        label: "1 PIECE",
+        price: 3.00
+      },
+      {
+        id: "crazy-crackups-junebug-box",
+        label: "1 BOX OF 6",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 670,
+    id: "cuckoo-fountain",
+    name: "CUCKOO FOUNTAIN",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "cuckoo-fountain-piece",
+        label: "1 PIECE",
+        price: 4.00
+      },
+      {
+        id: "cuckoo-fountain-box",
+        label: "1 BOX OF 6",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 675,
+    id: "happiness-fountain",
+    name: "HAPPINESS FOUNTAIN",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "happiness-fountain-piece",
+        label: "1 PIECE",
+        price: 1.50
+      },
+      {
+        id: "happiness-fountain-box",
+        label: "1 BOX OF 6",
+        price: 4.50
+      }
+    ]
+  },
+  {
+    itemNumber: 680,
+    id: "hn-60-fountain",
+    name: "HN 60 FOUNTAIN",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "hn-60-fountain-piece",
+        label: "1 PIECE",
+        price: 5.00
+      },
+      {
+        id: "hn-60-fountain-box",
+        label: "1 BOX OF 4",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 685,
+    id: "hn-90-fountain",
+    name: "HN 90 FOUNTAIN",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "hn-90-fountain-piece",
+        label: "1 PIECE",
+        price: 6.00
+      },
+      {
+        id: "hn-90-fountain-box",
+        label: "1 BOX OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 690,
+    id: "killer-bees",
+    name: "KILLER BEES",
+    category: "Fountains",
+    shopTypes: ["Fountains"],
+    options: [
+      {
+        id: "killer-bees-piece",
+        label: "1 PIECE",
+        price: 5.00
+      },
+      {
+        id: "killer-bees-box",
+        label: "1 BOX OF 4",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 695,
+    id: "black-cat-3-for-1-fountains",
+    name: "BLACK CAT 3 FOR 1 FOUNTAINS",
+    price: 12.00,
+    unitLabel: "1 PACK OF 3",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 700,
+    id: "brothers-a-to-z",
+    name: "BROTHERS A TO Z",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 705,
+    id: "america-forever",
+    name: "AMERICA FOREVER",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 710,
+    id: "arachnophobia",
+    name: "ARACHNOPHOBIA",
+    price: 35.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 715,
+    id: "brothers-bad-apple",
+    name: "BROTHERS BAD APPLE",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 720,
+    id: "bad-cactus",
+    name: "BAD CACTUS",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 725,
+    id: "brothers-bees-knees",
+    name: "BROTHERS BEES KNEES",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 730,
+    id: "brothers-born-and-raised",
+    name: "BROTHERS BORN AND RAISED",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 735,
+    id: "brothers-bowl-o-cherries",
+    name: "BROTHERS BOWL O CHERRIES",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 740,
+    id: "bring-it-minion",
+    name: "BRING IT - MINION",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 745,
+    id: "california-sunrise",
+    name: "CALIFORNIA SUNRISE",
+    price: 7.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 750,
+    id: "cool-fountain",
+    name: "COOL FOUNTAIN",
+    price: 10.00,
+    unitLabel: "1 PACK OF 4",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  }
+  ,
+  {
+    itemNumber: 755,
+    id: "cosmic-spin",
+    name: "COSMIC SPIN",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties"]
+  },
+  {
+    itemNumber: 760,
+    id: "dancing-with-ghost",
+    name: "DANCING WITH GHOST",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 765,
+    id: "despicable-minion",
+    name: "DESPICABLE - MINION",
+    price: 6.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 770,
+    id: "dragon-fire",
+    name: "DRAGON FIRE",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 775,
+    id: "brothers-extra-zesty",
+    name: "BROTHERS EXTRA ZESTY",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 780,
+    id: "brothers-fairies-in-a-jar",
+    name: "BROTHERS FAIRIES IN A JAR",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 785,
+    id: "black-cat-fantastic-4",
+    name: "BLACK CAT FANTASTIC 4",
+    price: 12.00,
+    unitLabel: "1 PACK OF 4",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 790,
+    id: "flower-child",
+    name: "FLOWER CHILD",
+    price: 17.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 795,
+    id: "brothers-flutter-by",
+    name: "BROTHERS FLUTTER BY",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 800,
+    id: "freezy-pops",
+    name: "FREEZY POPS",
+    price: 1.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 805,
+    id: "ftn-dew",
+    name: "FTN DEW",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 810,
+    id: "go-go-balls",
+    name: "GO GO BALLS",
+    price: 17.50,
+    unitLabel: "1 BOX OF 2",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 815,
+    id: "havana-heat",
+    name: "HAVANA HEAT",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 820,
+    id: "hoot-hoot-hooray",
+    name: "HOOT HOOT HOORAY",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 825,
+    id: "black-cat-hyper-chill",
+    name: "BLACK CAT HYPER CHILL",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 830,
+    id: "jr-snow-cone-fountain",
+    name: "JR SNOW CONE FOUNTAIN",
+    price: 12.00,
+    unitLabel: "1 BOX OF 4",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 835,
+    id: "kevin-minion",
+    name: "KEVIN - MINION",
+    price: 6.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 840,
+    id: "koi-pond",
+    name: "KOI POND",
+    price: 17.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 845,
+    id: "brothers-kooky-katerpillar",
+    name: "BROTHERS KOOKY KATERPILLAR",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 850,
+    id: "lava-lamp",
+    name: "LAVA LAMP",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 855,
+    id: "black-cat-mad-cat",
+    name: "BLACK CAT MAD CAT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  }
+  ,
+  {
+    itemNumber: 860,
+    id: "mad-monkey",
+    name: "MAD MONKEY",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 865,
+    id: "maximum-velocity",
+    name: "MAXIMUM VELOCITY",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 870,
+    id: "black-cat-medusa-fountain",
+    name: "BLACK CAT MEDUSA FOUNTAIN",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 875,
+    id: "meow",
+    name: "MEOW",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 880,
+    id: "military-tank-fire-storm",
+    name: "MILITARY TANK / FIRE STORM",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties"]
+  },
+  {
+    itemNumber: 885,
+    id: "neon-jelly-beans",
+    name: "NEON JELLY BEANS",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 890,
+    id: "pika-pika",
+    name: "PIKA PIKA",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 895,
+    id: "pina-colada",
+    name: "PINA COLADA",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 900,
+    id: "poop",
+    name: "POOP",
+    price: 4.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 905,
+    id: "princess-purse",
+    name: "PRINCESS PURSE",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 910,
+    id: "puppy-fountain",
+    name: "PUPPY FOUNTAIN",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties"]
+  },
+  {
+    itemNumber: 915,
+    id: "puzzle-cube",
+    name: "PUZZLE CUBE",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 920,
+    id: "pyro-patrick",
+    name: "PYRO PATRICK",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 925,
+    id: "pyro-shed",
+    name: "PYRO SHED",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 930,
+    id: "rainbow-cupcake",
+    name: "RAINBOW CUPCAKE",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 935,
+    id: "shazaam",
+    name: "SHAZAAM",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 940,
+    id: "skull-fountain",
+    name: "SKULL FOUNTAIN",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 945,
+    id: "snail-it",
+    name: "SNAIL IT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 950,
+    id: "snow-cone",
+    name: "SNOW CONE",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 955,
+    id: "black-cat-spark-my-interest",
+    name: "BLACK CAT SPARK MY INTEREST",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 960,
+    id: "sponge-boy",
+    name: "SPONGE BOY",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 965,
+    id: "stellar-beauty",
+    name: "STELLAR BEAUTY",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 970,
+    id: "toadally-purple",
+    name: "TOADALLY PURPLE",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 975,
+    id: "unicorn",
+    name: "UNICORN",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Novelties"]
+  },
+  {
+    itemNumber: 980,
+    id: "young-man",
+    name: "YOUNG MAN",
+    price: 4.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 985,
+    id: "brothers-zapper-dapper-doo",
+    name: "BROTHERS ZAPPER DAPPER DOO",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  }
+  ,
+  {
+    itemNumber: 990,
+    id: "handheld-snow-cone",
+    name: "HANDHELD SNOW CONE",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 995,
+    id: "brothers-hit-parade",
+    name: "BROTHERS HIT PARADE",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 1000,
+    id: "light-saber",
+    name: "LIGHT SABER",
+    price: 6.00,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 1005,
+    id: "lucky-wheels",
+    name: "LUCKY WHEELS",
+    price: 25.00,
+    unitLabel: "1 BOX OF 3",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 1010,
+    id: "brothers-photon-phaser",
+    name: "BROTHERS PHOTON PHASER",
+    price: 7.50,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 1015,
+    id: "sword-boys",
+    name: "SWORD - BOYS",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+  {
+    itemNumber: 1020,
+    id: "sword-girls",
+    name: "SWORD - GIRLS",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Hand-Held Fountains",
+    shopTypes: ["Fountains", "Hand-Held Fountains"]
+  },
+
+  {
+    itemNumber: 1025,
+    id: "closed-caption",
+    name: "CLOSED CAPTION",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1030,
+    id: "dragon-throne",
+    name: "DRAGON THRONE",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1035,
+    id: "black-cat-energizer",
+    name: "BLACK CAT ENERGIZER",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1040,
+    id: "black-cat-neon-lights",
+    name: "BLACK CAT NEON LIGHTS",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1045,
+    id: "spartan-scream",
+    name: "SPARTAN SCREAM",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1050,
+    id: "black-cat-tropical-thunder",
+    name: "BLACK CAT TROPICAL THUNDER",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 1055,
+    id: "black-cat-high-strung-with-mine-19-shot",
+    name: "BLACK CAT HIGH STRUNG WITH MINE - 19 SHOT",
+    price: 35.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains", "Cakes"]
+  },
+  {
+    itemNumber: 1060,
+    id: "mr-hippo",
+    name: "MR HIPPO",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+
+  {
+    itemNumber: 1065,
+    id: "saturn-missile-battery-25-shot",
+    name: "SATURN MISSILE BATTERY - 25 SHOT",
+    price: 2.50,
+    unitLabel: "1 PIECE",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes"]
+  },
+  {
+    itemNumber: 1070,
+    id: "saturn-missile-battery-25-shot-4-pack",
+    name: "SATURN MISSILE BATTERY - 25 SHOT",
+    price: 10.00,
+    unitLabel: "1 PACK OF 4",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes"]
+  },
+  {
+    itemNumber: 1075,
+    id: "saturn-missile-battery-100-shot",
+    name: "SATURN MISSILE BATTERY - 100 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes"]
+  },
+  {
+    itemNumber: 1080,
+    id: "saturn-missile-battery-300-shot",
+    name: "SATURN MISSILE BATTERY - 300 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes"]
+  },
+  {
+    itemNumber: 1085,
+    id: "saturn-missile-battery-325-shot",
+    name: "SATURN MISSILE BATTERY - 325 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes"]
+  },
+  {
+    itemNumber: 1090,
+    id: "red-bright-and-blue-660-shot",
+    name: "RED BRIGHT & BLUE - 660 SHOT",
+    price: 135.00,
+    unitLabel: "1 PIECE",
+    category: "Saturn Missiles",
+    shopTypes: ["Saturn Missiles", "Cakes", "Big Show Finale"]
+  }
+  ,
+  {
+    itemNumber: 1095,
+    id: "25-zombies-25-shot",
+    name: "25 ZOMBIES - 25 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1100,
+    id: "brothers-badhareday-49-shot",
+    name: "BROTHERS BADHAREDAY - 49 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1105,
+    id: "beach-vibes-12-shot",
+    name: "BEACH VIBES - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1110,
+    id: "black-blade-16-shot",
+    name: "BLACK BLADE - 16 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1115,
+    id: "brothers-bling-bling-36-shot",
+    name: "BROTHERS BLING BLING - 36 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1120,
+    id: "blue-16-shot",
+    name: "BLUE - 16 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1125,
+    id: "bonnie-and-clyde-19-shot",
+    name: "BONNIE AND CLYDE - 19 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1130,
+    id: "brothers-boomerbang-55-shot",
+    name: "BROTHERS BOOMERBANG - 55 SHOT",
+    price: 32.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1135,
+    id: "born-on-the-bayou-16-shot",
+    name: "BORN ON THE BAYOU - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1140,
+    id: "break-out-6-shot",
+    name: "BREAK OUT - 6 SHOT",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1145,
+    id: "cat-fight-9-shot",
+    name: "CAT FIGHT - 9 SHOT",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1150,
+    id: "chameleon-2000-16-shot",
+    name: "CHAMELEON 2000 - 16 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1155,
+    id: "cherry-bomber-10-shot",
+    name: "CHERRY BOMBER - 10 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1160,
+    id: "color-me-america-20-shot",
+    name: "COLOR ME AMERICA - 20 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1165,
+    id: "black-cat-color-pearl-48-shot",
+    name: "BLACK CAT COLOR PEARL - 48 SHOT",
+    price: 5.00,
+    unitLabel: "1 PACK OF 2",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1170,
+    id: "color-pearl-48-shot",
+    name: "COLOR PEARL - 48 SHOT",
+    price: 2.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1175,
+    id: "colorful-skies-25-shot",
+    name: "COLORFUL SKIES - 25 SHOT",
+    price: 17.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1180,
+    id: "brothers-copper-devils-25-shot",
+    name: "BROTHERS COPPER DEVILS - 25 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1185,
+    id: "county-fair-16-shot",
+    name: "COUNTY FAIR - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1190,
+    id: "crazy-cat-12-shot",
+    name: "CRAZY CAT - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1195,
+    id: "brothers-crimson-bulls-25-shot",
+    name: "BROTHERS CRIMSON BULLS - 25 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1200,
+    id: "dang-it-carl-28-shot",
+    name: "DANG IT CARL - 28 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1205,
+    id: "dino-pack-7-shot",
+    name: "DINO PACK - 7 SHOT",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1210,
+    id: "dirty-dancing-in-the-sky-7-shot",
+    name: "DIRTY DANCING IN THE SKY - 7 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1215,
+    id: "dope-16-shot",
+    name: "DOPE - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1220,
+    id: "fast-trigger-200-shot",
+    name: "FAST TRIGGER - 200 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1225,
+    id: "black-cat-fear-city-25-shot",
+    name: "BLACK CAT FEAR CITY - 25 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1230,
+    id: "fire-in-the-hole-7-shot",
+    name: "FIRE IN THE HOLE - 7 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1235,
+    id: "fireworks-fiesta-96-shot",
+    name: "FIREWORKS FIESTA - 96 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1240,
+    id: "fish-frenzy-9-shot",
+    name: "FISH FRENZY - 9 SHOT",
+    price: 7.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1245,
+    id: "for-our-flag-16-shot",
+    name: "FOR OUR FLAG - 16 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1250,
+    id: "friki-tiki-36-shot",
+    name: "FRIKI TIKI - 36 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1255,
+    id: "garden-in-spring-7-shot",
+    name: "GARDEN IN SPRING - 7 SHOT",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1260,
+    id: "ghost-peppers-10-shot",
+    name: "GHOST PEPPERS - 10 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1265,
+    id: "great-expectation-9-shot",
+    name: "GREAT EXPECTATION - 9 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1270,
+    id: "happy-camper-23-shot",
+    name: "HAPPY CAMPER - 23 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1275,
+    id: "happy-fireworks-36-shot",
+    name: "HAPPY FIREWORKS - 36 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1280,
+    id: "hard-hitter-16-shot",
+    name: "HARD HITTER - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1285,
+    id: "henchmen-12-shot",
+    name: "HENCHMEN - 12 SHOT",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1290,
+    id: "high-five-25-shot",
+    name: "HIGH FIVE - 25 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1295,
+    id: "hot-n-spicy-9-shot",
+    name: "HOT N SPICY - 9 SHOT",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1300,
+    id: "hyper-ii-96-shot",
+    name: "HYPER II - 96 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1305,
+    id: "brothers-instant-replay-12-shot",
+    name: "BROTHERS INSTANT REPLAY - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1310,
+    id: "brothers-irish-luck-12-shot",
+    name: "BROTHERS IRISH LUCK - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1315,
+    id: "legendary-beast-16-shot",
+    name: "LEGENDARY BEAST - 16 SHOT",
+    price: 27.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1320,
+    id: "black-cat-liquid-sky-20-shot",
+    name: "BLACK CAT LIQUID SKY - 20 SHOT",
+    price: 17.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1325,
+    id: "little-nemo-19-shot",
+    name: "LITTLE NEMO - 19 SHOT",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1330,
+    id: "loud-and-nasty-12-shot",
+    name: "LOUD & NASTY - 12 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1335,
+    id: "loyal-to-all-25-shot",
+    name: "LOYAL TO ALL - 25 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1340,
+    id: "lucky-streak-66-shot",
+    name: "LUCKY STREAK - 66 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1345,
+    id: "macaron-pops-16-shot",
+    name: "MACARON POPS - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1350,
+    id: "magical-barrage-100-shot",
+    name: "MAGICAL BARRAGE - 100 SHOT",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1355,
+    id: "brothers-magnificent-festival-25-shot",
+    name: "BROTHERS MAGNIFICENT FESTIVAL - 25 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1360,
+    id: "mecha-mermaid-30-shot",
+    name: "MECHA MERMAID - 30 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1365,
+    id: "brothers-mechanical-bug-100-shot",
+    name: "BROTHERS MECHANICAL BUG - 100 SHOT",
+    price: 32.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1370,
+    id: "metal-hawk-30-shot",
+    name: "METAL HAWK - 30 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1375,
+    id: "micro-pigzilla-108-shot",
+    name: "MICRO PIGZILLA - 108 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1380,
+    id: "mighty-python-cobra-19-shot",
+    name: "MIGHTY PYTHON / COBRA - 19 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1385,
+    id: "brothers-mobile-menace-35-shot",
+    name: "BROTHERS MOBILE MENACE - 35 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1390,
+    id: "mondays-suck-16-shot",
+    name: "MONDAYS SUCK - 16 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1395,
+    id: "monstrous-10-shot",
+    name: "MONSTROUS - 10 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1400,
+    id: "nation-ovation-16-shot",
+    name: "NATION OVATION - 16 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1405,
+    id: "neon-rainbow-16-shot",
+    name: "NEON RAINBOW - 16 SHOT",
+    price: 12.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1410,
+    id: "black-cat-night-defense-210-shot",
+    name: "BLACK CAT NIGHT DEFENSE - 210 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1415,
+    id: "night-moves-18-shot",
+    name: "NIGHT MOVES - 18 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1420,
+    id: "no-trespassing-16-shot",
+    name: "NO TRESPASSING - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1425,
+    id: "oklahoma-kicker-16-shot",
+    name: "OKLAHOMA KICKER - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1430,
+    id: "original-gangster-16-shot",
+    name: "ORIGINAL GANGSTER - 16 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1435,
+    id: "pink-16-shot",
+    name: "PINK - 16 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1440,
+    id: "pop-rocks-16-shot",
+    name: "POP ROCKS - 16 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1445,
+    id: "brothers-poppycock-46-shot",
+    name: "BROTHERS POPPYCOCK - 46 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1450,
+    id: "black-cat-pro-200-16-shot",
+    name: "BLACK CAT PRO 200 - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1455,
+    id: "pulse-pounder-50-shot",
+    name: "PULSE POUNDER - 50 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1460,
+    id: "punk-rockers-10-shot",
+    name: "PUNK ROCKERS - 10 SHOT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1465,
+    id: "purple-haze-16-shot",
+    name: "PURPLE HAZE - 16 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1470,
+    id: "pyro-lips-16-shot",
+    name: "PYRO LIPS - 16 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1475,
+    id: "brothers-red-white-and-blue-salute-24-shot",
+    name: "BROTHERS RED WHITE & BLUE SALUTE - 24 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1480,
+    id: "brothers-sabertooth-40-shot",
+    name: "BROTHERS SABERTOOTH - 40 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1485,
+    id: "brothers-sapphire-clan-25-shot",
+    name: "BROTHERS SAPPHIRE CLAN - 25 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1490,
+    id: "sirens-call-7-shot",
+    name: "SIRENS CALL - 7 SHOT",
+    price: 17.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1495,
+    id: "sleeping-with-the-fishes-25-shot",
+    name: "SLEEPING WITH THE FISHES - 25 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1500,
+    id: "space-monkey-18-shot",
+    name: "SPACE MONKEY - 18 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1505,
+    id: "brothers-stop-n-go-25-shot",
+    name: "BROTHERS STOP N GO - 25 SHOT",
+    price: 22.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1510,
+    id: "super-sonic-25-shot",
+    name: "SUPER SONIC - 25 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1515,
+    id: "texas-rattlesnake-16-shot",
+    name: "TEXAS RATTLESNAKE - 16 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1520,
+    id: "tombstone-9-shot",
+    name: "TOMBSTONE - 9 SHOT",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1525,
+    id: "uncle-ham-22-shot",
+    name: "UNCLE HAM - 22 SHOT",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1530,
+    id: "firecracker-joe-vendetta-12-shot",
+    name: "FIRECRACKER JOE VENDETTA - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1535,
+    id: "whack-job-7-shot",
+    name: "WHACK JOB - 7 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1540,
+    id: "white-tiger-9-shot",
+    name: "WHITE TIGER - 9 SHOT",
+    price: 7.50,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1545,
+    id: "widows-kiss-25-shot",
+    name: "WIDOWS KISS - 25 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1550,
+    id: "brothers-wildcard-49-shot",
+    name: "BROTHERS WILDCARD - 49 SHOT",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1555,
+    id: "winter-ballistic-20-shot",
+    name: "WINTER BALLISTIC - 20 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+
+  {
+    itemNumber: 1560,
+    id: "screaming-mimi-girandola",
+    name: "SCREAMING MIMI - GIRANDOLA",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items"]
+  },
+  {
+    itemNumber: 1565,
+    id: "abduction-20-shot",
+    name: "ABDUCTION - 20 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1570,
+    id: "alien-disco-girandola",
+    name: "ALIEN DISCO - GIRANDOLA",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items"]
+  },
+  {
+    itemNumber: 1575,
+    id: "alien-invasion-21-shot",
+    name: "ALIEN INVASION - 21 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1580,
+    id: "beam-me-up-girandola",
+    name: "BEAM ME UP - GIRANDOLA",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items"]
+  },
+  {
+    itemNumber: 1585,
+    id: "brothers-cleared-for-takeoff-girandola",
+    name: "BROTHERS CLEARED FOR TAKEOFF - GIRANDOLA",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items"]
+  },
+  {
+    itemNumber: 1590,
+    id: "return-to-roswell-26-shot",
+    name: "RETURN TO ROSWELL - 26 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1595,
+    id: "whistling-bunghole-21-shot",
+    name: "WHISTLING BUNGHOLE - 21 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Girandola",
+    shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
+  }
+  ,
+  {
+    itemNumber: 1600,
+    id: "agent-of-boom-37-shot",
+    name: "AGENT OF BOOM - 37 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1605,
+    id: "alpha-dog-21-shot",
+    name: "ALPHA DOG - 21 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1610,
+    id: "audio-graffiti-16-shot",
+    name: "AUDIO GRAFFITI - 16 SHOT",
+    price: 35.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1615,
+    id: "brothers-bamboozle-42-shot",
+    name: "BROTHERS BAMBOOZLE - 42 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1620,
+    id: "banana-split-16-shot",
+    name: "BANANA SPLIT - 16 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1625,
+    id: "brothers-big-top-42-shot",
+    name: "BROTHERS BIG TOP - 42 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1630,
+    id: "brothers-black-badge-30-shot",
+    name: "BROTHERS BLACK BADGE - 30 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1635,
+    id: "brew-crew-35-shot",
+    name: "BREW CREW - 35 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1640,
+    id: "brothers-current-events-30-shot",
+    name: "BROTHERS CURRENT EVENTS - 30 SHOT",
+    price: 35.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1645,
+    id: "black-cat-dragons-breath-15-shot",
+    name: "BLACK CAT DRAGONS BREATH - 15 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1650,
+    id: "gigablaster-480-shot",
+    name: "GIGABLASTER - 480 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1655,
+    id: "good-thinkin-lincoln-134-shot",
+    name: "GOOD THINKIN LINCOLN - 134 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1660,
+    id: "brothers-gunslinger-25-shot",
+    name: "BROTHERS GUNSLINGER - 25 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1665,
+    id: "honk-for-freedom-155-shot",
+    name: "HONK FOR FREEDOM - 155 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1670,
+    id: "i-love-it-loud-33-shot",
+    name: "I LOVE IT LOUD - 33 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1675,
+    id: "brothers-light-brigade-42-shot",
+    name: "BROTHERS LIGHT BRIGADE - 42 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1680,
+    id: "brothers-my-vice-48-shot",
+    name: "BROTHERS MY VICE - 48 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1685,
+    id: "nishiki-forest-9-shot",
+    name: "NISHIKI FOREST - 9 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1690,
+    id: "our-baby-reveal-12-shot",
+    name: "OUR BABY REVEAL - 12 SHOT",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1695,
+    id: "power-of-pink-25-shot",
+    name: "POWER OF PINK - 25 SHOT",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1700,
+    id: "pyro-approved-12-shot",
+    name: "PYRO APPROVED - 12 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1705,
+    id: "rounders-25-shot",
+    name: "ROUNDERS - 25 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1710,
+    id: "black-cat-shark-bite-15-shot",
+    name: "BLACK CAT SHARK BITE - 15 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1715,
+    id: "sour-patch-lemonade-16-shot",
+    name: "SOUR PATCH LEMONADE - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1720,
+    id: "brothers-striker-serpent-16-shot",
+    name: "BROTHERS STRIKER SERPENT - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1725,
+    id: "taco-truck-24-shot",
+    name: "TACO TRUCK - 24 SHOT",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1730,
+    id: "brothers-tempt-fate-20-shot",
+    name: "BROTHERS TEMPT FATE - 20 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1735,
+    id: "black-cat-terminator-cakes-15-shot",
+    name: "BLACK CAT TERMINATOR CAKES - 15 SHOT",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1740,
+    id: "brothers-trophy-wife-480-shot",
+    name: "BROTHERS TROPHY WIFE - 480 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1745,
+    id: "uss-hornet-89-shot",
+    name: "USS HORNET - 89 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1750,
+    id: "v-day-26-shot",
+    name: "V-DAY - 26 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1755,
+    id: "whiskey-business-20-shot",
+    name: "WHISKEY BUSINESS - 20 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1760,
+    id: "aerial-privilege-168-shot",
+    name: "AERIAL PRIVILEGE - 168 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1765,
+    id: "al-capone-16-shot",
+    name: "AL CAPONE - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1770,
+    id: "all-jacked-up-25-shot",
+    name: "ALL JACKED UP - 25 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1775,
+    id: "amazing-ballet-220-shot",
+    name: "AMAZING BALLET - 220 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1780,
+    id: "americas-finest-25-shot",
+    name: "AMERICA'S FINEST - 25 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1785,
+    id: "assassin-9-shot",
+    name: "ASSASSIN - 9 SHOT",
+    price: 80.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1790,
+    id: "baby-face-nelson-16-shot",
+    name: "BABY FACE NELSON - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1795,
+    id: "backroad-rebel-24-shot",
+    name: "BACKROAD REBEL - 24 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1800,
+    id: "backyard-bully-44-shot",
+    name: "BACKYARD BULLY - 44 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1805,
+    id: "brothers-bad-company-35-shot",
+    name: "BROTHERS BAD COMPANY - 35 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1810,
+    id: "batter-up-53-shot",
+    name: "BATTER UP - 53 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1815,
+    id: "black-hole-43-shot",
+    name: "BLACK HOLE - 43 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1820,
+    id: "brothers-blond-joke-36-shot",
+    name: "BROTHERS BLOND JOKE - 36 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1825,
+    id: "brothers-blue-blitz-80-shot",
+    name: "BROTHERS BLUE BLITZ - 80 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1830,
+    id: "border-patrol-159-shot",
+    name: "BORDER PATROL - 159 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1835,
+    id: "bucks-and-ducks-12-shot",
+    name: "BUCKS & DUCKS - 12 SHOT",
+    price: 80.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1840,
+    id: "bulldog-bash-34-shot",
+    name: "BULLDOG BASH - 34 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1845,
+    id: "capitalists-195-shot",
+    name: "CAPITALISTS - 195 SHOT",
+    price: 175.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1850,
+    id: "black-cat-caribbean-palms-20-shot",
+    name: "BLACK CAT CARIBBEAN PALMS - 20 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1855,
+    id: "carolina-reaper-20-shot",
+    name: "CAROLINA REAPER - 20 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1860,
+    id: "cerdo-loco-27-shot",
+    name: "CERDO LOCO - 27 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1865,
+    id: "chain-reaction-86-shot",
+    name: "CHAIN REACTION - 86 SHOT",
+    price: 110.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  }
+  ,
+  {
+    itemNumber: 1870,
+    id: "colors-of-america-10-shot",
+    name: "COLORS OF AMERICA - 10 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1875,
+    id: "country-roots-25-shot",
+    name: "COUNTRY ROOTS - 25 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes", 
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1880,
+    id: "dapper-dan-12-shot",
+    name: "DAPPER DAN - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1885,
+    id: "dillinger-121-shot",
+    name: "DILLINGER - 121 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1890,
+    id: "dont-tread-on-me-8-shot",
+    name: "DONT TREAD ON ME - 8 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1895,
+    id: "dripping-donut-33-shot",
+    name: "DRIPPING DONUT - 33 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1900,
+    id: "black-cat-fiesta-grande-216-shot",
+    name: "BLACK CAT FIESTA GRANDE - 216 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1905,
+    id: "fire-ninja-33-shot",
+    name: "FIRE NINJA - 33 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1910,
+    id: "frank-the-enforcer-12-shot",
+    name: "FRANK THE ENFORCER - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1915,
+    id: "galaxia-138-shot",
+    name: "GALAXIA - 138 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1920,
+    id: "ghost-fleet-9-shot",
+    name: "GHOST FLEET - 9 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1925,
+    id: "grand-finale-432-shot",
+    name: "GRAND FINALE - 432 SHOT",
+    price: 120.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 1930,
+    id: "black-cat-gunfighter-from-hell-49-shot",
+    name: "BLACK CAT GUNFIGHTER FROM HELL - 49 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1935,
+    id: "hammer-20-shot",
+    name: "HAMMER - 20 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1940,
+    id: "hardcore-cycles-16-shot",
+    name: "HARDCORE CYCLES - 16 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1945,
+    id: "brothers-high-falutin-49-shot",
+    name: "BROTHERS HIGH FALUTIN - 49 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1950,
+    id: "brothers-hit-the-road-jack-49-shot",
+    name: "BROTHERS HIT THE ROAD JACK - 49 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1955,
+    id: "hog-smash-28-shot",
+    name: "HOG SMASH - 28 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1960,
+    id: "hot-box-30-shot",
+    name: "HOT BOX - 30 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1965,
+    id: "brothers-howling-wolf-36-shot",
+    name: "BROTHERS HOWLING WOLF - 36 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1970,
+    id: "inferno-core-33-shot",
+    name: "INFERNO CORE - 33 SHOT",
+    price: 80.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1975,
+    id: "brothers-inside-job-49-shot",
+    name: "BROTHERS INSIDE JOB - 49 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 1980,
+    id: "johnny-da-jackal-16-shot",
+    name: "JOHNNY DA JACKAL - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1985,
+    id: "kabuki-12-shot",
+    name: "KABUKI - 12 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 1990,
+    id: "lets-go-brandon-30-shot",
+    name: "LETS GO BRANDON - 30 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 1995,
+    id: "loud-and-proud-21-shot",
+    name: "LOUD & PROUD - 21 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2000,
+    id: "lunar-eclipse-24-shot",
+    name: "LUNAR ECLIPSE - 24 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2005,
+    id: "machine-gun-kelly-16-shot",
+    name: "MACHINE GUN KELLY - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2010,
+    id: "mad-dog-coll-16-shot",
+    name: "MAD DOG COLL - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2015,
+    id: "magic-balls-12-shot",
+    name: "MAGIC BALLS - 12 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2020,
+    id: "brothers-major-combat-119-shot",
+    name: "BROTHERS MAJOR COMBAT - 119 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2025,
+    id: "man-cave-36-shot",
+    name: "MAN CAVE - 36 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2030,
+    id: "master-of-our-enemies-172-shot",
+    name: "MASTER OF OUR ENEMIES - 172 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2035,
+    id: "maximum-insanity-182-shot",
+    name: "MAXIMUM INSANITY - 182 SHOT",
+    price: 175.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2040,
+    id: "mechapigzilla-136-shot",
+    name: "MECHAPIGZILLA - 136 SHOT",
+    price: 175.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2045,
+    id: "brothers-midnight-204-shot",
+    name: "BROTHERS MIDNIGHT - 204 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2050,
+    id: "firecracker-joe-misconduct-30-shot",
+    name: "FIRECRACKER JOE MISCONDUCT - 30 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2055,
+    id: "moe-the-money-man-17-shot",
+    name: "MOE THE MONEY MAN - 17 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2060,
+    id: "mug-shots-25-shot",
+    name: "MUG SHOTS - 25 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2065,
+    id: "neon-jellyfish-12-shot",
+    name: "NEON JELLYFISH - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2070,
+    id: "black-cat-neon-peacock-93-shot",
+    name: "BLACK CAT NEON PEACOCK - 93 SHOT",
+    price: 110.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2075,
+    id: "opposing-forces-48-shot",
+    name: "OPPOSING FORCES - 48 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2080,
+    id: "out-for-blood-30-shot",
+    name: "OUT FOR BLOOD - 30 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2085,
+    id: "pablo-escobar-21-shot",
+    name: "PABLO ESCOBAR - 21 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 2090,
+    id: "brothers-parrots-prattle-36-shot",
+    name: "BROTHERS PARROTS PRATTLE - 36 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2095,
+    id: "party-meter-154-shot",
+    name: "PARTY METER - 154 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2100,
+    id: "patriotic-af-42-shot",
+    name: "PATRIOTIC AF - 42 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 2105,
+    id: "pigzilla-142-shot",
+    name: "PIGZILLA - 142 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2110,
+    id: "poppin-pineapple-27-shot",
+    name: "POPPIN PINEAPPLE - 27 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2115,
+    id: "porcupine-planet-55-shot",
+    name: "PORCUPINE PLANET - 55 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2120,
+    id: "pretty-boy-floyd-12-shot",
+    name: "PRETTY BOY FLOYD - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2125,
+    id: "pretty-pants-bandit-15-shot",
+    name: "PRETTY PANTS BANDIT - 15 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2130,
+    id: "pucker-up-33-shot",
+    name: "PUCKER UP - 33 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2135,
+    id: "black-cat-purple-monster-16-shot",
+    name: "BLACK CAT PURPLE MONSTER - 16 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2140,
+    id: "pyro-tsunami-25-shot",
+    name: "PYRO TSUNAMI - 25 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2145,
+    id: "rat-face-willy-20-shot",
+    name: "RAT FACE WILLY - 20 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2150,
+    id: "brothers-remix-24-shot",
+    name: "BROTHERS REMIX - 24 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2155,
+    id: "revolver-9-shot",
+    name: "REVOLVER - 9 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2160,
+    id: "rifle-9-shot",
+    name: "RIFLE - 9 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2165,
+    id: "brothers-rowdy-ride-185-shot",
+    name: "BROTHERS ROWDY RIDE - 185 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2170,
+    id: "roy-l-flush-18-shot",
+    name: "ROY L FLUSH - 18 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2175,
+    id: "royal-assorted-cakes-16-shot",
+    name: "ROYAL ASSORTED CAKES - 16 SHOT",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2180,
+    id: "sailors-nightmare-16-shot",
+    name: "SAILORS NIGHTMARE - 16 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2185,
+    id: "sammy-the-bull-16-shot",
+    name: "SAMMY THE BULL - 16 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2190,
+    id: "brothers-sassy-600-shot",
+    name: "BROTHERS SASSY - 600 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2195,
+    id: "brothers-saturday-night-special-36-shot",
+    name: "BROTHERS SATURDAY NIGHT SPECIAL - 36 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  }
+  ,
+  {
+    itemNumber: 2200,
+    id: "semi-auto-9-shot",
+    name: "SEMI AUTO - 9 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2205,
+    id: "shock-jock-36-shot",
+    name: "SHOCK JOCK - 36 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2210,
+    id: "brothers-sky-wide-204-shot",
+    name: "BROTHERS SKY WIDE - 204 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2215,
+    id: "skyfire-278-shot",
+    name: "SKYFIRE - 278 SHOT",
+    price: 60.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2220,
+    id: "smoke-master-30-shot",
+    name: "SMOKE MASTER - 30 SHOT",
+    price: 80.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2225,
+    id: "space-explorer-20-shot",
+    name: "SPACE EXPLORER - 20 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2230,
+    id: "spider-bite-12-shot",
+    name: "SPIDER BITE - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2235,
+    id: "sprinkle-donuts-10-shot",
+    name: "SPRINKLE DONUTS - 10 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2240,
+    id: "step-mutha-16-shot",
+    name: "STEP MUTHA - 16 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2245,
+    id: "super-stunt-12-shot",
+    name: "SUPER STUNT - 12 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2250,
+    id: "brothers-swift-n-shimmery-44-shot",
+    name: "BROTHERS SWIFT N SHIMMERY - 44 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2255,
+    id: "ta-dah-36-shot",
+    name: "TA-DAH - 36 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2260,
+    id: "teflon-don-20-shot",
+    name: "TEFLON DON - 20 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2265,
+    id: "the-wild-beast-42-shot",
+    name: "THE WILD BEAST - 42 SHOT",
+    price: 75.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2270,
+    id: "tony-the-big-tuna-12-shot",
+    name: "TONY THE BIG TUNA - 12 SHOT",
+    price: 45.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2275,
+    id: "too-hot-to-handle-35-shot",
+    name: "TOO HOT TO HANDLE - 35 SHOT",
+    price: 100.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2280,
+    id: "triumphant-25-shot",
+    name: "TRIUMPHANT - 25 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2285,
+    id: "trump-train-250-shot",
+    name: "TRUMP TRAIN - 250 SHOT",
+    price: 250.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2290,
+    id: "trumps-revenge-250-shot",
+    name: "TRUMPS REVENGE - 250 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2295,
+    id: "brothers-uncle-sams-answer-16-shot",
+    name: "BROTHERS UNCLE SAMS ANSWER - 16 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  },
+  {
+    itemNumber: 2300,
+    id: "usa-conqueror-192-shot",
+    name: "USA CONQUEROR - 192 SHOT",
+    price: 175.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2305,
+    id: "black-cat-voodoo-rain-36-shot",
+    name: "BLACK CAT VOODOO RAIN - 36 SHOT",
+    price: 70.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes"]
+  },
+  {
+    itemNumber: 2310,
+    id: "war-games-156-shot",
+    name: "WAR GAMES - 156 SHOT",
+    price: 125.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2315,
+    id: "brothers-war-hero-30-shot",
+    name: "BROTHERS WAR HERO - 30 SHOT",
+    price: 65.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic"]
+  }
+  ,
+  {
+    itemNumber: 2320,
+    id: "black-cat-american-freedom-train-180-shot",
+    name: "BLACK CAT AMERICAN FREEDOM TRAIN - 180 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2325,
+    id: "blood-is-pumping-72-shot",
+    name: "BLOOD IS PUMPING - 72 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2330,
+    id: "born-leaders-757-shot",
+    name: "BORN LEADERS - 757 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2335,
+    id: "fourth-of-july-finale-75-shot",
+    name: "FOURTH OF JULY FINALE - 75 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2340,
+    id: "on-freedoms-wing-72-shot",
+    name: "ON FREEDOMS WING - 72 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2345,
+    id: "red-white-and-brew-84-shot",
+    name: "RED WHITE & BREW - 84 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2350,
+    id: "smoke-color-waterfall-28-shot",
+    name: "SMOKE COLOR WATERFALL - 28 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Smoke", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2355,
+    id: "vip-180-shot",
+    name: "VIP - 180 SHOT",
+    price: 200.00,
+    unitLabel: "1 PIECE",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  }
+  ,
+  {
+    itemNumber: 2360,
+    id: "artillery-shell-6-shot",
+    name: "ARTILLERY SHELL - 6 SHOT",
+    price: 12.50,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2365,
+    id: "assorted-effect-artillery-6-shot",
+    name: "ASSORTED EFFECT ARTILLERY - 6 SHOT",
+    price: 12.50,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2370,
+    id: "black-cat-artillery-6-shot",
+    name: "BLACK CAT ARTILLERY - 6 SHOT",
+    price: 15.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2375,
+    id: "black-cat-festival-balls-6-shot",
+    name: "BLACK CAT FESTIVAL BALLS - 6 SHOT",
+    price: 15.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2380,
+    id: "festival-ball-6-shot",
+    name: "FESTIVAL BALL - 6 SHOT",
+    price: 10.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2385,
+    id: "showtime-festival-ball-6-shot",
+    name: "SHOWTIME FESTIVAL BALL - 6 SHOT",
+    price: 10.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2390,
+    id: "firecracker-joe-sucker-punch-6-shot",
+    name: "FIRECRACKER JOE SUCKER PUNCH - 6 SHOT",
+    price: 10.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2395,
+    id: "solar-blast-5-inch-6-shot",
+    name: "SOLAR BLAST 5 INCH - 6 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2400,
+    id: "black-cat-neon-diablo-5-inch-6-shot",
+    name: "BLACK CAT NEON DIABLO 5 INCH - 6 SHOT",
+    price: 35.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2405,
+    id: "donut-shells-6-inch-6-shot",
+    name: "DONUT SHELLS 6 INCH - 6 SHOT",
+    price: 32.50,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2410,
+    id: "scatter-bombs-6-inch-6-shot",
+    name: "SCATTER BOMBS 6 INCH - 6 SHOT",
+    price: 32.50,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2415,
+    id: "bad-bombs-12-shot",
+    name: "BAD BOMBS - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2420,
+    id: "bullet-bombs-12-shot",
+    name: "BULLET BOMBS - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2425,
+    id: "black-cat-magnum-artillery-12-shot",
+    name: "BLACK CAT MAGNUM ARTILLERY - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2430,
+    id: "red-white-and-boom-12-shot",
+    name: "RED WHITE & BOOM - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Patriotic"]
+  },
+  {
+    itemNumber: 2435,
+    id: "smoking-gun-artillery-12-shot",
+    name: "SMOKING GUN ARTILLERY - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2440,
+    id: "black-cat-star-spangled-cannon-12-shot",
+    name: "BLACK CAT STAR SPANGLED CANNON - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Patriotic"]
+  },
+  {
+    itemNumber: 2445,
+    id: "zombie-blaster-12-shot",
+    name: "ZOMBIE BLASTER - 12 SHOT",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2450,
+    id: "black-cat-diablo-4-inch-12-shot",
+    name: "BLACK CAT DIABLO 4 INCH - 12 SHOT",
+    price: 60.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  }
+  ,
+  {
+    itemNumber: 2455,
+    id: "black-cat-select-diablo-4-5-inch-12-shot",
+    name: "BLACK CAT SELECT DIABLO 4/5 INCH - 12 SHOT",
+    price: 65.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2460,
+    id: "neon-nightmare-4-inch-16-shot",
+    name: "NEON NIGHTMARE 4 INCH - 16 SHOT",
+    price: 80.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells"]
+  },
+  {
+    itemNumber: 2465,
+    id: "ammo-mag-6-inch-24-shot",
+    name: "AMMO MAG 6 INCH - 24 SHOT",
+    price: 140.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2470,
+    id: "barely-legal-5-inch-24-shot",
+    name: "BARELY LEGAL 5 INCH - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2475,
+    id: "black-cat-5-inch-canister-24-shot",
+    name: "BLACK CAT 5 INCH CANISTER - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2480,
+    id: "firecracker-joe-death-punch-4-inch-24-shot",
+    name: "FIRECRACKER JOE DEATH PUNCH 4 INCH - 24 SHOT",
+    price: 120.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2485,
+    id: "brothers-destiny-dominion-6-7-inch-24-shot",
+    name: "BROTHERS DESTINY DOMINION 6/7 INCH - 24 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2490,
+    id: "black-cat-diablo-4-inch-24-shot",
+    name: "BLACK CAT DIABLO 4 INCH - 24 SHOT",
+    price: 120.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2495,
+    id: "brothers-grand-jury-5-inch-24-shot",
+    name: "BROTHERS GRAND JURY 5 INCH - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2500,
+    id: "lock-n-load-4-inch-24-shot",
+    name: "LOCK N LOAD 4 INCH - 24 SHOT",
+    price: 120.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2505,
+    id: "neon-beef-5-inch-24-shot",
+    name: "NEON BEEF 5 INCH - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2510,
+    id: "black-cat-neon-diablo-5-inch-24-shot",
+    name: "BLACK CAT NEON DIABLO 5 INCH - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2515,
+    id: "black-cat-patriot-6-inch-24-shot",
+    name: "BLACK CAT PATRIOT 6 INCH - 24 SHOT",
+    price: 140.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2520,
+    id: "raise-the-dead-7-inch-24-shot",
+    name: "RAISE THE DEAD 7 INCH - 24 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2525,
+    id: "shocker-6-inch-24-shot",
+    name: "SHOCKER 6 INCH - 24 SHOT",
+    price: 140.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2530,
+    id: "spider-biter-5-inch-24-shot",
+    name: "SPIDER BITER 5 INCH - 24 SHOT",
+    price: 125.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2535,
+    id: "tank-buster-5-7-inch-24-shot",
+    name: "TANK BUSTER 5/7 INCH - 24 SHOT",
+    price: 140.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2540,
+    id: "ultimate-outlaw-36-shot",
+    name: "ULTIMATE OUTLAW - 36 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2545,
+    id: "power-of-pride-48-shot",
+    name: "POWER OF PRIDE - 48 SHOT",
+    price: 200.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Patriotic", "Big Show Finale"]
+  },
+
+  {
+    itemNumber: 2550,
+    id: "alakazam-3-inch-super-shells-9-shot",
+    name: "ALAKAZAM 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2555,
+    id: "ghost-shell-3-inch-super-shells-9-shot",
+    name: "GHOST SHELL 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2560,
+    id: "internal-combustion-3-inch-super-shells-9-shot",
+    name: "INTERNAL COMBUSTION 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2565,
+    id: "super-beast-3-inch-super-shells-9-shot",
+    name: "SUPER BEAST 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2570,
+    id: "usa-usa-3-inch-super-shells-9-shot",
+    name: "USA USA 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Patriotic", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2575,
+    id: "brothers-whacky-tobacky-3-inch-super-shells-9-shot",
+    name: "BROTHERS WHACKY TOBACKY 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2580,
+    id: "xtreme-energy-3-inch-super-shells-9-shot",
+    name: "XTREME ENERGY 3 INCH SUPER SHELLS - 9 SHOT",
+    price: 150.00,
+    unitLabel: "1 BOX",
+    category: "Reloadable Shells",
+    shopTypes: ["Reloadable Shells", "Big Show Finale"]
+  }
+  ,
+  {
+    itemNumber: 2585,
+    id: "black-cat-the-beast-assortment",
+    name: "BLACK CAT THE BEAST ASSORTMENT",
+    price: 350.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2590,
+    id: "black-cat-night-display",
+    name: "BLACK CAT NIGHT DISPLAY",
+    price: 250.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2595,
+    id: "black-cat-pyro-city",
+    name: "BLACK CAT PYRO CITY",
+    price: 250.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Big Show Finale"]
+  },
+  {
+    itemNumber: 2600,
+    id: "black-cat-party-animal",
+    name: "BLACK CAT PARTY ANIMAL",
+    price: 185.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2605,
+    id: "big-city-assortment",
+    name: "BIG CITY ASSORTMENT",
+    price: 185.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages"]
+  },
+  {
+    itemNumber: 2610,
+    id: "diamond-backyard-6-assortment",
+    name: "DIAMOND BACKYARD #6 ASSORTMENT",
+    price: 160.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages"]
+  },
+  {
+    itemNumber: 2615,
+    id: "party-pack-6",
+    name: "PARTY PACK 6",
+    price: 160.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2620,
+    id: "black-cat-pride-and-honor-6",
+    name: "BLACK CAT PRIDE & HONOR 6",
+    price: 160.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Patriotic"]
+  },
+  {
+    itemNumber: 2625,
+    id: "black-cat-celebrate-america-5-assortment",
+    name: "BLACK CAT CELEBRATE AMERICA #5 ASSORTMENT",
+    price: 140.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages", "Patriotic"]
+  },
+  {
+    itemNumber: 2630,
+    id: "platinum-backyard-5",
+    name: "PLATINUM BACKYARD 5",
+    price: 140.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2635,
+    id: "black-cat-heritage-4",
+    name: "BLACK CAT HERITAGE 4",
+    price: 90.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Patriotic"]
+  },
+  {
+    itemNumber: 2640,
+    id: "party-pack-4-assortment",
+    name: "PARTY PACK #4 ASSORTMENT",
+    price: 90.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages"]
+  },
+  {
+    itemNumber: 2645,
+    id: "neon-surprise-safe-and-sane",
+    name: "NEON SURPRISE - SAFE & SANE",
+    price: 40.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2650,
+    id: "black-cat-excellent-bag",
+    name: "BLACK CAT EXCELLENT BAG",
+    price: 45.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2655,
+    id: "black-cat-jr-pyro-assortment",
+    name: "BLACK CAT JR PYRO ASSORTMENT",
+    price: 40.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2660,
+    id: "nitro-bag-assortment",
+    name: "NITRO BAG ASSORTMENT",
+    price: 30.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments"]
+  },
+  {
+    itemNumber: 2665,
+    id: "black-cat-kids-pack-safe-and-sane",
+    name: "BLACK CAT KIDS PACK - SAFE & SANE",
+    price: 12.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2670,
+    id: "black-cat-jr-pyro-backpack-safe-and-sane",
+    name: "BLACK CAT JR PYRO BACKPACK - SAFE & SANE",
+    price: 25.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2675,
+    id: "wacky-pack-boys-safe-and-sane",
+    name: "WACKY PACK - BOYS - SAFE & SANE",
+    price: 25.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2680,
+    id: "wacky-pack-girls-safe-and-sane",
+    name: "WACKY PACK - GIRLS - SAFE & SANE",
+    price: 25.00,
+    unitLabel: "1 PACK",
+    category: "Assortments",
+    shopTypes: ["Assortments", "Bundle Packages", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2685,
+    id: "frisbee-assortment",
+    name: "FRISBEE ASSORTMENT",
+    price: 10.00,
+    unitLabel: "1 PACK",
+    category: "Bundle Packages",
+    shopTypes: ["Bundle Packages", "Assortments", "Daytime Fun"]
+  },
+
+  {
+    itemNumber: 2786,
+    id: "bring-the-rain-rockets",
+    name: "BRING THE RAIN ROCKETS",
+    price: 25.00,
+    unitLabel: "1 BOX",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2787,
+    id: "starshot-rockets",
+    name: "STARSHOT ROCKETS",
+    price: 15.00,
+    unitLabel: "1 BOX",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2788,
+    id: "silver-hawk",
+    name: "SILVER HAWK",
+    price: 12.50,
+    unitLabel: "1 PACK",
+    category: "Misc Tag Additions",
+    shopTypes: ["Misc Tag Additions", "Flying Items"]
+  },
+  {
+    itemNumber: 2789,
+    id: "brothers-corona-rockets",
+    name: "BROTHERS CORONA ROCKETS",
+    price: 15.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2790,
+    id: "screaming-banshee-rockets",
+    name: "SCREAMING BANSHEE ROCKETS",
+    price: 20.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2791,
+    id: "lightning-strobe-regular",
+    name: "LIGHTNING STROBE - REGULAR",
+    price: 30.00,
+    unitLabel: "1 BOX",
+    category: "Misc Tag Additions",
+    shopTypes: ["Misc Tag Additions", "Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2792,
+    id: "strobe-light-g-and-a",
+    name: "STROBE LIGHT - G&A",
+    price: 35.00,
+    unitLabel: "1 BOX",
+    category: "Misc Tag Additions",
+    shopTypes: ["Misc Tag Additions", "Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 2793,
+    id: "black-cat-big-n-bad-rocket",
+    name: "BLACK CAT BIG N' BAD ROCKET",
+    price: 30.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2794,
+    id: "black-cat-cowboy-rocket",
+    name: "BLACK CAT COWBOY ROCKET",
+    price: 40.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2795,
+    id: "street-strobe-rocket",
+    name: "STREET STROBE ROCKET",
+    price: 30.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2796,
+    id: "strobe-rocket-g-and-a",
+    name: "STROBE ROCKET - G&A",
+    price: 35.00,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2797,
+    id: "black-cat-bottle-rockets",
+    name: "BLACK CAT BOTTLE ROCKETS",
+    price: 17.50,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2798,
+    id: "black-cat-whistling-bottle-rockets-with-report",
+    name: "BLACK CAT WHISTLING BOTTLE ROCKETS WITH REPORT",
+    price: 20.00,
+    unitLabel: "1 BOX",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 2799,
+    id: "butterfly-rockets",
+    name: "BUTTERFLY ROCKETS",
+    price: 2.50,
+    unitLabel: "1 PACK",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 10147,
+    id: "premium-whistle-moon-rockets",
+    name: "PREMIUM WHISTLE MOON ROCKETS",
+    price: 15.00,
+    unitLabel: "1 BOX",
+    category: "Rockets",
+    shopTypes: ["Rockets", "Flying Items"]
+  }
 ];
 
 // This stores the customer's selected quantities.
@@ -1769,38 +5652,76 @@ let activeCategory = "Popular Picks";
 
 // These are the product IDs we want to show in the Popular Picks section.
 const popularPickIds = [
-  "8-inch-colored-sparklers",
-  "clay-colored-smoke-balls",
-  "snappers",
-  "ground-bloom-flowers",
-  "black-cat-morning-glory-sparklers",
-  "black-cat-artillery-shell-6-shot",
-  "25-saturn-missile-battery-single",
-  "black-cat-color-pearl-48-shot"
+  "kevin-minion",
+  "black-cat-firecracker-roll-1000",
+  "magic-whip-with-boom",
+  "black-cat-m-150-salute-crackers",
+  "mini-tube-smoke",
+  "dripping-donut-33-shot",
+  "whack-job-7-shot",
+  "abduction-20-shot",
+  "black-cat-bottle-rockets",
+  "bring-the-rain-rockets",
+  "artillery-shell-6-shot",
+  "black-cat-the-beast-assortment"
 ];
 
 // These are the product IDs we want to show in the Bundle Packages section.
 const bundlePackageIds = [
-  "black-cat-the-beast",
+  "black-cat-the-beast-assortment",
   "black-cat-night-display",
   "black-cat-pyro-city",
   "black-cat-party-animal",
   "big-city-assortment",
-  "diamond-backyard-6",
+  "diamond-backyard-6-assortment",
   "party-pack-6",
-  "black-cat-pride-and-honor-6"
+  "black-cat-pride-and-honor-6",
+  "black-cat-celebrate-america-5-assortment",
+  "platinum-backyard-5",
+  "black-cat-heritage-4",
+  "party-pack-4-assortment",
+  "neon-surprise-safe-and-sane",
+  "black-cat-excellent-bag",
+  "black-cat-jr-pyro-assortment",
+  "nitro-bag-assortment",
+  "black-cat-kids-pack-safe-and-sane",
+  "black-cat-jr-pyro-backpack-safe-and-sane",
+  "wacky-pack-boys-safe-and-sane",
+  "wacky-pack-girls-safe-and-sane",
+  "frisbee-assortment"
 ];
 
 // These are the product IDs we want to show in the Big Show Finale section.
 const bigShowFinaleIds = [
-  "black-cat-american-freedom-train-180-shot",
-  "born-leaders-757-shot",
-  "red-white-and-brew-84-shot",
-  "vip-180-shot",
+  "red-bright-and-blue-660-shot",
+  "abduction-20-shot",
+  "alien-invasion-21-shot",
+  "return-to-roswell-26-shot",
+  "whistling-bunghole-21-shot",
+  "gigablaster-480-shot",
+  "brothers-trophy-wife-480-shot",
+  "aerial-privilege-168-shot",
+  "amazing-ballet-220-shot",
+  "border-patrol-159-shot",
+  "capitalists-195-shot",
+  "chain-reaction-86-shot",
   "grand-finale-432-shot",
+  "maximum-insanity-182-shot",
+  "mechapigzilla-136-shot",
+  "party-meter-154-shot",
+  "pigzilla-142-shot",
+  "brothers-rowdy-ride-185-shot",
+  "brothers-sassy-600-shot",
+  "brothers-sky-wide-204-shot",
+  "space-explorer-20-shot",
   "trump-train-250-shot",
   "trumps-revenge-250-shot",
-  "usa-conqueror-192-shot"
+  "usa-conqueror-192-shot",
+  "black-cat-american-freedom-train-180-shot",
+  "born-leaders-757-shot",
+  "vip-180-shot",
+  "ammo-mag-6-inch-24-shot",
+  "black-cat-the-beast-assortment"
 ];
 
 // This finds the empty box in index.html where firework cards will be placed.
