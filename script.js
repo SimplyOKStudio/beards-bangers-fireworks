@@ -6,65 +6,65 @@ const taxRate = 0.0825;
 const fireworks = [
   {
     itemNumber: 5,
-    id: "40-16",
-    name: "40/16",
+    id: "standard-firecrackers-16-count",
+    name: "STANDARD FIRECRACKERS - 16 COUNT PACKS",
     category: "Firecrackers",
     shopTypes: ["Firecrackers"],
     options: [
       {
-        id: "40-16-pack",
-        label: "1 PACK",
+        id: "standard-firecrackers-16-count-pack",
+        label: "1 PACK OF 16",
         price: 0.50
       },
       {
-        id: "40-16-board",
-        label: "1 BOARD",
+        id: "standard-firecrackers-16-count-bundle",
+        label: "1 BUNDLE OF 40 PACKS",
         price: 10.00
       }
     ]
   },
   {
     itemNumber: 10,
-    id: "40-50-firecracker",
-    name: "40/50 FIRECRACKER",
+    id: "standard-firecrackers-50-count",
+    name: "STANDARD FIRECRACKERS - 50 COUNT PACKS",
     category: "Firecrackers",
     shopTypes: ["Firecrackers"],
     options: [
       {
-        id: "40-50-firecracker-pack",
-        label: "1 PACK",
+        id: "standard-firecrackers-50-count-pack",
+        label: "1 PACK OF 50",
         price: 1.50
       },
       {
-        id: "40-50-firecracker-board",
-        label: "1 BOARD",
+        id: "standard-firecrackers-50-count-bundle",
+        label: "1 BUNDLE OF 20 PACKS",
         price: 30.00
       }
     ]
   },
   {
     itemNumber: 15,
-    id: "20-100-firecracker",
-    name: "20/100 FIRECRACKER",
+    id: "standard-firecrackers-100-count",
+    name: "STANDARD FIRECRACKERS - 100 COUNT PACKS",
     category: "Firecrackers",
     shopTypes: ["Firecrackers"],
     options: [
       {
-        id: "20-100-firecracker-pack",
-        label: "1 PACK",
+        id: "standard-firecrackers-100-count-pack",
+        label: "1 PACK OF 100",
         price: 3.00
       },
       {
-        id: "20-100-firecracker-board",
-        label: "1 BOARD",
+        id: "standard-firecrackers-100-count-bundle",
+        label: "1 BUNDLE OF 10 PACKS",
         price: 30.00
       }
     ]
   },
   {
     itemNumber: 20,
-    id: "500-roll-assorted",
-    name: "500 ROLL - ASSORTED",
+    id: "standard-firecracker-roll-500",
+    name: "STANDARD FIRECRACKER ROLL - 500 COUNT",
     price: 7.50,
     unitLabel: "1 ROLL",
     category: "Firecrackers",
@@ -72,8 +72,8 @@ const fireworks = [
   },
   {
     itemNumber: 25,
-    id: "1000-roll-assorted",
-    name: "1000 ROLL - ASSORTED",
+    id: "standard-firecracker-roll-1000",
+    name: "STANDARD FIRECRACKER ROLL - 1000 COUNT",
     price: 15.00,
     unitLabel: "1 ROLL",
     category: "Firecrackers",
