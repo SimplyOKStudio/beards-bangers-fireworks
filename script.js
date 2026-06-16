@@ -37,7 +37,7 @@ const fireworks = [
       },
       {
         id: "standard-firecrackers-50-count-bundle",
-        label: "1 BUNDLE OF 20 PACKS",
+        label: "1 BUNDLE OF 40 PACKS",
         price: 30.00
       }
     ]
@@ -56,7 +56,7 @@ const fireworks = [
       },
       {
         id: "standard-firecrackers-100-count-bundle",
-        label: "1 BUNDLE OF 10 PACKS",
+        label: "1 BUNDLE OF 20 PACKS",
         price: 30.00
       }
     ]
@@ -76,6 +76,194 @@ const fireworks = [
     name: "STANDARD FIRECRACKER ROLL - 1000 COUNT",
     price: 15.00,
     unitLabel: "1 ROLL",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
+  },
+  {
+    itemNumber: 30,
+    id: "black-cat-firecrackers-16-count",
+    name: "BLACK CAT FIRECRACKERS - 16 COUNT PACKS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-firecrackers-16-count-pack",
+        label: "1 PACK OF 16",
+        price: 0.65
+      },
+      {
+        id: "black-cat-firecrackers-16-count-bundle",
+        label: "1 BUNDLE OF 40 PACKS",
+        price: 13.00
+      }
+    ]
+  },
+  {
+    itemNumber: 35,
+    id: "black-cat-firecrackers-50-count",
+    name: "BLACK CAT FIRECRACKERS - 50 COUNT PACKS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-firecrackers-50-count-pack",
+        label: "1 PACK OF 50",
+        price: 2.00
+      },
+      {
+        id: "black-cat-firecrackers-50-count-bundle",
+        label: "1 BUNDLE OF 40 PACKS",
+        price: 40.00
+      }
+    ]
+  },
+  {
+    itemNumber: 40,
+    id: "black-cat-firecrackers-100-count",
+    name: "BLACK CAT FIRECRACKERS - 100 COUNT PACKS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-firecrackers-100-count-pack",
+        label: "1 PACK OF 100",
+        price: 4.00
+      },
+      {
+        id: "black-cat-firecrackers-100-count-bundle",
+        label: "1 BUNDLE OF 20 PACKS",
+        price: 40.00
+      }
+    ]
+  },
+  {
+    itemNumber: 45,
+    id: "black-cat-firecrackers-200-count",
+    name: "BLACK CAT FIRECRACKERS - 200 COUNT PACKS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-firecrackers-200-count-pack",
+        label: "1 PACK OF 200",
+        price: 8.00
+      },
+      {
+        id: "black-cat-firecrackers-200-count-bundle",
+        label: "1 BUNDLE OF 10 PACKS",
+        price: 40.00
+      }
+    ]
+  },
+  {
+    itemNumber: 50,
+    id: "black-cat-firecrackers-400-count",
+    name: "BLACK CAT FIRECRACKERS - 400 COUNT PACKS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-firecrackers-400-count-pack",
+        label: "1 PACK OF 400",
+        price: 16.00
+      },
+      {
+        id: "black-cat-firecrackers-400-count-bundle",
+        label: "1 BUNDLE OF 5 PACKS",
+        price: 40.00
+      }
+    ]
+  },
+  {
+    itemNumber: 55,
+    id: "black-cat-firecracker-roll-1000",
+    name: "BLACK CAT FIRECRACKER ROLL - 1000 COUNT",
+    price: 20.00,
+    unitLabel: "1 ROLL",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
+  },
+  {
+    itemNumber: 60,
+    id: "black-cat-firecracker-roll-2000",
+    name: "BLACK CAT FIRECRACKER ROLL - 2000 COUNT",
+    price: 40.00,
+    unitLabel: "1 ROLL",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
+  },
+  {
+    itemNumber: 65,
+    id: "m-60-m-90-crackers",
+    name: "M-60 / M-90 CRACKERS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "m-60-m-90-crackers-piece",
+        label: "1 PIECE",
+        price: 0.60
+      },
+      {
+        id: "m-60-m-90-crackers-box",
+        label: "1 BOX OF 36",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 70,
+    id: "black-cat-m-150-salute-crackers",
+    name: "BLACK CAT M-150 SALUTE CRACKERS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "black-cat-m-150-salute-crackers-piece",
+        label: "1 PIECE",
+        price: 0.60
+      },
+      {
+        id: "black-cat-m-150-salute-crackers-box",
+        label: "1 BOX OF 36",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 75,
+    id: "bunker-buster-crackers",
+    name: "BUNKER BUSTER CRACKERS",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "bunker-buster-crackers-box",
+        label: "1 BOX",
+        price: 5.00
+      },
+      {
+        id: "bunker-buster-crackers-pack",
+        label: "1 PACK OF 4 BOXES",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 80,
+    id: "black-cat-little-dynamite",
+    name: "BLACK CAT LITTLE DYNAMITE",
+    price: 3.00,
+    unitLabel: "1 BOX",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
+  },
+  {
+    itemNumber: 85,
+    id: "magic-whip-with-boom",
+    name: "MAGIC WHIP WITH BOOM",
+    price: 7.50,
+    unitLabel: "1 BOX",
     category: "Firecrackers",
     shopTypes: ["Firecrackers"]
   }
