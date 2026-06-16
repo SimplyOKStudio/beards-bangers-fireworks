@@ -886,6 +886,241 @@ const fireworks = [
       }
     ]
   }
+  ,
+  {
+    itemNumber: 270,
+    id: "roman-candle-10-ball",
+    name: "ROMAN CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "roman-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.25
+      },
+      {
+        id: "roman-candle-10-ball-pack",
+        label: "1 PACK OF 6",
+        price: 7.50
+      }
+    ]
+  },
+  {
+    itemNumber: 275,
+    id: "boombomb-candle-10-ball",
+    name: "BOOMBOMB CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "boombomb-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "boombomb-candle-10-ball-pack",
+        label: "1 PACK OF 6",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 280,
+    id: "camo-pack-candle-10-ball",
+    name: "CAMO PACK CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "camo-pack-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "camo-pack-candle-10-ball-pack",
+        label: "1 PACK OF 12",
+        price: 18.00
+      }
+    ]
+  },
+  {
+    itemNumber: 285,
+    id: "brothers-cherry-on-top-candle-10-ball",
+    name: "BROTHERS CHERRY ON TOP CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "brothers-cherry-on-top-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "brothers-cherry-on-top-candle-10-ball-pack",
+        label: "1 PACK OF 4",
+        price: 6.00
+      }
+    ]
+  },
+  {
+    itemNumber: 290,
+    id: "crackling-candle-10-ball",
+    name: "CRACKLING CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "crackling-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "crackling-candle-10-ball-pack",
+        label: "1 PACK OF 6",
+        price: 9.00
+      }
+    ]
+  },
+  {
+    itemNumber: 295,
+    id: "exploding-candle-10-ball",
+    name: "EXPLODING CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "exploding-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "exploding-candle-10-ball-pack",
+        label: "1 PACK OF 4",
+        price: 6.00
+      }
+    ]
+  },
+  {
+    itemNumber: 300,
+    id: "black-cat-handful-candle-10-ball",
+    name: "BLACK CAT HANDFUL CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "black-cat-handful-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "black-cat-handful-candle-10-ball-pack",
+        label: "1 PACK OF 5",
+        price: 7.50
+      }
+    ]
+  },
+  {
+    itemNumber: 305,
+    id: "wild-side-candle-10-ball",
+    name: "WILD SIDE CANDLE - 10 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "wild-side-candle-10-ball-piece",
+        label: "1 CANDLE",
+        price: 1.50
+      },
+      {
+        id: "wild-side-candle-10-ball-pack",
+        label: "1 PACK OF 8",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 310,
+    id: "powerball-140-ball",
+    name: "POWERBALL - 140 BALL",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+  {
+    itemNumber: 315,
+    id: "gangster-gun-196-ball",
+    name: "GANGSTER GUN - 196 BALL",
+    price: 20.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+  {
+    itemNumber: 320,
+    id: "brothers-gatling-gun-240-ball",
+    name: "BROTHERS GATLING GUN - 240 BALL",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+  {
+    itemNumber: 325,
+    id: "mini-blaster-280-ball",
+    name: "MINI BLASTER - 280 BALL",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+  {
+    itemNumber: 330,
+    id: "brothers-heavy-gear-380-ball",
+    name: "BROTHERS HEAVY GEAR - 380 BALL",
+    price: 50.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+  {
+    itemNumber: 335,
+    id: "steel-titan-mortar-384-ball",
+    name: "STEEL TITAN MORTAR - 384 BALL",
+    price: 40.00,
+    unitLabel: "1 PIECE",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"]
+  },
+
+  {
+    itemNumber: 340,
+    id: "rotating-machine-gun-352-shot",
+    name: "ROTATING MACHINE GUN - 352 SHOT",
+    price: 140.00,
+    unitLabel: "1 PIECE",
+    category: "Rotating Roman Candles",
+    shopTypes: ["Roman Candles", "Rotating Roman Candles"]
+  },
+  {
+    itemNumber: 345,
+    id: "cartridge-rotating-machine-gun-352-shot",
+    name: "CARTRIDGE ROTATING MACHINE GUN - 352 SHOT",
+    price: 30.00,
+    unitLabel: "1 PIECE",
+    category: "Rotating Roman Candles",
+    shopTypes: ["Roman Candles", "Rotating Roman Candles"]
+  },
+  {
+    itemNumber: 350,
+    id: "machine-gun-kelly-388-shot",
+    name: "MACHINE GUN KELLY - 388 SHOT",
+    price: 150.00,
+    unitLabel: "1 PIECE",
+    category: "Rotating Roman Candles",
+    shopTypes: ["Roman Candles", "Rotating Roman Candles"]
+  }
 ];
 
 // This stores the customer's selected quantities.
