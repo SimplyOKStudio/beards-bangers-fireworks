@@ -1121,6 +1121,216 @@ const fireworks = [
     category: "Rotating Roman Candles",
     shopTypes: ["Roman Candles", "Rotating Roman Candles"]
   }
+  ,
+  {
+    itemNumber: 355,
+    id: "5-minute-smoke",
+    name: "5 MINUTE SMOKE",
+    price: 3.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 360,
+    id: "clay-colored-smoke-balls",
+    name: "CLAY COLORED SMOKE BALLS",
+    price: 3.25,
+    unitLabel: "1 BAG OF 6",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 365,
+    id: "sawdust-colored-smoke-balls",
+    name: "SAWDUST COLORED SMOKE BALLS",
+    price: 3.25,
+    unitLabel: "1 BAG OF 6",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 370,
+    id: "cloud-nine",
+    name: "CLOUD NINE",
+    price: 15.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 375,
+    id: "color-grenade-with-pull-string",
+    name: "COLOR GRENADE WITH PULL STRING",
+    price: 3.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 380,
+    id: "jumbo-smoke-crayons",
+    name: "JUMBO SMOKE CRAYONS",
+    price: 7.50,
+    unitLabel: "1 BOX OF 6",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 385,
+    id: "mammoth-smoke",
+    name: "MAMMOTH SMOKE",
+    price: 1.50,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 390,
+    id: "mini-tube-smoke",
+    name: "MINI TUBE SMOKE",
+    price: 1.50,
+    unitLabel: "1 PACK OF 4",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 395,
+    id: "black-cat-neon-camo-smoke",
+    name: "BLACK CAT NEON CAMO SMOKE",
+    price: 6.00,
+    unitLabel: "1 PACK OF 4",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 400,
+    id: "patriot-neon-assorted-smoke",
+    name: "PATRIOT / NEON ASSORTED SMOKE",
+    price: 1.50,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 405,
+    id: "never-ending-smoke",
+    name: "NEVER-ENDING SMOKE",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 410,
+    id: "reaper-smoke-black",
+    name: "REAPER SMOKE - BLACK",
+    price: 4.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+  {
+    itemNumber: 415,
+    id: "usa-smoke",
+    name: "USA SMOKE",
+    price: 6.00,
+    unitLabel: "1 PIECE",
+    category: "Smoke",
+    shopTypes: ["Smoke", "Daytime Fun"]
+  },
+
+  {
+    itemNumber: 420,
+    id: "dancing-trolls",
+    name: "DANCING TROLLS",
+    price: 8.00,
+    unitLabel: "1 BOX OF 4",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 425,
+    id: "friendship-pagoda",
+    name: "FRIENDSHIP PAGODA",
+    price: 3.00,
+    unitLabel: "1 PIECE",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 430,
+    id: "ground-bloom-flowers",
+    name: "GROUND BLOOM FLOWERS",
+    price: 1.25,
+    unitLabel: "1 PACK OF 6",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 435,
+    id: "happy-lamp-large",
+    name: "HAPPY LAMP - LARGE",
+    price: 6.00,
+    unitLabel: "1 BOX",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 440,
+    id: "head-spin",
+    name: "HEAD SPIN",
+    price: 8.00,
+    unitLabel: "1 BOX OF 2",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 445,
+    id: "lotus-lantern",
+    name: "LOTUS LANTERN",
+    price: 6.00,
+    unitLabel: "1 BOX OF 4",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 450,
+    id: "spinning-top",
+    name: "SPINNING TOP",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"],
+    options: [
+      {
+        id: "spinning-top-piece",
+        label: "1 PIECE",
+        price: 1.25
+      },
+      {
+        id: "spinning-top-pack",
+        label: "1 PACK OF 8",
+        price: 5.00
+      }
+    ]
+  },
+  {
+    itemNumber: 455,
+    id: "black-cat-tasmanian-devil",
+    name: "BLACK CAT TASMANIAN DEVIL",
+    price: 6.00,
+    unitLabel: "1 BOX OF 3",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  },
+  {
+    itemNumber: 460,
+    id: "whistling-chaser-with-report",
+    name: "WHISTLING CHASER WITH REPORT",
+    price: 2.00,
+    unitLabel: "1 PACK OF 12",
+    category: "Ground Spinners",
+    shopTypes: ["Ground Spinners", "Daytime Fun"]
+  }
 ];
 
 // This stores the customer's selected quantities.
