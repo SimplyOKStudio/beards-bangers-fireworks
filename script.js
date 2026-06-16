@@ -1540,6 +1540,224 @@ const fireworks = [
       }
     ]
   }
+  ,
+  {
+    itemNumber: 525,
+    id: "brothers-big-brute-plastic",
+    name: "BROTHERS BIG BRUTE",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 530,
+    id: "climbing-panda",
+    name: "CLIMBING PANDA",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"],
+    options: [
+      {
+        id: "climbing-panda-piece",
+        label: "1 PIECE",
+        price: 3.50
+      },
+      {
+        id: "climbing-panda-box",
+        label: "1 BOX OF 6",
+        price: 10.50
+      }
+    ]
+  },
+  {
+    itemNumber: 535,
+    id: "crackling-balls",
+    name: "CRACKLING BALLS",
+    price: 1.25,
+    unitLabel: "1 BAG OF 6",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 540,
+    id: "flashing-strobe",
+    name: "FLASHING STROBE",
+    price: 1.50,
+    unitLabel: "1 PACK",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 545,
+    id: "hen-laying-eggs",
+    name: "HEN LAYING EGGS",
+    price: 0.50,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 555,
+    id: "jumbo-strobe-large",
+    name: "JUMBO STROBE - LARGE",
+    price: 6.00,
+    unitLabel: "1 PACK OF 3",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 560,
+    id: "kryptonite",
+    name: "KRYPTONITE",
+    price: 7.50,
+    unitLabel: "1 PACK OF 3",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 570,
+    id: "night-crawler-worms-snakes",
+    name: "NIGHT CRAWLER WORMS / SNAKES",
+    price: 1.25,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 575,
+    id: "party-poppers-12-count",
+    name: "PARTY POPPERS - 12 COUNT",
+    price: 3.00,
+    unitLabel: "1 BOX OF 12",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 585,
+    id: "black-cat-party-poppers-6-count",
+    name: "BLACK CAT PARTY POPPERS - 6 COUNT",
+    price: 1.50,
+    unitLabel: "1 PACK OF 6",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 590,
+    id: "pooping-elephant",
+    name: "POOPING ELEPHANT",
+    price: 1.75,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 595,
+    id: "poopy-puppy-12-count",
+    name: "POOPY PUPPY - 12 COUNT",
+    price: 1.75,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 600,
+    id: "poopy-puppy-144-count",
+    name: "POOPY PUPPY - 144 COUNT",
+    price: 1.75,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 605,
+    id: "red-dirt-rampage",
+    name: "RED DIRT RAMPAGE",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 610,
+    id: "snakes-6-pack-assortment-120-count",
+    name: "SNAKES - 6 PACK ASSORTMENT",
+    price: 4.50,
+    unitLabel: "1 PACK",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 615,
+    id: "snakes-6-pack-assortment-144-count",
+    name: "SNAKES - 6 PACK ASSORTMENT",
+    price: 4.50,
+    unitLabel: "1 PACK",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 620,
+    id: "shark-family",
+    name: "SHARK FAMILY",
+    price: 20.00,
+    unitLabel: "1 PACK",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 625,
+    id: "snappers",
+    name: "SNAPPERS",
+    price: 0.75,
+    unitLabel: "1 BOX",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 630,
+    id: "solo-spinner",
+    name: "SOLO SPINNER",
+    price: 5.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 635,
+    id: "spirospark",
+    name: "SPIROSPARK",
+    price: 25.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 640,
+    id: "toy-tanks",
+    name: "TOY TANKS",
+    price: 1.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 645,
+    id: "brothers-terrific-tyrant",
+    name: "BROTHERS TERRIFIC TYRANT",
+    price: 10.00,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  },
+  {
+    itemNumber: 650,
+    id: "torpedo-thunder-snaps",
+    name: "TORPEDO / THUNDER SNAPS",
+    price: 1.50,
+    unitLabel: "1 PIECE",
+    category: "Novelties",
+    shopTypes: ["Novelties", "Daytime Fun"]
+  }
 ];
 
 // This stores the customer's selected quantities.
