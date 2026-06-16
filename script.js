@@ -5,78 +5,79 @@ const taxRate = 0.0825;
 
 const fireworks = [
   {
-    itemNumber: 2360,
-    id: "artillery-shell-6-shot",
-    name: "ARTILLERY SHELL - 6 SHOT",
-    price: 25.00,
-    unitLabel: "1 BOX",
-    category: "Reloadable Shells",
-    shopTypes: ["Reloadable Shells"]
-  },
-  {
-    itemNumber: 55,
-    id: "1000-roll-black-cat",
-    name: "1000 ROLL - BLACK CAT",
-    price: 20.00,
-    unitLabel: "1 ROLL",
+    itemNumber: 5,
+    id: "40-16",
+    name: "40/16",
     category: "Firecrackers",
-    shopTypes: ["Firecrackers"]
-  },
-  {
-    itemNumber: 185,
-    id: "10-colored-sparklers",
-    name: "10 COLORED SPARKLERS",
-    category: "Sparklers",
-    shopTypes: ["Sparklers", "Daytime Fun"],
+    shopTypes: ["Firecrackers"],
     options: [
       {
-        id: "10-colored-sparklers-box",
-        label: "1 BOX",
-        price: 2.50
+        id: "40-16-pack",
+        label: "1 PACK",
+        price: 0.50
       },
       {
-        id: "10-colored-sparklers-pack",
-        label: "1 PACK OF 12 BOXES",
+        id: "40-16-board",
+        label: "1 BOARD",
+        price: 10.00
+      }
+    ]
+  },
+  {
+    itemNumber: 10,
+    id: "40-50-firecracker",
+    name: "40/50 FIRECRACKER",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
+    options: [
+      {
+        id: "40-50-firecracker-pack",
+        label: "1 PACK",
+        price: 1.50
+      },
+      {
+        id: "40-50-firecracker-board",
+        label: "1 BOARD",
         price: 30.00
       }
     ]
   },
   {
-    itemNumber: 390,
-    id: "mini-tube-smoke",
-    name: "MINI TUBE SMOKE",
-    category: "Smoke",
-    shopTypes: ["Smoke", "Daytime Fun"],
+    itemNumber: 15,
+    id: "20-100-firecracker",
+    name: "20/100 FIRECRACKER",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"],
     options: [
       {
-        id: "mini-tube-smoke-pack",
+        id: "20-100-firecracker-pack",
         label: "1 PACK",
         price: 3.00
       },
       {
-        id: "mini-tube-smoke-box",
-        label: "1 BOX OF 6 PACKS",
-        price: 18.00
+        id: "20-100-firecracker-board",
+        label: "1 BOARD",
+        price: 30.00
       }
     ]
   },
   {
-    itemNumber: 835,
-    id: "kevin-minion",
-    name: "KEVIN - MINION",
-    price: 12.00,
-    unitLabel: "1 PIECE",
-    category: "Fountains",
-    shopTypes: ["Fountains"]
+    itemNumber: 20,
+    id: "500-roll-assorted",
+    name: "500 ROLL - ASSORTED",
+    price: 7.50,
+    unitLabel: "1 ROLL",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
   },
   {
-    itemNumber: 1895,
-    id: "dripping-donut-33-shot",
-    name: "DRIPPING DONUT - 33 SHOT",
-    price: 200.00,
-    unitLabel: "1 PIECE",
-    category: "Cakes",
-    shopTypes: ["Cakes"]
+    itemNumber: 25,
+    id: "1000-roll-assorted",
+    name: "1000 ROLL - ASSORTED",
+    price: 15.00,
+    unitLabel: "1 ROLL",
+    category: "Firecrackers",
+    shopTypes: ["Firecrackers"]
   }
 ];
 
