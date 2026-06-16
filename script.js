@@ -201,7 +201,7 @@ const fireworks = [
     options: [
       {
         id: "m-60-m-90-crackers-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 0.60
       },
       {
@@ -220,7 +220,7 @@ const fireworks = [
     options: [
       {
         id: "black-cat-m-150-salute-crackers-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 0.60
       },
       {
@@ -305,7 +305,7 @@ const fireworks = [
     options: [
       {
         id: "x-wing-missile-4-inch-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.75
       },
       {
@@ -324,7 +324,7 @@ const fireworks = [
     options: [
       {
         id: "x-wing-missile-6-inch-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.88
       },
       {
@@ -343,7 +343,7 @@ const fireworks = [
     options: [
       {
         id: "assorted-missile-10-inch-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 4.25
       },
       {
@@ -362,7 +362,7 @@ const fireworks = [
     options: [
       {
         id: "assorted-missile-12-inch-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 4.50
       },
       {
@@ -381,7 +381,7 @@ const fireworks = [
     options: [
       {
         id: "strike-eagle-missile-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 4.50
       },
       {
@@ -396,7 +396,7 @@ const fireworks = [
     id: "neptune-missile",
     name: "NEPTUNE MISSILE",
     price: 4.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Missiles",
     shopTypes: ["Missiles", "Flying Items"]
   },
@@ -410,7 +410,7 @@ const fireworks = [
     options: [
       {
         id: "single-night-parachute-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.25
       },
       {
@@ -425,7 +425,7 @@ const fireworks = [
     id: "air-trooper-parachute",
     name: "AIR TROOPER PARACHUTE",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Parachutes",
     shopTypes: ["Parachutes", "Daytime Fun"]
   },
@@ -438,7 +438,7 @@ const fireworks = [
     options: [
       {
         id: "giant-parachute-40-inch-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 3.75
       },
       {
@@ -457,7 +457,7 @@ const fireworks = [
     options: [
       {
         id: "oh-chute-parachute-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 5.00
       },
       {
@@ -472,7 +472,7 @@ const fireworks = [
     id: "parachute-battalion-11-shot",
     name: "PARACHUTE BATTALION - 11 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Parachutes",
     shopTypes: ["Parachutes", "Daytime Fun"]
   },
@@ -485,7 +485,7 @@ const fireworks = [
     options: [
       {
         id: "princess-parachute-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 10.00
       },
       {
@@ -504,7 +504,7 @@ const fireworks = [
     options: [
       {
         id: "base-jump-parachute-5-shot-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 5.00
       },
       {
@@ -519,7 +519,7 @@ const fireworks = [
     id: "chutes-25-shot",
     name: "CHUTES - 25 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Parachutes",
     shopTypes: ["Parachutes", "Daytime Fun"]
   }
@@ -1044,7 +1044,7 @@ const fireworks = [
     id: "powerball-140-ball",
     name: "POWERBALL - 140 BALL",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1053,7 +1053,7 @@ const fireworks = [
     id: "gangster-gun-196-ball",
     name: "GANGSTER GUN - 196 BALL",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1062,7 +1062,7 @@ const fireworks = [
     id: "brothers-gatling-gun-240-ball",
     name: "BROTHERS GATLING GUN - 240 BALL",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1071,7 +1071,7 @@ const fireworks = [
     id: "mini-blaster-280-ball",
     name: "MINI BLASTER - 280 BALL",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1080,7 +1080,7 @@ const fireworks = [
     id: "brothers-heavy-gear-380-ball",
     name: "BROTHERS HEAVY GEAR - 380 BALL",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1089,7 +1089,7 @@ const fireworks = [
     id: "steel-titan-mortar-384-ball",
     name: "STEEL TITAN MORTAR - 384 BALL",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Roman Candles",
     shopTypes: ["Roman Candles"]
   },
@@ -1099,7 +1099,7 @@ const fireworks = [
     id: "rotating-machine-gun-352-shot",
     name: "ROTATING MACHINE GUN - 352 SHOT",
     price: 140.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Rotating Roman Candles",
     shopTypes: ["Roman Candles", "Rotating Roman Candles"]
   },
@@ -1108,7 +1108,7 @@ const fireworks = [
     id: "cartridge-rotating-machine-gun-352-shot",
     name: "CARTRIDGE ROTATING MACHINE GUN - 352 SHOT",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Rotating Roman Candles",
     shopTypes: ["Roman Candles", "Rotating Roman Candles"]
   },
@@ -1117,7 +1117,7 @@ const fireworks = [
     id: "machine-gun-kelly-388-shot",
     name: "MACHINE GUN KELLY - 388 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Rotating Roman Candles",
     shopTypes: ["Roman Candles", "Rotating Roman Candles"]
   }
@@ -1127,7 +1127,7 @@ const fireworks = [
     id: "5-minute-smoke",
     name: "5 MINUTE SMOKE",
     price: 3.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1154,7 +1154,7 @@ const fireworks = [
     id: "cloud-nine",
     name: "CLOUD NINE",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1163,7 +1163,7 @@ const fireworks = [
     id: "color-grenade-with-pull-string",
     name: "COLOR GRENADE WITH PULL STRING",
     price: 3.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1181,7 +1181,7 @@ const fireworks = [
     id: "mammoth-smoke",
     name: "MAMMOTH SMOKE",
     price: 1.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1208,7 +1208,7 @@ const fireworks = [
     id: "patriot-neon-assorted-smoke",
     name: "PATRIOT / NEON ASSORTED SMOKE",
     price: 1.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1217,7 +1217,7 @@ const fireworks = [
     id: "never-ending-smoke",
     name: "NEVER-ENDING SMOKE",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1226,7 +1226,7 @@ const fireworks = [
     id: "reaper-smoke-black",
     name: "REAPER SMOKE - BLACK",
     price: 4.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1235,7 +1235,7 @@ const fireworks = [
     id: "usa-smoke",
     name: "USA SMOKE",
     price: 6.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Smoke",
     shopTypes: ["Smoke", "Daytime Fun"]
   },
@@ -1254,7 +1254,7 @@ const fireworks = [
     id: "friendship-pagoda",
     name: "FRIENDSHIP PAGODA",
     price: 3.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Ground Spinners",
     shopTypes: ["Ground Spinners", "Daytime Fun"]
   },
@@ -1303,7 +1303,7 @@ const fireworks = [
     options: [
       {
         id: "spinning-top-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.25
       },
       {
@@ -1341,7 +1341,7 @@ const fireworks = [
     options: [
       {
         id: "color-spaceship-2-pack-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.50
       },
       {
@@ -1360,7 +1360,7 @@ const fireworks = [
     options: [
       {
         id: "two-stage-turbo-phantom-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.50
       },
       {
@@ -1394,7 +1394,7 @@ const fireworks = [
     id: "drone",
     name: "DRONE",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Flying Items",
     shopTypes: ["Flying Items", "Daytime Fun"]
   },
@@ -1403,7 +1403,7 @@ const fireworks = [
     id: "fanta-sea",
     name: "FANTA SEA",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Flying Items",
     shopTypes: ["Flying Items", "Daytime Fun"]
   },
@@ -1416,7 +1416,7 @@ const fireworks = [
     options: [
       {
         id: "brothers-lady-bugs-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 2.50
       },
       {
@@ -1435,7 +1435,7 @@ const fireworks = [
     options: [
       {
         id: "brothers-magic-crystal-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 2.50
       },
       {
@@ -1454,7 +1454,7 @@ const fireworks = [
     options: [
       {
         id: "pigs-can-fly-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 3.00
       },
       {
@@ -1473,7 +1473,7 @@ const fireworks = [
     options: [
       {
         id: "sky-smoke-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 2.25
       },
       {
@@ -1492,7 +1492,7 @@ const fireworks = [
     options: [
       {
         id: "tiger-tails-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.50
       },
       {
@@ -1511,7 +1511,7 @@ const fireworks = [
     options: [
       {
         id: "black-cat-uav-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 2.00
       },
       {
@@ -1546,7 +1546,7 @@ const fireworks = [
     id: "brothers-big-brute-plastic",
     name: "BROTHERS BIG BRUTE",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1559,7 +1559,7 @@ const fireworks = [
     options: [
       {
         id: "climbing-panda-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 3.50
       },
       {
@@ -1592,7 +1592,7 @@ const fireworks = [
     id: "hen-laying-eggs",
     name: "HEN LAYING EGGS",
     price: 0.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1619,7 +1619,7 @@ const fireworks = [
     id: "night-crawler-worms-snakes",
     name: "NIGHT CRAWLER WORMS / SNAKES",
     price: 1.25,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1646,7 +1646,7 @@ const fireworks = [
     id: "pooping-elephant",
     name: "POOPING ELEPHANT",
     price: 1.75,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1655,7 +1655,7 @@ const fireworks = [
     id: "poopy-puppy-12-count",
     name: "POOPY PUPPY - 12 COUNT",
     price: 1.75,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1664,7 +1664,7 @@ const fireworks = [
     id: "poopy-puppy-144-count",
     name: "POOPY PUPPY - 144 COUNT",
     price: 1.75,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1673,7 +1673,7 @@ const fireworks = [
     id: "red-dirt-rampage",
     name: "RED DIRT RAMPAGE",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1718,7 +1718,7 @@ const fireworks = [
     id: "solo-spinner",
     name: "SOLO SPINNER",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1727,7 +1727,7 @@ const fireworks = [
     id: "spirospark",
     name: "SPIROSPARK",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1736,7 +1736,7 @@ const fireworks = [
     id: "toy-tanks",
     name: "TOY TANKS",
     price: 1.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1745,7 +1745,7 @@ const fireworks = [
     id: "brothers-terrific-tyrant",
     name: "BROTHERS TERRIFIC TYRANT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   },
@@ -1754,7 +1754,7 @@ const fireworks = [
     id: "torpedo-thunder-snaps",
     name: "TORPEDO / THUNDER SNAPS",
     price: 1.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Novelties",
     shopTypes: ["Novelties", "Daytime Fun"]
   }
@@ -1764,7 +1764,7 @@ const fireworks = [
     id: "jumbo-cone-fountain-5-inch",
     name: "JUMBO CONE FOUNTAIN - 5 INCH",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1773,7 +1773,7 @@ const fireworks = [
     id: "magic-potion",
     name: "MAGIC POTION",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1786,7 +1786,7 @@ const fireworks = [
     options: [
       {
         id: "crazy-crackups-junebug-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 3.00
       },
       {
@@ -1805,7 +1805,7 @@ const fireworks = [
     options: [
       {
         id: "cuckoo-fountain-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 4.00
       },
       {
@@ -1824,7 +1824,7 @@ const fireworks = [
     options: [
       {
         id: "happiness-fountain-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 1.50
       },
       {
@@ -1843,7 +1843,7 @@ const fireworks = [
     options: [
       {
         id: "hn-60-fountain-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 5.00
       },
       {
@@ -1862,7 +1862,7 @@ const fireworks = [
     options: [
       {
         id: "hn-90-fountain-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 6.00
       },
       {
@@ -1881,7 +1881,7 @@ const fireworks = [
     options: [
       {
         id: "killer-bees-piece",
-        label: "1 PIECE",
+        label: "EACH",
         price: 5.00
       },
       {
@@ -1905,7 +1905,7 @@ const fireworks = [
     id: "brothers-a-to-z",
     name: "BROTHERS A TO Z",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1914,7 +1914,7 @@ const fireworks = [
     id: "america-forever",
     name: "AMERICA FOREVER",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1923,7 +1923,7 @@ const fireworks = [
     id: "arachnophobia",
     name: "ARACHNOPHOBIA",
     price: 35.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1932,7 +1932,7 @@ const fireworks = [
     id: "brothers-bad-apple",
     name: "BROTHERS BAD APPLE",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1941,7 +1941,7 @@ const fireworks = [
     id: "bad-cactus",
     name: "BAD CACTUS",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1950,7 +1950,7 @@ const fireworks = [
     id: "brothers-bees-knees",
     name: "BROTHERS BEES KNEES",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1959,7 +1959,7 @@ const fireworks = [
     id: "brothers-born-and-raised",
     name: "BROTHERS BORN AND RAISED",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1968,7 +1968,7 @@ const fireworks = [
     id: "brothers-bowl-o-cherries",
     name: "BROTHERS BOWL O CHERRIES",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1977,7 +1977,7 @@ const fireworks = [
     id: "bring-it-minion",
     name: "BRING IT - MINION",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -1986,7 +1986,7 @@ const fireworks = [
     id: "california-sunrise",
     name: "CALIFORNIA SUNRISE",
     price: 7.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2005,7 +2005,7 @@ const fireworks = [
     id: "cosmic-spin",
     name: "COSMIC SPIN",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties"]
   },
@@ -2014,7 +2014,7 @@ const fireworks = [
     id: "dancing-with-ghost",
     name: "DANCING WITH GHOST",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2023,7 +2023,7 @@ const fireworks = [
     id: "despicable-minion",
     name: "DESPICABLE - MINION",
     price: 6.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2032,7 +2032,7 @@ const fireworks = [
     id: "dragon-fire",
     name: "DRAGON FIRE",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2041,7 +2041,7 @@ const fireworks = [
     id: "brothers-extra-zesty",
     name: "BROTHERS EXTRA ZESTY",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2050,7 +2050,7 @@ const fireworks = [
     id: "brothers-fairies-in-a-jar",
     name: "BROTHERS FAIRIES IN A JAR",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2068,7 +2068,7 @@ const fireworks = [
     id: "flower-child",
     name: "FLOWER CHILD",
     price: 17.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2077,7 +2077,7 @@ const fireworks = [
     id: "brothers-flutter-by",
     name: "BROTHERS FLUTTER BY",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2086,7 +2086,7 @@ const fireworks = [
     id: "freezy-pops",
     name: "FREEZY POPS",
     price: 1.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties", "Daytime Fun"]
   },
@@ -2095,7 +2095,7 @@ const fireworks = [
     id: "ftn-dew",
     name: "FTN DEW",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2113,7 +2113,7 @@ const fireworks = [
     id: "havana-heat",
     name: "HAVANA HEAT",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2122,7 +2122,7 @@ const fireworks = [
     id: "hoot-hoot-hooray",
     name: "HOOT HOOT HOORAY",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2131,7 +2131,7 @@ const fireworks = [
     id: "black-cat-hyper-chill",
     name: "BLACK CAT HYPER CHILL",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2149,7 +2149,7 @@ const fireworks = [
     id: "kevin-minion",
     name: "KEVIN - MINION",
     price: 6.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2158,7 +2158,7 @@ const fireworks = [
     id: "koi-pond",
     name: "KOI POND",
     price: 17.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2167,7 +2167,7 @@ const fireworks = [
     id: "brothers-kooky-katerpillar",
     name: "BROTHERS KOOKY KATERPILLAR",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2176,7 +2176,7 @@ const fireworks = [
     id: "lava-lamp",
     name: "LAVA LAMP",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2185,7 +2185,7 @@ const fireworks = [
     id: "black-cat-mad-cat",
     name: "BLACK CAT MAD CAT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   }
@@ -2195,7 +2195,7 @@ const fireworks = [
     id: "mad-monkey",
     name: "MAD MONKEY",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2204,7 +2204,7 @@ const fireworks = [
     id: "maximum-velocity",
     name: "MAXIMUM VELOCITY",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2213,7 +2213,7 @@ const fireworks = [
     id: "black-cat-medusa-fountain",
     name: "BLACK CAT MEDUSA FOUNTAIN",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2222,7 +2222,7 @@ const fireworks = [
     id: "meow",
     name: "MEOW",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2231,7 +2231,7 @@ const fireworks = [
     id: "military-tank-fire-storm",
     name: "MILITARY TANK / FIRE STORM",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties"]
   },
@@ -2240,7 +2240,7 @@ const fireworks = [
     id: "neon-jelly-beans",
     name: "NEON JELLY BEANS",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2249,7 +2249,7 @@ const fireworks = [
     id: "pika-pika",
     name: "PIKA PIKA",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2258,7 +2258,7 @@ const fireworks = [
     id: "pina-colada",
     name: "PINA COLADA",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2267,7 +2267,7 @@ const fireworks = [
     id: "poop",
     name: "POOP",
     price: 4.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties", "Daytime Fun"]
   },
@@ -2276,7 +2276,7 @@ const fireworks = [
     id: "princess-purse",
     name: "PRINCESS PURSE",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2285,7 +2285,7 @@ const fireworks = [
     id: "puppy-fountain",
     name: "PUPPY FOUNTAIN",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties"]
   },
@@ -2294,7 +2294,7 @@ const fireworks = [
     id: "puzzle-cube",
     name: "PUZZLE CUBE",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2303,7 +2303,7 @@ const fireworks = [
     id: "pyro-patrick",
     name: "PYRO PATRICK",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2312,7 +2312,7 @@ const fireworks = [
     id: "pyro-shed",
     name: "PYRO SHED",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2321,7 +2321,7 @@ const fireworks = [
     id: "rainbow-cupcake",
     name: "RAINBOW CUPCAKE",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2330,7 +2330,7 @@ const fireworks = [
     id: "shazaam",
     name: "SHAZAAM",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2339,7 +2339,7 @@ const fireworks = [
     id: "skull-fountain",
     name: "SKULL FOUNTAIN",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2348,7 +2348,7 @@ const fireworks = [
     id: "snail-it",
     name: "SNAIL IT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2357,7 +2357,7 @@ const fireworks = [
     id: "snow-cone",
     name: "SNOW CONE",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2366,7 +2366,7 @@ const fireworks = [
     id: "black-cat-spark-my-interest",
     name: "BLACK CAT SPARK MY INTEREST",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2375,7 +2375,7 @@ const fireworks = [
     id: "sponge-boy",
     name: "SPONGE BOY",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2384,7 +2384,7 @@ const fireworks = [
     id: "stellar-beauty",
     name: "STELLAR BEAUTY",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2393,7 +2393,7 @@ const fireworks = [
     id: "toadally-purple",
     name: "TOADALLY PURPLE",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2402,7 +2402,7 @@ const fireworks = [
     id: "unicorn",
     name: "UNICORN",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Novelties"]
   },
@@ -2411,7 +2411,7 @@ const fireworks = [
     id: "young-man",
     name: "YOUNG MAN",
     price: 4.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2420,7 +2420,7 @@ const fireworks = [
     id: "brothers-zapper-dapper-doo",
     name: "BROTHERS ZAPPER DAPPER DOO",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   }
@@ -2430,7 +2430,7 @@ const fireworks = [
     id: "handheld-snow-cone",
     name: "HANDHELD SNOW CONE",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2439,7 +2439,7 @@ const fireworks = [
     id: "brothers-hit-parade",
     name: "BROTHERS HIT PARADE",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2448,7 +2448,7 @@ const fireworks = [
     id: "light-saber",
     name: "LIGHT SABER",
     price: 6.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2466,7 +2466,7 @@ const fireworks = [
     id: "brothers-photon-phaser",
     name: "BROTHERS PHOTON PHASER",
     price: 7.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2475,7 +2475,7 @@ const fireworks = [
     id: "sword-boys",
     name: "SWORD - BOYS",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2484,7 +2484,7 @@ const fireworks = [
     id: "sword-girls",
     name: "SWORD - GIRLS",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Hand-Held Fountains",
     shopTypes: ["Fountains", "Hand-Held Fountains"]
   },
@@ -2494,7 +2494,7 @@ const fireworks = [
     id: "closed-caption",
     name: "CLOSED CAPTION",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2503,7 +2503,7 @@ const fireworks = [
     id: "dragon-throne",
     name: "DRAGON THRONE",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2512,7 +2512,7 @@ const fireworks = [
     id: "black-cat-energizer",
     name: "BLACK CAT ENERGIZER",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2521,7 +2521,7 @@ const fireworks = [
     id: "black-cat-neon-lights",
     name: "BLACK CAT NEON LIGHTS",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2530,7 +2530,7 @@ const fireworks = [
     id: "spartan-scream",
     name: "SPARTAN SCREAM",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2539,7 +2539,7 @@ const fireworks = [
     id: "black-cat-tropical-thunder",
     name: "BLACK CAT TROPICAL THUNDER",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2548,7 +2548,7 @@ const fireworks = [
     id: "black-cat-high-strung-with-mine-19-shot",
     name: "BLACK CAT HIGH STRUNG WITH MINE - 19 SHOT",
     price: 35.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains", "Cakes"]
   },
@@ -2557,7 +2557,7 @@ const fireworks = [
     id: "mr-hippo",
     name: "MR HIPPO",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Fountains",
     shopTypes: ["Fountains"]
   },
@@ -2567,7 +2567,7 @@ const fireworks = [
     id: "saturn-missile-battery-25-shot",
     name: "SATURN MISSILE BATTERY - 25 SHOT",
     price: 2.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Saturn Missiles",
     shopTypes: ["Saturn Missiles", "Cakes"]
   },
@@ -2585,7 +2585,7 @@ const fireworks = [
     id: "saturn-missile-battery-100-shot",
     name: "SATURN MISSILE BATTERY - 100 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Saturn Missiles",
     shopTypes: ["Saturn Missiles", "Cakes"]
   },
@@ -2594,7 +2594,7 @@ const fireworks = [
     id: "saturn-missile-battery-300-shot",
     name: "SATURN MISSILE BATTERY - 300 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Saturn Missiles",
     shopTypes: ["Saturn Missiles", "Cakes"]
   },
@@ -2603,7 +2603,7 @@ const fireworks = [
     id: "saturn-missile-battery-325-shot",
     name: "SATURN MISSILE BATTERY - 325 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Saturn Missiles",
     shopTypes: ["Saturn Missiles", "Cakes"]
   },
@@ -2612,7 +2612,7 @@ const fireworks = [
     id: "red-bright-and-blue-660-shot",
     name: "RED BRIGHT & BLUE - 660 SHOT",
     price: 135.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Saturn Missiles",
     shopTypes: ["Saturn Missiles", "Cakes", "Big Show Finale"]
   }
@@ -2622,7 +2622,7 @@ const fireworks = [
     id: "25-zombies-25-shot",
     name: "25 ZOMBIES - 25 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2631,7 +2631,7 @@ const fireworks = [
     id: "brothers-badhareday-49-shot",
     name: "BROTHERS BADHAREDAY - 49 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2640,7 +2640,7 @@ const fireworks = [
     id: "beach-vibes-12-shot",
     name: "BEACH VIBES - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2649,7 +2649,7 @@ const fireworks = [
     id: "black-blade-16-shot",
     name: "BLACK BLADE - 16 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2658,7 +2658,7 @@ const fireworks = [
     id: "brothers-bling-bling-36-shot",
     name: "BROTHERS BLING BLING - 36 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2667,7 +2667,7 @@ const fireworks = [
     id: "blue-16-shot",
     name: "BLUE - 16 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2676,7 +2676,7 @@ const fireworks = [
     id: "bonnie-and-clyde-19-shot",
     name: "BONNIE AND CLYDE - 19 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2685,7 +2685,7 @@ const fireworks = [
     id: "brothers-boomerbang-55-shot",
     name: "BROTHERS BOOMERBANG - 55 SHOT",
     price: 32.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2694,7 +2694,7 @@ const fireworks = [
     id: "born-on-the-bayou-16-shot",
     name: "BORN ON THE BAYOU - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2703,7 +2703,7 @@ const fireworks = [
     id: "break-out-6-shot",
     name: "BREAK OUT - 6 SHOT",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2712,7 +2712,7 @@ const fireworks = [
     id: "cat-fight-9-shot",
     name: "CAT FIGHT - 9 SHOT",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2721,7 +2721,7 @@ const fireworks = [
     id: "chameleon-2000-16-shot",
     name: "CHAMELEON 2000 - 16 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2730,7 +2730,7 @@ const fireworks = [
     id: "cherry-bomber-10-shot",
     name: "CHERRY BOMBER - 10 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2739,7 +2739,7 @@ const fireworks = [
     id: "color-me-america-20-shot",
     name: "COLOR ME AMERICA - 20 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2757,7 +2757,7 @@ const fireworks = [
     id: "color-pearl-48-shot",
     name: "COLOR PEARL - 48 SHOT",
     price: 2.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2766,7 +2766,7 @@ const fireworks = [
     id: "colorful-skies-25-shot",
     name: "COLORFUL SKIES - 25 SHOT",
     price: 17.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2775,7 +2775,7 @@ const fireworks = [
     id: "brothers-copper-devils-25-shot",
     name: "BROTHERS COPPER DEVILS - 25 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2784,7 +2784,7 @@ const fireworks = [
     id: "county-fair-16-shot",
     name: "COUNTY FAIR - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2793,7 +2793,7 @@ const fireworks = [
     id: "crazy-cat-12-shot",
     name: "CRAZY CAT - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2802,7 +2802,7 @@ const fireworks = [
     id: "brothers-crimson-bulls-25-shot",
     name: "BROTHERS CRIMSON BULLS - 25 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2811,7 +2811,7 @@ const fireworks = [
     id: "dang-it-carl-28-shot",
     name: "DANG IT CARL - 28 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -2821,7 +2821,7 @@ const fireworks = [
     id: "dino-pack-7-shot",
     name: "DINO PACK - 7 SHOT",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2830,7 +2830,7 @@ const fireworks = [
     id: "dirty-dancing-in-the-sky-7-shot",
     name: "DIRTY DANCING IN THE SKY - 7 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2839,7 +2839,7 @@ const fireworks = [
     id: "dope-16-shot",
     name: "DOPE - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2848,7 +2848,7 @@ const fireworks = [
     id: "fast-trigger-200-shot",
     name: "FAST TRIGGER - 200 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2857,7 +2857,7 @@ const fireworks = [
     id: "black-cat-fear-city-25-shot",
     name: "BLACK CAT FEAR CITY - 25 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2866,7 +2866,7 @@ const fireworks = [
     id: "fire-in-the-hole-7-shot",
     name: "FIRE IN THE HOLE - 7 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2875,7 +2875,7 @@ const fireworks = [
     id: "fireworks-fiesta-96-shot",
     name: "FIREWORKS FIESTA - 96 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2884,7 +2884,7 @@ const fireworks = [
     id: "fish-frenzy-9-shot",
     name: "FISH FRENZY - 9 SHOT",
     price: 7.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2893,7 +2893,7 @@ const fireworks = [
     id: "for-our-flag-16-shot",
     name: "FOR OUR FLAG - 16 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2902,7 +2902,7 @@ const fireworks = [
     id: "friki-tiki-36-shot",
     name: "FRIKI TIKI - 36 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2911,7 +2911,7 @@ const fireworks = [
     id: "garden-in-spring-7-shot",
     name: "GARDEN IN SPRING - 7 SHOT",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2920,7 +2920,7 @@ const fireworks = [
     id: "ghost-peppers-10-shot",
     name: "GHOST PEPPERS - 10 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2929,7 +2929,7 @@ const fireworks = [
     id: "great-expectation-9-shot",
     name: "GREAT EXPECTATION - 9 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2938,7 +2938,7 @@ const fireworks = [
     id: "happy-camper-23-shot",
     name: "HAPPY CAMPER - 23 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2947,7 +2947,7 @@ const fireworks = [
     id: "happy-fireworks-36-shot",
     name: "HAPPY FIREWORKS - 36 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2956,7 +2956,7 @@ const fireworks = [
     id: "hard-hitter-16-shot",
     name: "HARD HITTER - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2965,7 +2965,7 @@ const fireworks = [
     id: "henchmen-12-shot",
     name: "HENCHMEN - 12 SHOT",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2974,7 +2974,7 @@ const fireworks = [
     id: "high-five-25-shot",
     name: "HIGH FIVE - 25 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2983,7 +2983,7 @@ const fireworks = [
     id: "hot-n-spicy-9-shot",
     name: "HOT N SPICY - 9 SHOT",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -2992,7 +2992,7 @@ const fireworks = [
     id: "hyper-ii-96-shot",
     name: "HYPER II - 96 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -3002,7 +3002,7 @@ const fireworks = [
     id: "brothers-instant-replay-12-shot",
     name: "BROTHERS INSTANT REPLAY - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3011,7 +3011,7 @@ const fireworks = [
     id: "brothers-irish-luck-12-shot",
     name: "BROTHERS IRISH LUCK - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3020,7 +3020,7 @@ const fireworks = [
     id: "legendary-beast-16-shot",
     name: "LEGENDARY BEAST - 16 SHOT",
     price: 27.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3029,7 +3029,7 @@ const fireworks = [
     id: "black-cat-liquid-sky-20-shot",
     name: "BLACK CAT LIQUID SKY - 20 SHOT",
     price: 17.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3038,7 +3038,7 @@ const fireworks = [
     id: "little-nemo-19-shot",
     name: "LITTLE NEMO - 19 SHOT",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3047,7 +3047,7 @@ const fireworks = [
     id: "loud-and-nasty-12-shot",
     name: "LOUD & NASTY - 12 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3056,7 +3056,7 @@ const fireworks = [
     id: "loyal-to-all-25-shot",
     name: "LOYAL TO ALL - 25 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3065,7 +3065,7 @@ const fireworks = [
     id: "lucky-streak-66-shot",
     name: "LUCKY STREAK - 66 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3074,7 +3074,7 @@ const fireworks = [
     id: "macaron-pops-16-shot",
     name: "MACARON POPS - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3083,7 +3083,7 @@ const fireworks = [
     id: "magical-barrage-100-shot",
     name: "MAGICAL BARRAGE - 100 SHOT",
     price: 5.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3092,7 +3092,7 @@ const fireworks = [
     id: "brothers-magnificent-festival-25-shot",
     name: "BROTHERS MAGNIFICENT FESTIVAL - 25 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3101,7 +3101,7 @@ const fireworks = [
     id: "mecha-mermaid-30-shot",
     name: "MECHA MERMAID - 30 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3110,7 +3110,7 @@ const fireworks = [
     id: "brothers-mechanical-bug-100-shot",
     name: "BROTHERS MECHANICAL BUG - 100 SHOT",
     price: 32.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3119,7 +3119,7 @@ const fireworks = [
     id: "metal-hawk-30-shot",
     name: "METAL HAWK - 30 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3128,7 +3128,7 @@ const fireworks = [
     id: "micro-pigzilla-108-shot",
     name: "MICRO PIGZILLA - 108 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3137,7 +3137,7 @@ const fireworks = [
     id: "mighty-python-cobra-19-shot",
     name: "MIGHTY PYTHON / COBRA - 19 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3146,7 +3146,7 @@ const fireworks = [
     id: "brothers-mobile-menace-35-shot",
     name: "BROTHERS MOBILE MENACE - 35 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3155,7 +3155,7 @@ const fireworks = [
     id: "mondays-suck-16-shot",
     name: "MONDAYS SUCK - 16 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3164,7 +3164,7 @@ const fireworks = [
     id: "monstrous-10-shot",
     name: "MONSTROUS - 10 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3173,7 +3173,7 @@ const fireworks = [
     id: "nation-ovation-16-shot",
     name: "NATION OVATION - 16 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -3183,7 +3183,7 @@ const fireworks = [
     id: "neon-rainbow-16-shot",
     name: "NEON RAINBOW - 16 SHOT",
     price: 12.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3192,7 +3192,7 @@ const fireworks = [
     id: "black-cat-night-defense-210-shot",
     name: "BLACK CAT NIGHT DEFENSE - 210 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3201,7 +3201,7 @@ const fireworks = [
     id: "night-moves-18-shot",
     name: "NIGHT MOVES - 18 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3210,7 +3210,7 @@ const fireworks = [
     id: "no-trespassing-16-shot",
     name: "NO TRESPASSING - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3219,7 +3219,7 @@ const fireworks = [
     id: "oklahoma-kicker-16-shot",
     name: "OKLAHOMA KICKER - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3228,7 +3228,7 @@ const fireworks = [
     id: "original-gangster-16-shot",
     name: "ORIGINAL GANGSTER - 16 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3237,7 +3237,7 @@ const fireworks = [
     id: "pink-16-shot",
     name: "PINK - 16 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3246,7 +3246,7 @@ const fireworks = [
     id: "pop-rocks-16-shot",
     name: "POP ROCKS - 16 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3255,7 +3255,7 @@ const fireworks = [
     id: "brothers-poppycock-46-shot",
     name: "BROTHERS POPPYCOCK - 46 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3264,7 +3264,7 @@ const fireworks = [
     id: "black-cat-pro-200-16-shot",
     name: "BLACK CAT PRO 200 - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3273,7 +3273,7 @@ const fireworks = [
     id: "pulse-pounder-50-shot",
     name: "PULSE POUNDER - 50 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3282,7 +3282,7 @@ const fireworks = [
     id: "punk-rockers-10-shot",
     name: "PUNK ROCKERS - 10 SHOT",
     price: 10.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3291,7 +3291,7 @@ const fireworks = [
     id: "purple-haze-16-shot",
     name: "PURPLE HAZE - 16 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3300,7 +3300,7 @@ const fireworks = [
     id: "pyro-lips-16-shot",
     name: "PYRO LIPS - 16 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3309,7 +3309,7 @@ const fireworks = [
     id: "brothers-red-white-and-blue-salute-24-shot",
     name: "BROTHERS RED WHITE & BLUE SALUTE - 24 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3318,7 +3318,7 @@ const fireworks = [
     id: "brothers-sabertooth-40-shot",
     name: "BROTHERS SABERTOOTH - 40 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3327,7 +3327,7 @@ const fireworks = [
     id: "brothers-sapphire-clan-25-shot",
     name: "BROTHERS SAPPHIRE CLAN - 25 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3336,7 +3336,7 @@ const fireworks = [
     id: "sirens-call-7-shot",
     name: "SIRENS CALL - 7 SHOT",
     price: 17.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3345,7 +3345,7 @@ const fireworks = [
     id: "sleeping-with-the-fishes-25-shot",
     name: "SLEEPING WITH THE FISHES - 25 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3354,7 +3354,7 @@ const fireworks = [
     id: "space-monkey-18-shot",
     name: "SPACE MONKEY - 18 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -3364,7 +3364,7 @@ const fireworks = [
     id: "brothers-stop-n-go-25-shot",
     name: "BROTHERS STOP N GO - 25 SHOT",
     price: 22.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3373,7 +3373,7 @@ const fireworks = [
     id: "super-sonic-25-shot",
     name: "SUPER SONIC - 25 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3382,7 +3382,7 @@ const fireworks = [
     id: "texas-rattlesnake-16-shot",
     name: "TEXAS RATTLESNAKE - 16 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3391,7 +3391,7 @@ const fireworks = [
     id: "tombstone-9-shot",
     name: "TOMBSTONE - 9 SHOT",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3400,7 +3400,7 @@ const fireworks = [
     id: "uncle-ham-22-shot",
     name: "UNCLE HAM - 22 SHOT",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3409,7 +3409,7 @@ const fireworks = [
     id: "firecracker-joe-vendetta-12-shot",
     name: "FIRECRACKER JOE VENDETTA - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3418,7 +3418,7 @@ const fireworks = [
     id: "whack-job-7-shot",
     name: "WHACK JOB - 7 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3427,7 +3427,7 @@ const fireworks = [
     id: "white-tiger-9-shot",
     name: "WHITE TIGER - 9 SHOT",
     price: 7.50,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3436,7 +3436,7 @@ const fireworks = [
     id: "widows-kiss-25-shot",
     name: "WIDOWS KISS - 25 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3445,7 +3445,7 @@ const fireworks = [
     id: "brothers-wildcard-49-shot",
     name: "BROTHERS WILDCARD - 49 SHOT",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3454,7 +3454,7 @@ const fireworks = [
     id: "winter-ballistic-20-shot",
     name: "WINTER BALLISTIC - 20 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3464,7 +3464,7 @@ const fireworks = [
     id: "screaming-mimi-girandola",
     name: "SCREAMING MIMI - GIRANDOLA",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items"]
   },
@@ -3473,7 +3473,7 @@ const fireworks = [
     id: "abduction-20-shot",
     name: "ABDUCTION - 20 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
   },
@@ -3482,7 +3482,7 @@ const fireworks = [
     id: "alien-disco-girandola",
     name: "ALIEN DISCO - GIRANDOLA",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items"]
   },
@@ -3491,7 +3491,7 @@ const fireworks = [
     id: "alien-invasion-21-shot",
     name: "ALIEN INVASION - 21 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
   },
@@ -3500,7 +3500,7 @@ const fireworks = [
     id: "beam-me-up-girandola",
     name: "BEAM ME UP - GIRANDOLA",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items"]
   },
@@ -3509,7 +3509,7 @@ const fireworks = [
     id: "brothers-cleared-for-takeoff-girandola",
     name: "BROTHERS CLEARED FOR TAKEOFF - GIRANDOLA",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items"]
   },
@@ -3518,7 +3518,7 @@ const fireworks = [
     id: "return-to-roswell-26-shot",
     name: "RETURN TO ROSWELL - 26 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
   },
@@ -3527,7 +3527,7 @@ const fireworks = [
     id: "whistling-bunghole-21-shot",
     name: "WHISTLING BUNGHOLE - 21 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Girandola",
     shopTypes: ["Girandola", "Flying Items", "Big Show Finale"]
   }
@@ -3537,7 +3537,7 @@ const fireworks = [
     id: "agent-of-boom-37-shot",
     name: "AGENT OF BOOM - 37 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3546,7 +3546,7 @@ const fireworks = [
     id: "alpha-dog-21-shot",
     name: "ALPHA DOG - 21 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3555,7 +3555,7 @@ const fireworks = [
     id: "audio-graffiti-16-shot",
     name: "AUDIO GRAFFITI - 16 SHOT",
     price: 35.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3564,7 +3564,7 @@ const fireworks = [
     id: "brothers-bamboozle-42-shot",
     name: "BROTHERS BAMBOOZLE - 42 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3573,7 +3573,7 @@ const fireworks = [
     id: "banana-split-16-shot",
     name: "BANANA SPLIT - 16 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3582,7 +3582,7 @@ const fireworks = [
     id: "brothers-big-top-42-shot",
     name: "BROTHERS BIG TOP - 42 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3591,7 +3591,7 @@ const fireworks = [
     id: "brothers-black-badge-30-shot",
     name: "BROTHERS BLACK BADGE - 30 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3600,7 +3600,7 @@ const fireworks = [
     id: "brew-crew-35-shot",
     name: "BREW CREW - 35 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3609,7 +3609,7 @@ const fireworks = [
     id: "brothers-current-events-30-shot",
     name: "BROTHERS CURRENT EVENTS - 30 SHOT",
     price: 35.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3618,7 +3618,7 @@ const fireworks = [
     id: "black-cat-dragons-breath-15-shot",
     name: "BLACK CAT DRAGONS BREATH - 15 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3627,7 +3627,7 @@ const fireworks = [
     id: "gigablaster-480-shot",
     name: "GIGABLASTER - 480 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3636,7 +3636,7 @@ const fireworks = [
     id: "good-thinkin-lincoln-134-shot",
     name: "GOOD THINKIN LINCOLN - 134 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3645,7 +3645,7 @@ const fireworks = [
     id: "brothers-gunslinger-25-shot",
     name: "BROTHERS GUNSLINGER - 25 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3654,7 +3654,7 @@ const fireworks = [
     id: "honk-for-freedom-155-shot",
     name: "HONK FOR FREEDOM - 155 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3663,7 +3663,7 @@ const fireworks = [
     id: "i-love-it-loud-33-shot",
     name: "I LOVE IT LOUD - 33 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3672,7 +3672,7 @@ const fireworks = [
     id: "brothers-light-brigade-42-shot",
     name: "BROTHERS LIGHT BRIGADE - 42 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3681,7 +3681,7 @@ const fireworks = [
     id: "brothers-my-vice-48-shot",
     name: "BROTHERS MY VICE - 48 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3690,7 +3690,7 @@ const fireworks = [
     id: "nishiki-forest-9-shot",
     name: "NISHIKI FOREST - 9 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3699,7 +3699,7 @@ const fireworks = [
     id: "our-baby-reveal-12-shot",
     name: "OUR BABY REVEAL - 12 SHOT",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3708,7 +3708,7 @@ const fireworks = [
     id: "power-of-pink-25-shot",
     name: "POWER OF PINK - 25 SHOT",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3717,7 +3717,7 @@ const fireworks = [
     id: "pyro-approved-12-shot",
     name: "PYRO APPROVED - 12 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -3727,7 +3727,7 @@ const fireworks = [
     id: "rounders-25-shot",
     name: "ROUNDERS - 25 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3736,7 +3736,7 @@ const fireworks = [
     id: "black-cat-shark-bite-15-shot",
     name: "BLACK CAT SHARK BITE - 15 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3745,7 +3745,7 @@ const fireworks = [
     id: "sour-patch-lemonade-16-shot",
     name: "SOUR PATCH LEMONADE - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3754,7 +3754,7 @@ const fireworks = [
     id: "brothers-striker-serpent-16-shot",
     name: "BROTHERS STRIKER SERPENT - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3763,7 +3763,7 @@ const fireworks = [
     id: "taco-truck-24-shot",
     name: "TACO TRUCK - 24 SHOT",
     price: 30.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3772,7 +3772,7 @@ const fireworks = [
     id: "brothers-tempt-fate-20-shot",
     name: "BROTHERS TEMPT FATE - 20 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3781,7 +3781,7 @@ const fireworks = [
     id: "black-cat-terminator-cakes-15-shot",
     name: "BLACK CAT TERMINATOR CAKES - 15 SHOT",
     price: 40.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3790,7 +3790,7 @@ const fireworks = [
     id: "brothers-trophy-wife-480-shot",
     name: "BROTHERS TROPHY WIFE - 480 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3799,7 +3799,7 @@ const fireworks = [
     id: "uss-hornet-89-shot",
     name: "USS HORNET - 89 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -3808,7 +3808,7 @@ const fireworks = [
     id: "v-day-26-shot",
     name: "V-DAY - 26 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3817,7 +3817,7 @@ const fireworks = [
     id: "whiskey-business-20-shot",
     name: "WHISKEY BUSINESS - 20 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -3827,7 +3827,7 @@ const fireworks = [
     id: "aerial-privilege-168-shot",
     name: "AERIAL PRIVILEGE - 168 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3836,7 +3836,7 @@ const fireworks = [
     id: "al-capone-16-shot",
     name: "AL CAPONE - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3845,7 +3845,7 @@ const fireworks = [
     id: "all-jacked-up-25-shot",
     name: "ALL JACKED UP - 25 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3854,7 +3854,7 @@ const fireworks = [
     id: "amazing-ballet-220-shot",
     name: "AMAZING BALLET - 220 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3863,7 +3863,7 @@ const fireworks = [
     id: "americas-finest-25-shot",
     name: "AMERICA'S FINEST - 25 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -3872,7 +3872,7 @@ const fireworks = [
     id: "assassin-9-shot",
     name: "ASSASSIN - 9 SHOT",
     price: 80.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3881,7 +3881,7 @@ const fireworks = [
     id: "baby-face-nelson-16-shot",
     name: "BABY FACE NELSON - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3890,7 +3890,7 @@ const fireworks = [
     id: "backroad-rebel-24-shot",
     name: "BACKROAD REBEL - 24 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3899,7 +3899,7 @@ const fireworks = [
     id: "backyard-bully-44-shot",
     name: "BACKYARD BULLY - 44 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3908,7 +3908,7 @@ const fireworks = [
     id: "brothers-bad-company-35-shot",
     name: "BROTHERS BAD COMPANY - 35 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3917,7 +3917,7 @@ const fireworks = [
     id: "batter-up-53-shot",
     name: "BATTER UP - 53 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3926,7 +3926,7 @@ const fireworks = [
     id: "black-hole-43-shot",
     name: "BLACK HOLE - 43 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3935,7 +3935,7 @@ const fireworks = [
     id: "brothers-blond-joke-36-shot",
     name: "BROTHERS BLOND JOKE - 36 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3944,7 +3944,7 @@ const fireworks = [
     id: "brothers-blue-blitz-80-shot",
     name: "BROTHERS BLUE BLITZ - 80 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3953,7 +3953,7 @@ const fireworks = [
     id: "border-patrol-159-shot",
     name: "BORDER PATROL - 159 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3962,7 +3962,7 @@ const fireworks = [
     id: "bucks-and-ducks-12-shot",
     name: "BUCKS & DUCKS - 12 SHOT",
     price: 80.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3971,7 +3971,7 @@ const fireworks = [
     id: "bulldog-bash-34-shot",
     name: "BULLDOG BASH - 34 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3980,7 +3980,7 @@ const fireworks = [
     id: "capitalists-195-shot",
     name: "CAPITALISTS - 195 SHOT",
     price: 175.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -3989,7 +3989,7 @@ const fireworks = [
     id: "black-cat-caribbean-palms-20-shot",
     name: "BLACK CAT CARIBBEAN PALMS - 20 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -3998,7 +3998,7 @@ const fireworks = [
     id: "carolina-reaper-20-shot",
     name: "CAROLINA REAPER - 20 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4007,7 +4007,7 @@ const fireworks = [
     id: "cerdo-loco-27-shot",
     name: "CERDO LOCO - 27 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4016,7 +4016,7 @@ const fireworks = [
     id: "chain-reaction-86-shot",
     name: "CHAIN REACTION - 86 SHOT",
     price: 110.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   }
@@ -4026,7 +4026,7 @@ const fireworks = [
     id: "colors-of-america-10-shot",
     name: "COLORS OF AMERICA - 10 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4035,7 +4035,7 @@ const fireworks = [
     id: "country-roots-25-shot",
     name: "COUNTRY ROOTS - 25 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes", 
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4044,7 +4044,7 @@ const fireworks = [
     id: "dapper-dan-12-shot",
     name: "DAPPER DAN - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4053,7 +4053,7 @@ const fireworks = [
     id: "dillinger-121-shot",
     name: "DILLINGER - 121 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4062,7 +4062,7 @@ const fireworks = [
     id: "dont-tread-on-me-8-shot",
     name: "DONT TREAD ON ME - 8 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4071,7 +4071,7 @@ const fireworks = [
     id: "dripping-donut-33-shot",
     name: "DRIPPING DONUT - 33 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4080,7 +4080,7 @@ const fireworks = [
     id: "black-cat-fiesta-grande-216-shot",
     name: "BLACK CAT FIESTA GRANDE - 216 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4089,7 +4089,7 @@ const fireworks = [
     id: "fire-ninja-33-shot",
     name: "FIRE NINJA - 33 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4098,7 +4098,7 @@ const fireworks = [
     id: "frank-the-enforcer-12-shot",
     name: "FRANK THE ENFORCER - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4107,7 +4107,7 @@ const fireworks = [
     id: "galaxia-138-shot",
     name: "GALAXIA - 138 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4116,7 +4116,7 @@ const fireworks = [
     id: "ghost-fleet-9-shot",
     name: "GHOST FLEET - 9 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4125,7 +4125,7 @@ const fireworks = [
     id: "grand-finale-432-shot",
     name: "GRAND FINALE - 432 SHOT",
     price: 120.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4134,7 +4134,7 @@ const fireworks = [
     id: "black-cat-gunfighter-from-hell-49-shot",
     name: "BLACK CAT GUNFIGHTER FROM HELL - 49 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4143,7 +4143,7 @@ const fireworks = [
     id: "hammer-20-shot",
     name: "HAMMER - 20 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4152,7 +4152,7 @@ const fireworks = [
     id: "hardcore-cycles-16-shot",
     name: "HARDCORE CYCLES - 16 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4161,7 +4161,7 @@ const fireworks = [
     id: "brothers-high-falutin-49-shot",
     name: "BROTHERS HIGH FALUTIN - 49 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4170,7 +4170,7 @@ const fireworks = [
     id: "brothers-hit-the-road-jack-49-shot",
     name: "BROTHERS HIT THE ROAD JACK - 49 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4179,7 +4179,7 @@ const fireworks = [
     id: "hog-smash-28-shot",
     name: "HOG SMASH - 28 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4188,7 +4188,7 @@ const fireworks = [
     id: "hot-box-30-shot",
     name: "HOT BOX - 30 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4197,7 +4197,7 @@ const fireworks = [
     id: "brothers-howling-wolf-36-shot",
     name: "BROTHERS HOWLING WOLF - 36 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4206,7 +4206,7 @@ const fireworks = [
     id: "inferno-core-33-shot",
     name: "INFERNO CORE - 33 SHOT",
     price: 80.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4215,7 +4215,7 @@ const fireworks = [
     id: "brothers-inside-job-49-shot",
     name: "BROTHERS INSIDE JOB - 49 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -4225,7 +4225,7 @@ const fireworks = [
     id: "johnny-da-jackal-16-shot",
     name: "JOHNNY DA JACKAL - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4234,7 +4234,7 @@ const fireworks = [
     id: "kabuki-12-shot",
     name: "KABUKI - 12 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4243,7 +4243,7 @@ const fireworks = [
     id: "lets-go-brandon-30-shot",
     name: "LETS GO BRANDON - 30 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4252,7 +4252,7 @@ const fireworks = [
     id: "loud-and-proud-21-shot",
     name: "LOUD & PROUD - 21 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4261,7 +4261,7 @@ const fireworks = [
     id: "lunar-eclipse-24-shot",
     name: "LUNAR ECLIPSE - 24 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4270,7 +4270,7 @@ const fireworks = [
     id: "machine-gun-kelly-16-shot",
     name: "MACHINE GUN KELLY - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4279,7 +4279,7 @@ const fireworks = [
     id: "mad-dog-coll-16-shot",
     name: "MAD DOG COLL - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4288,7 +4288,7 @@ const fireworks = [
     id: "magic-balls-12-shot",
     name: "MAGIC BALLS - 12 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4297,7 +4297,7 @@ const fireworks = [
     id: "brothers-major-combat-119-shot",
     name: "BROTHERS MAJOR COMBAT - 119 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4306,7 +4306,7 @@ const fireworks = [
     id: "man-cave-36-shot",
     name: "MAN CAVE - 36 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4315,7 +4315,7 @@ const fireworks = [
     id: "master-of-our-enemies-172-shot",
     name: "MASTER OF OUR ENEMIES - 172 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4324,7 +4324,7 @@ const fireworks = [
     id: "maximum-insanity-182-shot",
     name: "MAXIMUM INSANITY - 182 SHOT",
     price: 175.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4333,7 +4333,7 @@ const fireworks = [
     id: "mechapigzilla-136-shot",
     name: "MECHAPIGZILLA - 136 SHOT",
     price: 175.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4342,7 +4342,7 @@ const fireworks = [
     id: "brothers-midnight-204-shot",
     name: "BROTHERS MIDNIGHT - 204 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4351,7 +4351,7 @@ const fireworks = [
     id: "firecracker-joe-misconduct-30-shot",
     name: "FIRECRACKER JOE MISCONDUCT - 30 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4360,7 +4360,7 @@ const fireworks = [
     id: "moe-the-money-man-17-shot",
     name: "MOE THE MONEY MAN - 17 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4369,7 +4369,7 @@ const fireworks = [
     id: "mug-shots-25-shot",
     name: "MUG SHOTS - 25 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4378,7 +4378,7 @@ const fireworks = [
     id: "neon-jellyfish-12-shot",
     name: "NEON JELLYFISH - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4387,7 +4387,7 @@ const fireworks = [
     id: "black-cat-neon-peacock-93-shot",
     name: "BLACK CAT NEON PEACOCK - 93 SHOT",
     price: 110.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4396,7 +4396,7 @@ const fireworks = [
     id: "opposing-forces-48-shot",
     name: "OPPOSING FORCES - 48 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4405,7 +4405,7 @@ const fireworks = [
     id: "out-for-blood-30-shot",
     name: "OUT FOR BLOOD - 30 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4414,7 +4414,7 @@ const fireworks = [
     id: "pablo-escobar-21-shot",
     name: "PABLO ESCOBAR - 21 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -4424,7 +4424,7 @@ const fireworks = [
     id: "brothers-parrots-prattle-36-shot",
     name: "BROTHERS PARROTS PRATTLE - 36 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4433,7 +4433,7 @@ const fireworks = [
     id: "party-meter-154-shot",
     name: "PARTY METER - 154 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4442,7 +4442,7 @@ const fireworks = [
     id: "patriotic-af-42-shot",
     name: "PATRIOTIC AF - 42 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4451,7 +4451,7 @@ const fireworks = [
     id: "pigzilla-142-shot",
     name: "PIGZILLA - 142 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4460,7 +4460,7 @@ const fireworks = [
     id: "poppin-pineapple-27-shot",
     name: "POPPIN PINEAPPLE - 27 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4469,7 +4469,7 @@ const fireworks = [
     id: "porcupine-planet-55-shot",
     name: "PORCUPINE PLANET - 55 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4478,7 +4478,7 @@ const fireworks = [
     id: "pretty-boy-floyd-12-shot",
     name: "PRETTY BOY FLOYD - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4487,7 +4487,7 @@ const fireworks = [
     id: "pretty-pants-bandit-15-shot",
     name: "PRETTY PANTS BANDIT - 15 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4496,7 +4496,7 @@ const fireworks = [
     id: "pucker-up-33-shot",
     name: "PUCKER UP - 33 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4505,7 +4505,7 @@ const fireworks = [
     id: "black-cat-purple-monster-16-shot",
     name: "BLACK CAT PURPLE MONSTER - 16 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4514,7 +4514,7 @@ const fireworks = [
     id: "pyro-tsunami-25-shot",
     name: "PYRO TSUNAMI - 25 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4523,7 +4523,7 @@ const fireworks = [
     id: "rat-face-willy-20-shot",
     name: "RAT FACE WILLY - 20 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4532,7 +4532,7 @@ const fireworks = [
     id: "brothers-remix-24-shot",
     name: "BROTHERS REMIX - 24 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4541,7 +4541,7 @@ const fireworks = [
     id: "revolver-9-shot",
     name: "REVOLVER - 9 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4550,7 +4550,7 @@ const fireworks = [
     id: "rifle-9-shot",
     name: "RIFLE - 9 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4559,7 +4559,7 @@ const fireworks = [
     id: "brothers-rowdy-ride-185-shot",
     name: "BROTHERS ROWDY RIDE - 185 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4568,7 +4568,7 @@ const fireworks = [
     id: "roy-l-flush-18-shot",
     name: "ROY L FLUSH - 18 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4577,7 +4577,7 @@ const fireworks = [
     id: "royal-assorted-cakes-16-shot",
     name: "ROYAL ASSORTED CAKES - 16 SHOT",
     price: 50.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4586,7 +4586,7 @@ const fireworks = [
     id: "sailors-nightmare-16-shot",
     name: "SAILORS NIGHTMARE - 16 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4595,7 +4595,7 @@ const fireworks = [
     id: "sammy-the-bull-16-shot",
     name: "SAMMY THE BULL - 16 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4604,7 +4604,7 @@ const fireworks = [
     id: "brothers-sassy-600-shot",
     name: "BROTHERS SASSY - 600 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4613,7 +4613,7 @@ const fireworks = [
     id: "brothers-saturday-night-special-36-shot",
     name: "BROTHERS SATURDAY NIGHT SPECIAL - 36 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   }
@@ -4623,7 +4623,7 @@ const fireworks = [
     id: "semi-auto-9-shot",
     name: "SEMI AUTO - 9 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4632,7 +4632,7 @@ const fireworks = [
     id: "shock-jock-36-shot",
     name: "SHOCK JOCK - 36 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4641,7 +4641,7 @@ const fireworks = [
     id: "brothers-sky-wide-204-shot",
     name: "BROTHERS SKY WIDE - 204 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4650,7 +4650,7 @@ const fireworks = [
     id: "skyfire-278-shot",
     name: "SKYFIRE - 278 SHOT",
     price: 60.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4659,7 +4659,7 @@ const fireworks = [
     id: "smoke-master-30-shot",
     name: "SMOKE MASTER - 30 SHOT",
     price: 80.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4668,7 +4668,7 @@ const fireworks = [
     id: "space-explorer-20-shot",
     name: "SPACE EXPLORER - 20 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4677,7 +4677,7 @@ const fireworks = [
     id: "spider-bite-12-shot",
     name: "SPIDER BITE - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4686,7 +4686,7 @@ const fireworks = [
     id: "sprinkle-donuts-10-shot",
     name: "SPRINKLE DONUTS - 10 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4695,7 +4695,7 @@ const fireworks = [
     id: "step-mutha-16-shot",
     name: "STEP MUTHA - 16 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4704,7 +4704,7 @@ const fireworks = [
     id: "super-stunt-12-shot",
     name: "SUPER STUNT - 12 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4713,7 +4713,7 @@ const fireworks = [
     id: "brothers-swift-n-shimmery-44-shot",
     name: "BROTHERS SWIFT N SHIMMERY - 44 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4722,7 +4722,7 @@ const fireworks = [
     id: "ta-dah-36-shot",
     name: "TA-DAH - 36 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4731,7 +4731,7 @@ const fireworks = [
     id: "teflon-don-20-shot",
     name: "TEFLON DON - 20 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4740,7 +4740,7 @@ const fireworks = [
     id: "the-wild-beast-42-shot",
     name: "THE WILD BEAST - 42 SHOT",
     price: 75.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4749,7 +4749,7 @@ const fireworks = [
     id: "tony-the-big-tuna-12-shot",
     name: "TONY THE BIG TUNA - 12 SHOT",
     price: 45.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4758,7 +4758,7 @@ const fireworks = [
     id: "too-hot-to-handle-35-shot",
     name: "TOO HOT TO HANDLE - 35 SHOT",
     price: 100.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4767,7 +4767,7 @@ const fireworks = [
     id: "triumphant-25-shot",
     name: "TRIUMPHANT - 25 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4776,7 +4776,7 @@ const fireworks = [
     id: "trump-train-250-shot",
     name: "TRUMP TRAIN - 250 SHOT",
     price: 250.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4785,7 +4785,7 @@ const fireworks = [
     id: "trumps-revenge-250-shot",
     name: "TRUMPS REVENGE - 250 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4794,7 +4794,7 @@ const fireworks = [
     id: "brothers-uncle-sams-answer-16-shot",
     name: "BROTHERS UNCLE SAMS ANSWER - 16 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   },
@@ -4803,7 +4803,7 @@ const fireworks = [
     id: "usa-conqueror-192-shot",
     name: "USA CONQUEROR - 192 SHOT",
     price: 175.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4812,7 +4812,7 @@ const fireworks = [
     id: "black-cat-voodoo-rain-36-shot",
     name: "BLACK CAT VOODOO RAIN - 36 SHOT",
     price: 70.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes"]
   },
@@ -4821,7 +4821,7 @@ const fireworks = [
     id: "war-games-156-shot",
     name: "WAR GAMES - 156 SHOT",
     price: 125.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4830,7 +4830,7 @@ const fireworks = [
     id: "brothers-war-hero-30-shot",
     name: "BROTHERS WAR HERO - 30 SHOT",
     price: 65.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic"]
   }
@@ -4840,7 +4840,7 @@ const fireworks = [
     id: "black-cat-american-freedom-train-180-shot",
     name: "BLACK CAT AMERICAN FREEDOM TRAIN - 180 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4849,7 +4849,7 @@ const fireworks = [
     id: "blood-is-pumping-72-shot",
     name: "BLOOD IS PUMPING - 72 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4858,7 +4858,7 @@ const fireworks = [
     id: "born-leaders-757-shot",
     name: "BORN LEADERS - 757 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   },
@@ -4867,7 +4867,7 @@ const fireworks = [
     id: "fourth-of-july-finale-75-shot",
     name: "FOURTH OF JULY FINALE - 75 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4876,7 +4876,7 @@ const fireworks = [
     id: "on-freedoms-wing-72-shot",
     name: "ON FREEDOMS WING - 72 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4885,7 +4885,7 @@ const fireworks = [
     id: "red-white-and-brew-84-shot",
     name: "RED WHITE & BREW - 84 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Patriotic", "Big Show Finale"]
   },
@@ -4894,7 +4894,7 @@ const fireworks = [
     id: "smoke-color-waterfall-28-shot",
     name: "SMOKE COLOR WATERFALL - 28 SHOT",
     price: 150.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Smoke", "Big Show Finale"]
   },
@@ -4903,7 +4903,7 @@ const fireworks = [
     id: "vip-180-shot",
     name: "VIP - 180 SHOT",
     price: 200.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Cakes",
     shopTypes: ["Cakes", "Big Show Finale"]
   }
@@ -5511,7 +5511,7 @@ const fireworks = [
     id: "bring-the-rain-rockets",
     name: "BRING THE RAIN ROCKET",
     price: 25.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Pop Bottle Rockets",
     shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
@@ -5520,7 +5520,7 @@ const fireworks = [
     id: "starshot-rockets",
     name: "STARSHOT ROCKET",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Pop Bottle Rockets",
     shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
@@ -5538,7 +5538,7 @@ const fireworks = [
     id: "brothers-corona-rockets",
     name: "BROTHERS CORONA ROCKET",
     price: 15.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Pop Bottle Rockets",
     shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
@@ -5547,7 +5547,7 @@ const fireworks = [
     id: "screaming-banshee-rockets",
     name: "SCREAMING BANSHEE ROCKET",
     price: 20.00,
-    unitLabel: "1 PIECE",
+    unitLabel: "EACH",
     category: "Pop Bottle Rockets",
     shopTypes: ["Pop Bottle Rockets", "Flying Items"]
   },
@@ -5563,7 +5563,7 @@ const fireworks = [
   {
     itemNumber: 2792,
     id: "strobe-light-g-and-a",
-    name: "STROBE LIGHT - G&A",
+    name: "STROBE LIGHT",
     price: 35.00,
     unitLabel: "1 BOX",
     category: "Misc Tag Additions",
@@ -5599,7 +5599,7 @@ const fireworks = [
   {
     itemNumber: 2796,
     id: "strobe-rocket-g-and-a",
-    name: "STROBE ROCKET - G&A",
+    name: "STROBE ROCKET",
     price: 35.00,
     unitLabel: "1 PACK",
     category: "Rockets",
@@ -5763,7 +5763,7 @@ const floatingTotalText = document.getElementById("floating-total-text");
 
 // This creates the plus and minus button rows for a firework card.
 // Some fireworks have one buying option.
-// Other fireworks have multiple buying options, like 1 piece or 1 box.
+// Other fireworks have multiple buying options, like EACH or 1 box.
 function createBuyingOptionsHtml(firework) {
   // This checks if this firework has multiple buying options.
   if (firework.options !== undefined) {
