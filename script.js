@@ -523,6 +523,369 @@ const fireworks = [
     category: "Parachutes",
     shopTypes: ["Parachutes", "Daytime Fun"]
   }
+  ,
+  {
+    itemNumber: 175,
+    id: "colored-sparklers-8-inch",
+    name: "COLORED SPARKLERS - 8 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "colored-sparklers-8-inch-box",
+        label: "1 BOX OF 6 SPARKLERS",
+        price: 1.00
+      },
+      {
+        id: "colored-sparklers-8-inch-pack",
+        label: "1 PACK OF 12 BOXES",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 180,
+    id: "gold-sparklers-8-inch",
+    name: "GOLD SPARKLERS - 8 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "gold-sparklers-8-inch-box",
+        label: "1 BOX OF 6 SPARKLERS",
+        price: 1.00
+      },
+      {
+        id: "gold-sparklers-8-inch-pack",
+        label: "1 PACK OF 12 BOXES",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 185,
+    id: "colored-sparklers-10-inch",
+    name: "COLORED SPARKLERS - 10 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "colored-sparklers-10-inch-box",
+        label: "1 BOX OF 8 SPARKLERS",
+        price: 1.25
+      },
+      {
+        id: "colored-sparklers-10-inch-pack",
+        label: "1 PACK OF 12 BOXES",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 190,
+    id: "gold-sparklers-10-inch",
+    name: "GOLD SPARKLERS - 10 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "gold-sparklers-10-inch-box",
+        label: "1 BOX OF 8 SPARKLERS",
+        price: 1.25
+      },
+      {
+        id: "gold-sparklers-10-inch-pack",
+        label: "1 PACK OF 12 BOXES",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 195,
+    id: "gold-sparklers-20-inch",
+    name: "GOLD SPARKLERS - 20 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "gold-sparklers-20-inch-pack",
+        label: "1 PACK OF 4 SPARKLERS",
+        price: 5.00
+      },
+      {
+        id: "gold-sparklers-20-inch-bundle",
+        label: "1 BUNDLE OF 6 PACKS",
+        price: 30.00
+      }
+    ]
+  },
+  {
+    itemNumber: 200,
+    id: "gold-magic-sparklers-20-inch",
+    name: "GOLD MAGIC SPARKLERS - 20 INCH",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "gold-magic-sparklers-20-inch-piece",
+        label: "1 SPARKLER",
+        price: 1.25
+      },
+      {
+        id: "gold-magic-sparklers-20-inch-pack",
+        label: "1 PACK OF 6",
+        price: 7.50
+      }
+    ]
+  },
+  {
+    itemNumber: 205,
+    id: "black-cat-morning-glory-sparklers",
+    name: "BLACK CAT MORNING GLORY SPARKLERS",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "black-cat-morning-glory-sparklers-bundle",
+        label: "1 BUNDLE OF 6 SPARKLERS",
+        price: 0.65
+      },
+      {
+        id: "black-cat-morning-glory-sparklers-box",
+        label: "1 BOX OF 24 BUNDLES",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 210,
+    id: "morning-glory-sparklers",
+    name: "MORNING GLORY SPARKLERS",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "morning-glory-sparklers-bundle",
+        label: "1 BUNDLE OF 6 SPARKLERS",
+        price: 0.65
+      },
+      {
+        id: "morning-glory-sparklers-box",
+        label: "1 BOX OF 24 BUNDLES",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 215,
+    id: "morning-glory-sparklers-36-count",
+    name: "MORNING GLORY SPARKLERS - 36 COUNT BAG",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "morning-glory-sparklers-36-count-piece",
+        label: "1 SPARKLER",
+        price: 0.85
+      },
+      {
+        id: "morning-glory-sparklers-36-count-bag",
+        label: "1 BAG OF 36",
+        price: 5.00
+      }
+    ]
+  },
+  {
+    itemNumber: 220,
+    id: "black-cat-neon-sparklers",
+    name: "BLACK CAT NEON SPARKLERS",
+    category: "Sparklers",
+    shopTypes: ["Sparklers", "Daytime Fun"],
+    options: [
+      {
+        id: "black-cat-neon-sparklers-piece",
+        label: "1 SPARKLER",
+        price: 0.70
+      },
+      {
+        id: "black-cat-neon-sparklers-pack",
+        label: "1 PACK OF 5",
+        price: 3.50
+      }
+    ]
+  },
+
+  {
+    itemNumber: 225,
+    id: "roman-candle-5-ball",
+    name: "ROMAN CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "roman-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 0.75
+      },
+      {
+        id: "roman-candle-5-ball-pack",
+        label: "1 PACK OF 6",
+        price: 4.50
+      }
+    ]
+  },
+  {
+    itemNumber: 230,
+    id: "americas-candle-5-ball",
+    name: "AMERICA'S CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "americas-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "americas-candle-5-ball-pack",
+        label: "1 PACK OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 235,
+    id: "brothers-blackjack-candle-5-ball",
+    name: "BROTHERS BLACKJACK CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "brothers-blackjack-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "brothers-blackjack-candle-5-ball-pack",
+        label: "1 PACK OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 240,
+    id: "contraband-candle-5-ball",
+    name: "CONTRABAND CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "contraband-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "contraband-candle-5-ball-pack",
+        label: "1 PACK OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 245,
+    id: "brothers-crazy-aces-candle-5-ball",
+    name: "BROTHERS CRAZY ACES CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "brothers-crazy-aces-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "brothers-crazy-aces-candle-5-ball-pack",
+        label: "1 PACK OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 250,
+    id: "dragon-tails-candle-5-ball",
+    name: "DRAGON TAILS CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "dragon-tails-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "dragon-tails-candle-5-ball-pack",
+        label: "1 PACK OF 5",
+        price: 15.00
+      }
+    ]
+  },
+  {
+    itemNumber: 255,
+    id: "black-cat-gatlin-pack-5-ball",
+    name: "BLACK CAT GATLIN PACK - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "black-cat-gatlin-pack-5-ball-candle",
+        label: "1 CANDLE",
+        price: 3.50
+      },
+      {
+        id: "black-cat-gatlin-pack-5-ball-pack",
+        label: "1 PACK OF 8",
+        price: 28.00
+      }
+    ]
+  },
+  {
+    itemNumber: 260,
+    id: "black-cat-premium-candle-5-ball",
+    name: "BLACK CAT PREMIUM CANDLE - 5 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "black-cat-premium-candle-5-ball-piece",
+        label: "1 CANDLE",
+        price: 3.00
+      },
+      {
+        id: "black-cat-premium-candle-5-ball-pack",
+        label: "1 PACK OF 4",
+        price: 12.00
+      }
+    ]
+  },
+  {
+    itemNumber: 265,
+    id: "thundermania-candle-8-ball",
+    name: "THUNDERMANIA CANDLE - 8 BALL",
+    category: "Roman Candles",
+    shopTypes: ["Roman Candles"],
+    options: [
+      {
+        id: "thundermania-candle-8-ball-piece",
+        label: "1 CANDLE",
+        price: 2.00
+      },
+      {
+        id: "thundermania-candle-8-ball-pack",
+        label: "1 PACK OF 4",
+        price: 8.00
+      }
+    ]
+  }
 ];
 
 // This stores the customer's selected quantities.
