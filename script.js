@@ -272,7 +272,7 @@ const fireworks = [
     itemNumber: 90,
     id: "punks",
     name: "PUNKS",
-    price: 0.25,
+    price: 0.03,
     unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
@@ -281,7 +281,7 @@ const fireworks = [
     itemNumber: 95,
     id: "black-cat-punks",
     name: "BLACK CAT PUNKS",
-    price: 0.25,
+    price: 0.24,
     unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
@@ -290,7 +290,7 @@ const fireworks = [
     itemNumber: 100,
     id: "jumbo-punks",
     name: "JUMBO PUNKS",
-    price: 0.25,
+    price: 0.30,
     unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
