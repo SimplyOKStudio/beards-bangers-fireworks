@@ -6213,15 +6213,6 @@ inventorySearch.addEventListener("keydown", function (event) {
   }
 });
 
-// This closes the phone keyboard when the customer scrolls down the page.
-window.addEventListener("scroll", function () {
-  // This checks if the search box is currently active.
-  if (document.activeElement === inventorySearch) {
-    // This tells the search box to stop being active.
-    inventorySearch.blur();
-  }
-});
-
 // This runs the displayFireworks function when the page loads.
 displayFireworks();
 
