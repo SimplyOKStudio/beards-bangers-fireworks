@@ -5820,7 +5820,7 @@ function displayFireworks() {
   let fireworksToShow = fireworks;
 
   // This shows only Popular Picks when the Popular Picks button is selected.
-  if (activeCategory === "Popular Picks") {
+  if (activeCategory === "Popular Picks" && searchText.length === 0) {
     fireworksToShow = popularPickIds
       .map(function (fireworkId) {
         return fireworks.find(function (firework) {
@@ -5832,31 +5832,49 @@ function displayFireworks() {
       });
   }
 
-  // This keeps only fireworks that match the search text and selected category.
   const filteredFireworks = fireworksToShow.filter(function (firework) {
-    // This checks the firework name.
-    const nameMatches = firework.name.toLowerCase().includes(searchText);
+  // This checks if the customer has typed anything into the search box.
+  const searchIsBeingUsed = searchText.length > 0;
 
-    // This checks the firework category.
-    const categoryMatches = firework.category.toLowerCase().includes(searchText);
+  // This checks the firework name.
+  const nameMatches = firework.name.toLowerCase().includes(searchText);
 
-    // This checks the buying option labels if this firework has multiple buying options.
-    const optionMatches =
-      firework.options !== undefined &&
-      firework.options.some(function (option) {
-        return option.label.toLowerCase().includes(searchText);
-      });
+  // This checks the main category.
+  const categoryMatches = firework.category.toLowerCase().includes(searchText);
 
-    // This checks whether the selected shopping type matches this firework.
-    const selectedShopTypeMatches =
-      activeCategory === "All" ||
-      activeCategory === "Popular Picks" ||
-      firework.category === activeCategory ||
-      firework.shopTypes.includes(activeCategory);
+  // This checks the extra shop type labels.
+  const shopTypeMatches =
+    firework.shopTypes !== undefined &&
+    firework.shopTypes.some(function (shopType) {
+      return shopType.toLowerCase().includes(searchText);
+    });
 
-    // This keeps the firework if it matches the search and the selected shopping type.
-    return (nameMatches || categoryMatches || optionMatches) && selectedShopTypeMatches;
-  });
+  // This checks buying option labels if the firework has multiple buying options.
+  const optionMatches =
+    firework.options !== undefined &&
+    firework.options.some(function (option) {
+      return option.label.toLowerCase().includes(searchText);
+    });
+
+  // This checks if the firework belongs to the selected category button.
+  const selectedCategoryMatches =
+    activeCategory === "All" ||
+    activeCategory === "Popular Picks" ||
+    firework.category === activeCategory ||
+    firework.shopTypes.includes(activeCategory);
+
+  // This combines all the search checks.
+  const searchMatches =
+    nameMatches || categoryMatches || shopTypeMatches || optionMatches;
+
+  // If the customer is typing, search the whole catalog and ignore the selected category.
+  if (searchIsBeingUsed) {
+    return searchMatches;
+  }
+
+  // If the customer is not typing, use the selected category button normally.
+  return selectedCategoryMatches;
+});
   // This shows a message if no fireworks match the search.
   if (filteredFireworks.length === 0) {
     // This tells the customer nothing matched their search.
