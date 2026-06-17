@@ -996,11 +996,6 @@ body {
   padding-bottom: 130px;
 }
 
-/* This hides the My List bar while the customer is typing in search. */
-body.search-is-active #floating-list-button {
-  display: none;
-}
-
 /* Keeps the search bar and My List button visible while customers scroll. */
 #sticky-shop-bar {
   position: sticky;

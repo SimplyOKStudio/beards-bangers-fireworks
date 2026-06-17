@@ -6192,18 +6192,6 @@ function setCategoryFilter(categoryName) {
 // This reruns the Full Inventory display every time the customer types in the search box.
 inventorySearch.addEventListener("input", displayFireworks);
 
-// This hides the My List bar while the customer is typing in the search box.
-inventorySearch.addEventListener("focus", function () {
-  // This adds a class to the page body.
-  document.body.classList.add("search-is-active");
-});
-
-// This brings the My List bar back when the customer leaves the search box.
-inventorySearch.addEventListener("blur", function () {
-  // This removes the class from the page body.
-  document.body.classList.remove("search-is-active");
-});
-
 // This closes the phone keyboard when the customer presses Enter/Search.
 inventorySearch.addEventListener("keydown", function (event) {
   // This checks if the customer pressed the Enter key.
