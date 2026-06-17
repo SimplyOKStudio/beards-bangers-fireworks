@@ -1000,3 +1000,54 @@ body {
 body.search-is-active #floating-list-button {
   display: none;
 }
+
+/* Keeps the search bar and My List button visible while customers scroll. */
+#sticky-shop-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #111;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Makes the search box take most of the top bar space. */
+#sticky-shop-bar #inventory-search {
+  flex: 1;
+  margin: 0;
+}
+
+/* Changes the old floating button into a top-bar button. */
+#sticky-shop-bar #floating-list-button {
+  position: static;
+  width: auto;
+  min-width: 115px;
+  margin: 0;
+  padding: 8px 10px;
+}
+
+/* Keeps the My List button readable without getting too tall. */
+#sticky-shop-bar #floating-list-button span {
+  display: block;
+  line-height: 1.15;
+}
+
+/* Makes the helper text smaller so the top bar stays compact. */
+#sticky-shop-bar #floating-list-help {
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+/* Makes the top bar stack nicely on very small phones. */
+@media (max-width: 480px) {
+  #sticky-shop-bar {
+    flex-direction: column;
+  }
+
+  #sticky-shop-bar #floating-list-button {
+    width: 100%;
+  }
+}

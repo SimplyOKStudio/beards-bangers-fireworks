@@ -135,8 +135,29 @@
   </div>
   <!-- Category filter buttons end here. -->
 
+  <!-- This sticky top bar keeps search and the customer list visible. -->
+<div id="sticky-shop-bar">
+
   <!-- This search box lets customers quickly find fireworks by name or category. -->
   <input id="inventory-search" type="text" placeholder="Search fireworks...">
+
+  <!-- This button lets customers jump to their selected fireworks list anytime. -->
+  <button id="floating-list-button" onclick="scrollToCustomerList()">
+
+    <!-- This is the top line of the list button. -->
+    <span id="floating-list-label">My List</span>
+
+    <!-- This tells customers the list button can be clicked or tapped. -->
+    <span id="floating-list-help">Tap to view list</span>
+
+    <!-- This shows how many items are currently selected. -->
+    <span id="floating-item-count">0 items</span>
+
+    <!-- This shows the estimated total on the list button. -->
+    <span id="floating-total-text">$0.00</span>
+  </button>
+
+</div>
 
   <!-- JavaScript will automatically place our firework cards inside this empty box. -->
   <div id="fireworks-container"></div>
@@ -162,20 +183,6 @@
   </section>
   <!-- My Fireworks List section ends here. -->
 
-  <!-- This floating button stays on the screen so customers can jump to their list anytime. -->
-<button id="floating-list-button" onclick="scrollToCustomerList()">
-  <!-- This is the top line of the floating button. -->
-  <span id="floating-list-label">My List</span>
-
-  <!-- This tells customers the floating button can be clicked or tapped. -->
-  <span id="floating-list-help">Tap to view list</span>
-
-  <!-- This shows how many items are currently selected. -->
-  <span id="floating-item-count">0 items</span>
-
-  <!-- This shows the estimated total on the floating button. -->
-  <span id="floating-total-text">$0.00</span>
-</button>
   <!-- This connects our JavaScript file so the buttons can do things. -->
   <script src="script.js"></script>
 </body>
