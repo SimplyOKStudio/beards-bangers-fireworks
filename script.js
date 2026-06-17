@@ -270,32 +270,31 @@ const fireworks = [
   ,
   {
     itemNumber: 90,
-    id: "punks-100-count-bundle",
-    name: "PUNKS - 100 COUNT BUNDLE",
-    price: 1.50,
-    unitLabel: "1 BUNDLE OF 100",
+    id: "punks",
+    name: "PUNKS",
+    price: 0.25,
+    unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
   },
   {
     itemNumber: 95,
-    id: "jumbo-punks-50-count-bundle",
-    name: "JUMBO PUNKS - 50 COUNT BUNDLE",
-    price: 6.00,
-    unitLabel: "1 BUNDLE OF 50",
+    id: "black-cat-punks",
+    name: "BLACK CAT PUNKS",
+    price: 0.25,
+    unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
   },
   {
     itemNumber: 100,
-    id: "extra-large-punks-50-count-bundle",
-    name: "EXTRA LARGE PUNKS - 50 COUNT BUNDLE",
-    price: 7.50,
-    unitLabel: "1 BUNDLE OF 50",
+    id: "jumbo-punks",
+    name: "JUMBO PUNKS",
+    price: 0.25,
+    unitLabel: "EACH",
     category: "Punks",
     shopTypes: ["Punks", "Accessories"]
   },
-
   {
     itemNumber: 105,
     id: "x-wing-missile-4-inch",
