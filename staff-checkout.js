@@ -50,9 +50,10 @@ const staffCategoryNames = [
   "Patriotic"
 ];
 
-// This reads the encoded order from the website link.
+// This reads the submitted order from the staff checkout link.
 function getStaffOrderFromUrl() {
   const currentUrl = new URL(window.location.href);
+
   const encodedOrder = currentUrl.searchParams.get("order");
 
   if (!encodedOrder) {
@@ -61,14 +62,16 @@ function getStaffOrderFromUrl() {
 
   try {
     const decodedOrderText = decodeURIComponent(atob(encodedOrder));
+
     return JSON.parse(decodedOrderText);
   } catch (error) {
     console.error("Could not decode staff order link:", error);
+
     return null;
   }
 }
 
-// This loads the submitted order into the staff checkout page.
+// This loads the submitted customer order into the staff page.
 function loadStaffOrder() {
   const staffOrder = getStaffOrderFromUrl();
 
@@ -82,12 +85,27 @@ function loadStaffOrder() {
   }
 
   staffTicketNumber = staffOrder.ticketNumber || "No ticket number";
+
   staffSelectedFireworks = staffOrder.items || {};
 
-  updateStaffOrder();
+  updateStaffPage();
 }
 
-// This displays the staff category buttons.
+// This changes the selected category.
+function setStaffCategory(categoryName) {
+  activeStaffCategory = categoryName;
+
+  const staffSearch = document.getElementById("staff-product-search");
+
+  if (staffSearch) {
+    staffSearch.value = "";
+    staffSearch.blur();
+  }
+
+  updateStaffPage();
+}
+
+// This shows all category buttons.
 function displayStaffCategoryButtons() {
   const categoryButtonsBox = document.getElementById("staff-category-buttons");
 
@@ -110,22 +128,7 @@ function displayStaffCategoryButtons() {
   categoryButtonsBox.innerHTML = categoryButtonHtml.join("");
 }
 
-// This changes the selected staff category.
-function setStaffCategory(categoryName) {
-  activeStaffCategory = categoryName;
-
-  const staffSearch = document.getElementById("staff-product-search");
-
-  if (staffSearch) {
-    staffSearch.value = "";
-    staffSearch.blur();
-  }
-
-  displayStaffCategoryButtons();
-  displayStaffProductResults();
-}
-
-// This checks if a product matches the selected staff category.
+// This checks if a product belongs in the selected category.
 function staffProductMatchesCategory(firework) {
   if (activeStaffCategory === "All") {
     return true;
@@ -144,7 +147,7 @@ function staffProductMatchesCategory(firework) {
   return categoryMatches || shopTypeMatches;
 }
 
-// This checks if a product matches staff search text.
+// This checks if a product matches the staff search.
 function staffProductMatchesSearch(firework, searchText) {
   const nameMatches = firework.name.toLowerCase().includes(searchText);
 
@@ -165,20 +168,38 @@ function staffProductMatchesSearch(firework, searchText) {
   return nameMatches || categoryMatches || shopTypeMatches || optionMatches;
 }
 
-// This creates add buttons for normal products and multi-option products.
-function createStaffProductAddHtml(firework) {
+// This gets the current quantity for one product or option.
+function getStaffQuantity(fireworkId) {
+  return staffSelectedFireworks[fireworkId] || 0;
+}
+
+// This creates the plus/minus row for one product or option.
+function createStaffQuantityControls(fireworkId) {
+  const quantity = getStaffQuantity(fireworkId);
+
+  return `
+    <div class="staff-product-quantity-row">
+      <button type="button" onclick="subtractStaffFirework('${fireworkId}')">-</button>
+
+      <span>${quantity}</span>
+
+      <button type="button" onclick="addStaffFirework('${fireworkId}')">+</button>
+    </div>
+  `;
+}
+
+// This creates price rows for normal products and multi-option products.
+function createStaffProductPriceRows(firework) {
   if (firework.options !== undefined) {
     return firework.options.map(function (option) {
       return `
-        <div class="staff-add-option-row">
-          <div>
-            <p class="staff-add-option-label">${option.label}</p>
-            <p class="staff-add-option-price">$${option.price.toFixed(2)}</p>
+        <div class="staff-product-option-row">
+          <div class="staff-product-option-info">
+            <p class="staff-product-option-label">${option.label}</p>
+            <p class="staff-product-option-price">$${option.price.toFixed(2)}</p>
           </div>
 
-          <button type="button" onclick="addStaffFirework('${option.id}')">
-            Add
-          </button>
+          ${createStaffQuantityControls(option.id)}
         </div>
       `;
     }).join("");
@@ -187,21 +208,19 @@ function createStaffProductAddHtml(firework) {
   const unitLabel = firework.unitLabel || "EACH";
 
   return `
-    <div class="staff-add-option-row">
-      <div>
-        <p class="staff-add-option-label">${unitLabel}</p>
-        <p class="staff-add-option-price">$${firework.price.toFixed(2)}</p>
+    <div class="staff-product-option-row">
+      <div class="staff-product-option-info">
+        <p class="staff-product-option-label">${unitLabel}</p>
+        <p class="staff-product-option-price">$${firework.price.toFixed(2)}</p>
       </div>
 
-      <button type="button" onclick="addStaffFirework('${firework.id}')">
-        Add
-      </button>
+      ${createStaffQuantityControls(firework.id)}
     </div>
   `;
 }
 
-// This displays products staff can add to the current order.
-function displayStaffProductResults() {
+// This displays the product cards staff can browse and edit.
+function displayStaffProducts() {
   const staffSearch = document.getElementById("staff-product-search");
   const productResults = document.getElementById("staff-product-results");
 
@@ -228,7 +247,7 @@ function displayStaffProductResults() {
   }
 
   if (productsToShow.length === 0) {
-    productResults.innerHTML = "<p>No products found.</p>";
+    productResults.innerHTML = "<p class='staff-empty-message'>No products found.</p>";
     return;
   }
 
@@ -238,9 +257,10 @@ function displayStaffProductResults() {
     productCards.push(`
       <div class="staff-product-card">
         <h3>${firework.name}</h3>
-        <p>${firework.category}</p>
 
-        ${createStaffProductAddHtml(firework)}
+        <p class="staff-product-category">${firework.category}</p>
+
+        ${createStaffProductPriceRows(firework)}
       </div>
     `);
   });
@@ -248,8 +268,60 @@ function displayStaffProductResults() {
   productResults.innerHTML = productCards.join("");
 }
 
-// This updates the editable staff order list and totals.
-function updateStaffOrder() {
+// This calculates subtotal, tax, total, and item count.
+function calculateStaffTotals() {
+  let subtotal = 0;
+
+  let itemCount = 0;
+
+  const selectedIds = Object.keys(staffSelectedFireworks);
+
+  selectedIds.forEach(function (fireworkId) {
+    const firework = findFireworkById(fireworkId);
+
+    if (!firework) {
+      return;
+    }
+
+    const quantity = staffSelectedFireworks[fireworkId];
+
+    if (quantity <= 0) {
+      return;
+    }
+
+    subtotal = subtotal + quantity * firework.price;
+
+    itemCount = itemCount + quantity;
+  });
+
+  const estimatedTax = subtotal * taxRate;
+
+  const estimatedTotal = subtotal + estimatedTax;
+
+  return {
+    subtotal: subtotal,
+    estimatedTax: estimatedTax,
+    estimatedTotal: estimatedTotal,
+    itemCount: itemCount
+  };
+}
+
+// This updates the My List button at the top.
+function updateStaffFloatingListButton() {
+  const floatingCount = document.getElementById("staff-floating-list-count");
+  const floatingTotal = document.getElementById("staff-floating-list-total");
+
+  const totals = calculateStaffTotals();
+
+  const itemWord = totals.itemCount === 1 ? "item" : "items";
+
+  floatingCount.textContent = totals.itemCount + " " + itemWord;
+
+  floatingTotal.textContent = "$" + totals.estimatedTotal.toFixed(2);
+}
+
+// This updates the current order list at the bottom.
+function updateStaffOrderList() {
   const ticketHeading = document.getElementById("staff-ticket-heading");
   const orderList = document.getElementById("staff-order-list");
   const subtotalText = document.getElementById("staff-subtotal-text");
@@ -258,18 +330,9 @@ function updateStaffOrder() {
 
   ticketHeading.textContent = "Ticket: " + staffTicketNumber;
 
-  let subtotal = 0;
   let orderLines = [];
 
   const selectedIds = Object.keys(staffSelectedFireworks);
-
-  if (selectedIds.length === 0) {
-    orderList.textContent = "No fireworks are currently in this staff order.";
-    subtotalText.textContent = "Subtotal: $0.00";
-    taxText.textContent = "Estimated Tax: $0.00";
-    totalText.textContent = "Estimated Total: $0.00";
-    return;
-  }
 
   selectedIds.forEach(function (fireworkId) {
     const firework = findFireworkById(fireworkId);
@@ -285,7 +348,6 @@ function updateStaffOrder() {
     }
 
     const itemTotal = quantity * firework.price;
-    subtotal = subtotal + itemTotal;
 
     orderLines.push(`
       <div class="staff-order-card">
@@ -293,13 +355,7 @@ function updateStaffOrder() {
 
         <p>$${firework.price.toFixed(2)} each</p>
 
-        <div class="staff-quantity-row">
-          <button type="button" onclick="subtractStaffFirework('${firework.id}')">-</button>
-
-          <span>${quantity}</span>
-
-          <button type="button" onclick="addStaffFirework('${firework.id}')">+</button>
-        </div>
+        ${createStaffQuantityControls(firework.id)}
 
         <p>Item Total: $${itemTotal.toFixed(2)}</p>
 
@@ -310,17 +366,31 @@ function updateStaffOrder() {
     `);
   });
 
-  orderList.innerHTML = orderLines.join("");
+  if (orderLines.length === 0) {
+    orderList.textContent = "No fireworks are currently in this staff order.";
+  } else {
+    orderList.innerHTML = orderLines.join("");
+  }
 
-  const estimatedTax = subtotal * taxRate;
-  const estimatedTotal = subtotal + estimatedTax;
+  const totals = calculateStaffTotals();
 
-  subtotalText.textContent = "Subtotal: $" + subtotal.toFixed(2);
-  taxText.textContent = "Estimated Tax: $" + estimatedTax.toFixed(2);
-  totalText.textContent = "Estimated Total: $" + estimatedTotal.toFixed(2);
+  subtotalText.textContent = "Subtotal: $" + totals.subtotal.toFixed(2);
+  taxText.textContent = "Estimated Tax: $" + totals.estimatedTax.toFixed(2);
+  totalText.textContent = "Estimated Total: $" + totals.estimatedTotal.toFixed(2);
 }
 
-// This adds one item to the staff order.
+// This updates the whole staff page.
+function updateStaffPage() {
+  displayStaffCategoryButtons();
+
+  displayStaffProducts();
+
+  updateStaffOrderList();
+
+  updateStaffFloatingListButton();
+}
+
+// This adds one item.
 function addStaffFirework(fireworkId) {
   if (staffSelectedFireworks[fireworkId] === undefined) {
     staffSelectedFireworks[fireworkId] = 0;
@@ -328,16 +398,10 @@ function addStaffFirework(fireworkId) {
 
   staffSelectedFireworks[fireworkId] = staffSelectedFireworks[fireworkId] + 1;
 
-  updateStaffOrder();
-
-  const orderList = document.getElementById("staff-order-list");
-
-  if (orderList) {
-    orderList.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  updateStaffPage();
 }
 
-// This subtracts one item from the staff order.
+// This subtracts one item.
 function subtractStaffFirework(fireworkId) {
   if (staffSelectedFireworks[fireworkId] === undefined) {
     return;
@@ -349,16 +413,16 @@ function subtractStaffFirework(fireworkId) {
     delete staffSelectedFireworks[fireworkId];
   }
 
-  updateStaffOrder();
+  updateStaffPage();
 }
 
-// This removes an item completely from the staff order.
+// This removes one item completely.
 function removeStaffFirework(fireworkId) {
   const firework = findFireworkById(fireworkId);
 
   if (!firework) {
     delete staffSelectedFireworks[fireworkId];
-    updateStaffOrder();
+    updateStaffPage();
     return;
   }
 
@@ -366,22 +430,32 @@ function removeStaffFirework(fireworkId) {
 
   if (shouldRemove === true) {
     delete staffSelectedFireworks[fireworkId];
-    updateStaffOrder();
+
+    updateStaffPage();
+  }
+}
+
+// This scrolls staff to the current order.
+function scrollToStaffOrder() {
+  const currentOrderHeading = document.getElementById("staff-current-order-heading");
+
+  if (currentOrderHeading) {
+    currentOrderHeading.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
 // This starts the staff checkout page.
 function startStaffCheckoutPage() {
-  loadStaffOrder();
-  displayStaffCategoryButtons();
-  displayStaffProductResults();
-
   const staffSearch = document.getElementById("staff-product-search");
 
   if (staffSearch) {
-    staffSearch.addEventListener("input", displayStaffProductResults);
+    staffSearch.addEventListener("input", function () {
+      updateStaffPage();
+    });
   }
+
+  loadStaffOrder();
 }
 
-// This runs when the staff checkout page opens.
+// This runs when the page opens.
 startStaffCheckoutPage();
