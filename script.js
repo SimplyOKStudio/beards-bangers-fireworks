@@ -640,6 +640,27 @@ function calculateCurrentListTotals() {
   };
 }
 
+// This builds a special staff checkout link that can reload the customer's selected items.
+function buildStaffCheckoutLink(ticketNumber) {
+  // This creates a small order object with only the ticket number and selected item quantities.
+  const staffOrder = {
+    ticketNumber: ticketNumber,
+    items: selectedFireworks
+  };
+
+  // This turns the order object into text.
+  const staffOrderText = JSON.stringify(staffOrder);
+
+  // This safely encodes the order text so it can travel inside a website link.
+  const encodedOrder = btoa(encodeURIComponent(staffOrderText));
+
+  // This gets the website's current domain, like https://beardsbangersfireworks.com.
+  const siteOrigin = window.location.origin;
+
+  // This builds the final staff checkout link.
+  return siteOrigin + "/staff-checkout.html?order=" + encodedOrder;
+}
+
 // This prepares the hidden Netlify form fields before the list is submitted.
 function prepareStandListSubmission() {
   // This gets the selected firework ids from the customer's list.
@@ -666,6 +687,8 @@ function prepareStandListSubmission() {
   // This creates a readable submission time.
   const submittedTime = new Date().toLocaleString();
 
+  const staffCheckoutLink = buildStaffCheckoutLink(ticketNumber);
+
   // This fills the hidden ticket number field.
   document.getElementById("submitted-ticket-number").value = ticketNumber;
 
@@ -683,6 +706,8 @@ function prepareStandListSubmission() {
 
   // This fills the hidden submitted time field.
   document.getElementById("submitted-time").value = submittedTime;
+
+  document.getElementById("submitted-staff-checkout-link").value = staffCheckoutLink;
 
   // This saves the ticket number temporarily so the confirmation can use it later if needed.
   sessionStorage.setItem("lastTicketNumber", ticketNumber);

@@ -1349,3 +1349,61 @@ body {
 }
 
 /* Human confirmation checkbox ends here. */
+
+/* Staff checkout proof-of-life styling starts here. */
+
+.staff-checkout-panel {
+  max-width: 760px;
+  margin: 28px auto;
+  padding: 22px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+}
+
+.staff-checkout-panel h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #fff3d2;
+}
+
+.staff-checkout-note {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.staff-order-card {
+  margin-bottom: 14px;
+  padding: 16px;
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-order-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff3d2;
+}
+
+.staff-order-card p {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.staff-total-box {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #07182e;
+  border: 2px solid #f0b72f;
+  border-radius: 14px;
+}
+
+.staff-total-box p {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+/* Staff checkout proof-of-life styling ends here. */
