@@ -6383,3 +6383,14 @@ function prepareStandListSubmission() {
   return true;
 }
 
+// This closes the phone keyboard when the customer starts scrolling.
+window.addEventListener("scroll", function () {
+  // This finds the search box.
+  const inventorySearch = document.getElementById("inventory-search");
+
+  // This checks if the search box exists and is currently being typed in.
+  if (inventorySearch && document.activeElement === inventorySearch) {
+    // This removes focus from the search box, which closes the mobile keyboard.
+    inventorySearch.blur();
+  }
+});
