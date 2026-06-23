@@ -1130,19 +1130,27 @@ body {
   padding: 8px;
   gap: 8px;
   background-color: #111111;
+  display: flex;
+  align-items: center;
 }
 
 #sticky-shop-bar #inventory-search {
-  min-height: 58px;
-  padding: 12px 14px;
+  flex: 1;
+  min-width: 0;
+  min-height: 62px;
+  height: 62px;
+  padding: 10px 14px;
+  margin: 0;
   font-size: 20px;
+  line-height: 1.1;
   border-radius: 16px;
 }
 
 #sticky-shop-bar #floating-list-button {
-  min-height: 58px;
-  min-width: 135px;
-  padding: 8px 10px;
+  width: 138px;
+  min-width: 138px;
+  min-height: 62px;
+  padding: 7px 9px;
   border-radius: 16px;
 
   display: grid;
@@ -1151,61 +1159,53 @@ body {
     "label count"
     "help help"
     "total total";
-  gap: 2px 8px;
+  column-gap: 6px;
+  row-gap: 3px;
   align-items: center;
+  justify-items: stretch;
 }
 
 #sticky-shop-bar #floating-list-label {
   grid-area: label;
   margin: 0;
-  font-size: 18px;
+  min-width: 0;
+  font-size: 17px;
   line-height: 1;
   text-align: left;
+  white-space: nowrap;
+}
+
+#sticky-shop-bar #floating-item-count {
+  grid-area: count;
+  margin: 0;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
 }
 
 #sticky-shop-bar #floating-list-help {
   grid-area: help;
   display: block;
   margin: 0;
-  font-size: 12px;
+  min-width: 0;
+  font-size: 11px;
   line-height: 1;
   font-weight: 700;
-  opacity: 0.85;
+  opacity: 0.9;
   text-align: center;
-}
-
-#sticky-shop-bar #floating-item-count {
-  grid-area: count;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1;
-  text-align: right;
+  white-space: nowrap;
 }
 
 #sticky-shop-bar #floating-total-text {
   grid-area: total;
   margin: 0;
-  font-size: 19px;
-  line-height: 1.1;
+  min-width: 0;
+  font-size: 20px;
+  line-height: 1;
   text-align: center;
-}
-
-/* On very small phones, keep the search and My List button side by side. */
-@media (max-width: 480px) {
-  #sticky-shop-bar {
-    flex-direction: row;
-    align-items: stretch;
-  }
-
-  #sticky-shop-bar #inventory-search {
-    width: auto;
-    min-width: 0;
-  }
-
-  #sticky-shop-bar #floating-list-button {
-    width: 145px;
-    flex-shrink: 0;
-  }
+  white-space: nowrap;
 }
 
 /* Compact sticky search and My List bar ends here. */
