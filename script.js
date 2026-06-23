@@ -6206,9 +6206,6 @@ function setCategoryFilter(categoryName) {
   displayFireworks();
 }
 
-// This reruns the Full Inventory display every time the customer types in the search box.
-inventorySearch.addEventListener("input", displayFireworks);
-
 // This closes the phone keyboard when the customer presses Enter/Search.
 inventorySearch.addEventListener("keydown", function (event) {
   // This checks if the customer pressed the Enter key.
@@ -6444,3 +6441,58 @@ window.addEventListener(
 );
 
 // Keyboard close helper ends here.
+
+// Search Done button helper starts here.
+
+// This finds the Done button beside the search box.
+const searchDoneButton = document.getElementById("search-done-button");
+
+// This shows the Done button while the customer is using search.
+function showSearchDoneButton() {
+  // This stops the function if the Done button does not exist.
+  if (!searchDoneButton) {
+    return;
+  }
+
+  // This shows the Done button.
+  searchDoneButton.classList.remove("hidden");
+}
+
+// This hides the Done button.
+function hideSearchDoneButton() {
+  // This stops the function if the Done button does not exist.
+  if (!searchDoneButton) {
+    return;
+  }
+
+  // This hides the Done button.
+  searchDoneButton.classList.add("hidden");
+}
+
+// This finishes search and closes the phone keyboard.
+function finishSearch() {
+  // This stops the function if the search box does not exist.
+  if (!inventorySearch) {
+    return;
+  }
+
+  // This removes focus from the search box, which closes the phone keyboard.
+  inventorySearch.blur();
+
+  // This hides the Done button after the keyboard closes.
+  hideSearchDoneButton();
+}
+
+// This shows the Done button when the customer taps into the search box.
+inventorySearch.addEventListener("focus", showSearchDoneButton);
+
+// This shows the Done button while the customer types.
+inventorySearch.addEventListener("input", function () {
+  // This updates the fireworks list.
+  displayFireworks();
+
+  // This shows the Done button while searching.
+  showSearchDoneButton();
+});
+
+// Search Done button helper ends here.

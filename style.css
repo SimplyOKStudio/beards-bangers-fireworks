@@ -1124,17 +1124,12 @@ body {
 
 /* Send List to Stand form ends here. */
 
-/* Fixed top search and My List bar starts here. */
+/* Clean sticky search, Done button, and My List bar starts here. */
 
 #sticky-shop-bar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2000;
-
-  width: 100%;
-  max-width: 760px;
+  z-index: 1000;
 
   padding: 8px;
   gap: 8px;
@@ -1145,17 +1140,21 @@ body {
   align-items: stretch;
 
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-/* This adds room so the fixed search/My List bar does not cover the products. */
-#full-inventory-section {
-  padding-top: 132px;
+/* This keeps the search bar and Done button on one clean row. */
+#search-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
 }
 
 /* Search bar */
-#sticky-shop-bar #inventory-search {
-  width: 100%;
+#search-row #inventory-search {
+  flex: 1;
+  width: auto;
+  min-width: 0;
   height: 56px;
   min-height: 56px;
   padding: 0 16px;
@@ -1163,6 +1162,28 @@ body {
   font-size: 20px;
   line-height: 56px;
   border-radius: 16px;
+}
+
+/* Done Searching button */
+#search-done-button {
+  width: 86px;
+  min-width: 86px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 10px;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  border-radius: 16px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+/* This keeps hidden things hidden. */
+#search-done-button.hidden {
+  display: none;
 }
 
 /* My List button */
@@ -1242,4 +1263,4 @@ body {
   color: #07182e;
 }
 
-/* Fixed top search and My List bar ends here. */
+/* Clean sticky search, Done button, and My List bar ends here. */

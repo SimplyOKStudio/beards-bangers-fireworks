@@ -139,7 +139,18 @@
 <div id="sticky-shop-bar">
 
   <!-- This search box lets customers quickly find fireworks by name or category. -->
-  <input id="inventory-search" type="text" placeholder="Search fireworks...">
+    <!-- This row holds the search box and the Done Searching button. -->
+  <div id="search-row">
+
+    <!-- This search box lets customers quickly find fireworks by name or category. -->
+    <input id="inventory-search" type="text" placeholder="Search fireworks...">
+
+    <!-- This button closes the phone keyboard after searching. -->
+    <button id="search-done-button" class="hidden" type="button" onclick="finishSearch()">
+      Done
+    </button>
+
+  </div>
 
   <!-- This button lets customers jump to their selected fireworks list anytime. -->
   <button id="floating-list-button" onclick="scrollToCustomerList()">
