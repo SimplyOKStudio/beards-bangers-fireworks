@@ -1124,9 +1124,12 @@ body {
 
 /* Send List to Stand form ends here. */
 
-/* Clean mobile sticky search and My List bar starts here. */
+/* Professional compact sticky search and My List bar starts here. */
 
 #sticky-shop-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 8px;
   gap: 8px;
   background-color: #111111;
@@ -1135,74 +1138,93 @@ body {
   align-items: stretch;
 }
 
+/* Search bar */
 #sticky-shop-bar #inventory-search {
   width: 100%;
-  min-height: 54px;
-  height: 54px;
-  padding: 10px 14px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 16px;
   margin: 0;
-  font-size: 19px;
-  line-height: 1.1;
+  font-size: 20px;
+  line-height: 56px;
   border-radius: 16px;
 }
 
+/* My List button */
 #sticky-shop-bar #floating-list-button {
   width: 100%;
-  min-height: 58px;
-  padding: 8px 12px;
+  height: 56px;
+  min-height: 56px;
+  padding: 6px 14px;
   border-radius: 16px;
 
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-areas:
-    "label help count"
-    "total total total";
-  column-gap: 10px;
-  row-gap: 4px;
+    "label count total"
+    "help help help";
+  column-gap: 12px;
+  row-gap: 2px;
   align-items: center;
+  justify-content: center;
+
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
 }
 
+/* My List text */
 #sticky-shop-bar #floating-list-label {
   grid-area: label;
   margin: 0;
   min-width: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
-  text-align: left;
-  white-space: nowrap;
-}
-
-#sticky-shop-bar #floating-list-help {
-  grid-area: help;
-  display: block;
-  margin: 0;
-  min-width: 0;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 700;
-  opacity: 0.9;
+  font-weight: 900;
   text-align: center;
   white-space: nowrap;
+  color: #07182e;
 }
 
+/* Item count */
 #sticky-shop-bar #floating-item-count {
   grid-area: count;
   margin: 0;
   min-width: 0;
   font-size: 18px;
   line-height: 1;
-  text-align: right;
+  font-weight: 900;
+  text-align: center;
   white-space: nowrap;
+  color: #07182e;
 }
 
+/* Total */
 #sticky-shop-bar #floating-total-text {
   grid-area: total;
   margin: 0;
   min-width: 0;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1;
+  font-weight: 900;
   text-align: center;
   white-space: nowrap;
+  color: #07182e;
 }
 
-/* Clean mobile sticky search and My List bar ends here. */
+/* Tap helper */
+#sticky-shop-bar #floating-list-help {
+  grid-area: help;
+  display: block;
+  margin: 0;
+  min-width: 0;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.85;
+  color: #07182e;
+}
+
+/* Professional compact sticky search and My List bar ends here. */
