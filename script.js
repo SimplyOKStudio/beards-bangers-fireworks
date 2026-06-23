@@ -1,7 +1,7 @@
 // This is the tax rate used for the estimated total.
 // Example: 0.0825 means 8.25% tax.
 // Later, change this to your real local tax rate.
-const taxRate = 0.0825;
+const taxRate = 0.09995;
 
 const fireworks = [
   {
@@ -6224,5 +6224,162 @@ displayFireworks();
 // This runs the displayTopSections function when the page loads.
 displayTopSections();
 
+// This opens the Send List to Stand form.
+function showStandListForm() {
+  // This gets the selected firework ids from the customer's list.
+  const selectedIds = Object.keys(selectedFireworks);
 
+  // This checks if the customer has not selected anything yet.
+  if (selectedIds.length === 0) {
+    // This tells the customer they need at least one item first.
+    alert("Please add at least one firework to your list before sending it to the stand.");
+
+    // This stops the function.
+    return;
+  }
+
+  // This finds the Send List to Stand form.
+  const standListForm = document.getElementById("stand-list-form");
+
+  // This removes the hidden class so the form appears.
+  standListForm.classList.remove("hidden");
+
+  // This scrolls the form into view.
+  standListForm.scrollIntoView({ behavior: "smooth" });
+}
+
+// This creates a simple ticket number like Red 214.
+function generateTicketNumber() {
+  // This is the list of possible ticket colors.
+  const ticketColors = ["Red", "Blue", "Gold", "Green", "Orange", "Purple"];
+
+  // This randomly chooses one color from the list.
+  const randomColor = ticketColors[Math.floor(Math.random() * ticketColors.length)];
+
+  // This creates a random number from 100 to 999.
+  const randomNumber = Math.floor(Math.random() * 900) + 100;
+
+  // This combines the color and number into one ticket number.
+  return randomColor + " " + randomNumber;
+}
+
+// This builds a plain-text version of the customer's selected list for the email/submission.
+function buildSubmittedListText() {
+  // This starts an empty list of text lines.
+  let submittedLines = [];
+
+  // This gets all selected firework ids from the selectedFireworks object.
+  const selectedIds = Object.keys(selectedFireworks);
+
+  // This goes through each selected firework id.
+  selectedIds.forEach(function (fireworkId) {
+    // This finds the full firework info using the id.
+    const firework = findFireworkById(fireworkId);
+
+    // This gets the selected quantity.
+    const quantity = selectedFireworks[fireworkId];
+
+    // This calculates the item total.
+    const itemTotal = quantity * firework.price;
+
+    // This adds one clean text line to the submission.
+    submittedLines.push(
+      quantity +
+        " x " +
+        firework.name +
+        " @ $" +
+        firework.price.toFixed(2) +
+        " = $" +
+        itemTotal.toFixed(2)
+    );
+  });
+
+  // This combines all lines into one text block.
+  return submittedLines.join("\n");
+}
+
+// This calculates the current list money totals for the form submission.
+function calculateCurrentListTotals() {
+  // This starts the subtotal at 0.
+  let subtotal = 0;
+
+  // This gets all selected firework ids from the selectedFireworks object.
+  const selectedIds = Object.keys(selectedFireworks);
+
+  // This goes through each selected firework id.
+  selectedIds.forEach(function (fireworkId) {
+    // This finds the full firework info using the id.
+    const firework = findFireworkById(fireworkId);
+
+    // This gets the selected quantity.
+    const quantity = selectedFireworks[fireworkId];
+
+    // This adds this item total to the subtotal.
+    subtotal = subtotal + quantity * firework.price;
+  });
+
+  // This calculates the estimated tax.
+  const estimatedTax = subtotal * taxRate;
+
+  // This calculates the estimated total.
+  const estimatedTotal = subtotal + estimatedTax;
+
+  // This returns all three totals.
+  return {
+    subtotal: subtotal,
+    estimatedTax: estimatedTax,
+    estimatedTotal: estimatedTotal
+  };
+}
+
+// This prepares the hidden Netlify form fields before the list is submitted.
+function prepareStandListSubmission() {
+  // This gets the selected firework ids from the customer's list.
+  const selectedIds = Object.keys(selectedFireworks);
+
+  // This checks if the customer has not selected anything yet.
+  if (selectedIds.length === 0) {
+    // This tells the customer they need at least one item first.
+    alert("Please add at least one firework to your list before submitting.");
+
+    // This stops the form from sending.
+    return false;
+  }
+
+  // This creates a ticket number for this list.
+  const ticketNumber = generateTicketNumber();
+
+  // This builds the plain-text list for the email/submission.
+  const submittedListText = buildSubmittedListText();
+
+  // This calculates the current totals.
+  const totals = calculateCurrentListTotals();
+
+  // This creates a readable submission time.
+  const submittedTime = new Date().toLocaleString();
+
+  // This fills the hidden ticket number field.
+  document.getElementById("submitted-ticket-number").value = ticketNumber;
+
+  // This fills the hidden fireworks list field.
+  document.getElementById("submitted-list").value = submittedListText;
+
+  // This fills the hidden subtotal field.
+  document.getElementById("submitted-subtotal").value = "$" + totals.subtotal.toFixed(2);
+
+  // This fills the hidden tax field.
+  document.getElementById("submitted-tax").value = "$" + totals.estimatedTax.toFixed(2);
+
+  // This fills the hidden total field.
+  document.getElementById("submitted-total").value = "$" + totals.estimatedTotal.toFixed(2);
+
+  // This fills the hidden submitted time field.
+  document.getElementById("submitted-time").value = submittedTime;
+
+  // This saves the ticket number temporarily so the confirmation can use it later if needed.
+  sessionStorage.setItem("lastTicketNumber", ticketNumber);
+
+  // This allows the form to submit.
+  return true;
+}
 

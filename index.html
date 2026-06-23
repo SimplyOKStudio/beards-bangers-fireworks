@@ -165,7 +165,7 @@
 <!-- Browse Fireworks section ends here. -->
 
   <!-- My Fireworks List section starts here. -->
-<section id="my-list-section">
+  <section id="my-list-section">
     <!-- This is the title for the customer's selected list. -->
     <h2>My Fireworks List</h2>
 
@@ -173,13 +173,134 @@
     <p id="customer-list-text">No fireworks selected yet.</p>
 
     <!-- This paragraph will show the estimated subtotal. -->
-    <p id="subtotal-text">Subtotal: $0.00</p>
+    <p id="subtotal-text">Estimated Subtotal: $0.00</p>
 
     <!-- This paragraph will show the estimated tax. -->
     <p id="tax-text">Estimated Tax: $0.00</p>
 
     <!-- This paragraph will show the estimated total after tax. -->
     <p id="total-text">Estimated Total: $0.00</p>
+
+    <!-- This reminds customers that discounts happen in person at checkout. -->
+    <p class="checkout-note">
+      Discounts for CPN Nation members, CPN employees, and Military are applied at checkout with valid badge/card/ID.
+    </p>
+
+    <!-- This reminds customers that this is not a final paid order. -->
+    <p class="checkout-note">
+      Submitting a list does not complete a purchase. Availability and final total are confirmed at checkout.
+    </p>
+
+    <!-- This button opens the customer submission form. -->
+    <button id="show-submit-form-button" type="button" onclick="showStandListForm()">
+      Send List to Stand
+    </button>
+
+    <!-- This form sends the customer's list to Netlify Forms. -->
+    <form
+      id="stand-list-form"
+      name="fireworks-list"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="hidden"
+      onsubmit="return prepareStandListSubmission()"
+    >
+      <!-- This hidden field tells Netlify which form is being submitted. -->
+      <input type="hidden" name="form-name" value="fireworks-list">
+
+      <!-- This hidden field helps catch spam bots. Real customers will not see it. -->
+      <p class="hidden">
+        <label>
+          Do not fill this out:
+          <input name="bot-field">
+        </label>
+      </p>
+
+      <!-- This is the customer info area. -->
+      <h2>Send List to Stand</h2>
+
+      <!-- This explains what the form does. -->
+      <p>
+        Enter your name or nickname and email so we can contact you about your list.
+      </p>
+
+      <!-- Customer name or nickname starts here. -->
+      <label for="customer-name">Customer name or nickname</label>
+      <input
+        id="customer-name"
+        name="customerName"
+        type="text"
+        required
+        placeholder="Example: Kevin, Mom, Red Truck"
+      >
+
+      <!-- Customer email starts here. -->
+      <label for="customer-email">Email address</label>
+      <input
+        id="customer-email"
+        name="email"
+        type="email"
+        required
+        placeholder="you@example.com"
+      >
+
+      <!-- This text explains why email is required. -->
+      <p class="small-form-note">
+        Email is required so we can send your ticket number and contact you if anything is unavailable.
+      </p>
+
+      <!-- These hidden fields are filled by JavaScript right before the form sends. -->
+      <input id="submitted-ticket-number" name="ticketNumber" type="hidden">
+      <input id="submitted-list" name="fireworksList" type="hidden">
+      <input id="submitted-subtotal" name="estimatedSubtotal" type="hidden">
+      <input id="submitted-tax" name="estimatedTax" type="hidden">
+      <input id="submitted-total" name="estimatedTotal" type="hidden">
+      <input id="submitted-time" name="submittedTime" type="hidden">
+
+      <!-- This customer wording explains changes, new lists, and checkout. -->
+      <div class="submission-rules">
+        <p>
+          Need to change your list? Reply to your confirmation email with your ticket number.
+          We will confirm availability before checkout.
+        </p>
+
+        <p>
+          Want to place another list? Please return to our website and submit a new list so we can create a new ticket number.
+        </p>
+
+        <p>
+          Submitting a list does not complete a purchase. Availability and final total are confirmed at checkout.
+        </p>
+      </div>
+
+      <!-- This submits the list to Netlify. -->
+      <button id="submit-stand-list-button" type="submit">
+        Submit List
+      </button>
+    </form>
+
+    <!-- This confirmation box appears after the customer submits their list. -->
+    <div id="submission-confirmation" class="hidden">
+      <h2>List Submitted</h2>
+
+      <p id="confirmation-ticket-text">
+        Your list has been submitted.
+      </p>
+
+      <p>
+        We will contact you by email when your list is ready or if anything is unavailable.
+      </p>
+
+      <p>
+        Need to change your list? Reply to your confirmation email with your ticket number.
+        We will confirm availability before checkout.
+      </p>
+
+      <p>
+        Submitting a list does not complete a purchase. Availability and final total are confirmed at checkout.
+      </p>
+    </div>
   </section>
   <!-- My Fireworks List section ends here. -->
 
