@@ -1823,3 +1823,45 @@ body {
 }
 
 /* Staff main-site-style checkout ends here. */
+
+/* Staff order readability polish starts here. */
+
+.staff-order-card h3 {
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+}
+
+.staff-order-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.staff-trash-button {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.staff-remove-button {
+  display: none;
+}
+
+/* Staff order readability polish ends here. */

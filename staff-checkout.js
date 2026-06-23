@@ -7,6 +7,8 @@ let staffTicketNumber = "No ticket number";
 // This keeps track of the selected staff category.
 let activeStaffCategory = "All";
 
+let staffSearchScrollTimer;
+
 // These are quick-pick products for staff.
 const staffPopularPickIds = [
   "starshot-rockets",
@@ -357,13 +359,20 @@ function updateStaffOrderList() {
 
         <p>$${firework.price.toFixed(2)} each</p>
 
-        ${createStaffQuantityControls(firework.id)}
+        <div class="staff-order-action-row">
+  ${createStaffQuantityControls(firework.id)}
 
-        <p>Item Total: $${itemTotal.toFixed(2)}</p>
+  <button
+    class="staff-trash-button"
+    type="button"
+    onclick="removeStaffFirework('${firework.id}')"
+    aria-label="Remove ${firework.name}"
+  >
+    🗑️
+  </button>
+</div>
 
-        <button class="staff-remove-button" type="button" onclick="removeStaffFirework('${firework.id}')">
-          Remove Item
-        </button>
+<p>Item Total: $${itemTotal.toFixed(2)}</p>
       </div>
     `);
   });
@@ -462,20 +471,24 @@ function startStaffCheckoutPage() {
   staffSearch.addEventListener("input", function () {
     updateStaffPage();
 
-    const productResults = document.getElementById("staff-product-results");
+    clearTimeout(staffSearchScrollTimer);
 
-    if (!productResults) {
-      return;
-    }
+    staffSearchScrollTimer = setTimeout(function () {
+      const productResults = document.getElementById("staff-product-results");
 
-    const resultsPosition = productResults.getBoundingClientRect().top + window.scrollY;
+      if (!productResults) {
+        return;
+      }
 
-    const extraSpaceAboveResults = 170;
+      const resultsPosition = productResults.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({
-      top: resultsPosition - extraSpaceAboveResults,
-      behavior: "smooth"
-    });
+      const extraSpaceAboveResults = 170;
+
+      window.scrollTo({
+        top: resultsPosition - extraSpaceAboveResults,
+        behavior: "smooth"
+      });
+    }, 450);
   });
 }
 
