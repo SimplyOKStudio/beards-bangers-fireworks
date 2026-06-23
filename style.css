@@ -1124,64 +1124,51 @@ body {
 
 /* Send List to Stand form ends here. */
 
-/* Compact sticky search and My List bar starts here. */
+/* Clean mobile sticky search and My List bar starts here. */
 
 #sticky-shop-bar {
   padding: 8px;
   gap: 8px;
   background-color: #111111;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #sticky-shop-bar #inventory-search {
-  flex: 1;
-  min-width: 0;
-  min-height: 62px;
-  height: 62px;
+  width: 100%;
+  min-height: 54px;
+  height: 54px;
   padding: 10px 14px;
   margin: 0;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.1;
   border-radius: 16px;
 }
 
 #sticky-shop-bar #floating-list-button {
-  width: 138px;
-  min-width: 138px;
-  min-height: 62px;
-  padding: 7px 9px;
+  width: 100%;
+  min-height: 58px;
+  padding: 8px 12px;
   border-radius: 16px;
 
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto auto;
   grid-template-areas:
-    "label count"
-    "help help"
-    "total total";
-  column-gap: 6px;
-  row-gap: 3px;
+    "label help count"
+    "total total total";
+  column-gap: 10px;
+  row-gap: 4px;
   align-items: center;
-  justify-items: stretch;
 }
 
 #sticky-shop-bar #floating-list-label {
   grid-area: label;
   margin: 0;
   min-width: 0;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1;
   text-align: left;
-  white-space: nowrap;
-}
-
-#sticky-shop-bar #floating-item-count {
-  grid-area: count;
-  margin: 0;
-  min-width: 0;
-  font-size: 15px;
-  line-height: 1;
-  text-align: right;
   white-space: nowrap;
 }
 
@@ -1190,7 +1177,7 @@ body {
   display: block;
   margin: 0;
   min-width: 0;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1;
   font-weight: 700;
   opacity: 0.9;
@@ -1198,14 +1185,24 @@ body {
   white-space: nowrap;
 }
 
+#sticky-shop-bar #floating-item-count {
+  grid-area: count;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
 #sticky-shop-bar #floating-total-text {
   grid-area: total;
   margin: 0;
   min-width: 0;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
 }
 
-/* Compact sticky search and My List bar ends here. */
+/* Clean mobile sticky search and My List bar ends here. */
