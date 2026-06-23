@@ -1,6 +1,9 @@
 // This stores the staff-side version of the customer's order.
 let staffSelectedFireworks = {};
 
+// This stores the ticket number from the submitted order.
+let staffTicketNumber = "No ticket number";
+
 // This reads the encoded order from the website link.
 function getStaffOrderFromUrl() {
   // This reads the current page URL.
@@ -29,17 +32,14 @@ function getStaffOrderFromUrl() {
   }
 }
 
-// This displays the staff order on the page.
-function displayStaffOrder() {
+// This loads the submitted order into the staff checkout page.
+function loadStaffOrder() {
   // This gets the order from the link.
   const staffOrder = getStaffOrderFromUrl();
 
   // This finds the page areas we need to update.
   const ticketHeading = document.getElementById("staff-ticket-heading");
   const orderList = document.getElementById("staff-order-list");
-  const subtotalText = document.getElementById("staff-subtotal-text");
-  const taxText = document.getElementById("staff-tax-text");
-  const totalText = document.getElementById("staff-total-text");
 
   // This handles a missing or broken order link.
   if (!staffOrder) {
@@ -48,11 +48,27 @@ function displayStaffOrder() {
     return;
   }
 
+  // This saves the ticket number.
+  staffTicketNumber = staffOrder.ticketNumber || "No ticket number";
+
   // This saves the submitted items into the staff order object.
   staffSelectedFireworks = staffOrder.items || {};
 
+  // This displays the editable order.
+  updateStaffOrder();
+}
+
+// This updates the editable staff order list and totals.
+function updateStaffOrder() {
+  // This finds the page areas we need to update.
+  const ticketHeading = document.getElementById("staff-ticket-heading");
+  const orderList = document.getElementById("staff-order-list");
+  const subtotalText = document.getElementById("staff-subtotal-text");
+  const taxText = document.getElementById("staff-tax-text");
+  const totalText = document.getElementById("staff-total-text");
+
   // This shows the ticket number.
-  ticketHeading.textContent = "Ticket: " + staffOrder.ticketNumber;
+  ticketHeading.textContent = "Ticket: " + staffTicketNumber;
 
   // This starts the subtotal at 0.
   let subtotal = 0;
@@ -65,7 +81,7 @@ function displayStaffOrder() {
 
   // This handles an empty order.
   if (selectedIds.length === 0) {
-    orderList.textContent = "No fireworks were found in this order.";
+    orderList.textContent = "No fireworks are currently in this staff order.";
     subtotalText.textContent = "Subtotal: $0.00";
     taxText.textContent = "Estimated Tax: $0.00";
     totalText.textContent = "Estimated Total: $0.00";
@@ -85,19 +101,37 @@ function displayStaffOrder() {
     // This gets the quantity.
     const quantity = staffSelectedFireworks[fireworkId];
 
+    // This skips items with 0 quantity.
+    if (quantity <= 0) {
+      return;
+    }
+
     // This calculates this item's total.
     const itemTotal = quantity * firework.price;
 
     // This adds this item total to the subtotal.
     subtotal = subtotal + itemTotal;
 
-    // This creates one readable staff item card.
+    // This creates one editable staff item card.
     orderLines.push(`
       <div class="staff-order-card">
         <h3>${firework.name}</h3>
-        <p>Quantity: ${quantity}</p>
+
         <p>$${firework.price.toFixed(2)} each</p>
+
+        <div class="staff-quantity-row">
+          <button type="button" onclick="subtractStaffFirework('${firework.id}')">-</button>
+
+          <span>${quantity}</span>
+
+          <button type="button" onclick="addStaffFirework('${firework.id}')">+</button>
+        </div>
+
         <p>Item Total: $${itemTotal.toFixed(2)}</p>
+
+        <button class="staff-remove-button" type="button" onclick="removeStaffFirework('${firework.id}')">
+          Remove Item
+        </button>
       </div>
     `);
   });
@@ -115,5 +149,60 @@ function displayStaffOrder() {
   totalText.textContent = "Estimated Total: $" + estimatedTotal.toFixed(2);
 }
 
+// This adds one item to the staff order.
+function addStaffFirework(fireworkId) {
+  // This starts the item at 0 if it is not already in the staff order.
+  if (staffSelectedFireworks[fireworkId] === undefined) {
+    staffSelectedFireworks[fireworkId] = 0;
+  }
+
+  // This increases the quantity by 1.
+  staffSelectedFireworks[fireworkId] = staffSelectedFireworks[fireworkId] + 1;
+
+  // This updates the visible staff order.
+  updateStaffOrder();
+}
+
+// This subtracts one item from the staff order.
+function subtractStaffFirework(fireworkId) {
+  // This stops if the item is not in the staff order.
+  if (staffSelectedFireworks[fireworkId] === undefined) {
+    return;
+  }
+
+  // This subtracts one from the quantity.
+  staffSelectedFireworks[fireworkId] = staffSelectedFireworks[fireworkId] - 1;
+
+  // This removes the item if quantity reaches 0 or less.
+  if (staffSelectedFireworks[fireworkId] <= 0) {
+    delete staffSelectedFireworks[fireworkId];
+  }
+
+  // This updates the visible staff order.
+  updateStaffOrder();
+}
+
+// This removes an item completely from the staff order.
+function removeStaffFirework(fireworkId) {
+  // This finds the product info.
+  const firework = findFireworkById(fireworkId);
+
+  // This stops if the product cannot be found.
+  if (!firework) {
+    delete staffSelectedFireworks[fireworkId];
+    updateStaffOrder();
+    return;
+  }
+
+  // This asks staff to confirm removal.
+  const shouldRemove = confirm("Remove " + firework.name + " from this staff order?");
+
+  // This removes the item if staff confirms.
+  if (shouldRemove === true) {
+    delete staffSelectedFireworks[fireworkId];
+    updateStaffOrder();
+  }
+}
+
 // This loads the staff order when the page opens.
-displayStaffOrder();
+loadStaffOrder();
