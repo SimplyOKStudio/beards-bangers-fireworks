@@ -1407,3 +1407,53 @@ body {
 }
 
 /* Staff checkout proof-of-life styling ends here. */
+
+/* Staff checkout editable buttons start here. */
+
+.staff-quantity-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.staff-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  font-size: 30px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+.staff-quantity-row span {
+  min-width: 42px;
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+.staff-remove-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+/* Staff checkout editable buttons end here. */
