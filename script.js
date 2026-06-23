@@ -6383,14 +6383,43 @@ function prepareStandListSubmission() {
   return true;
 }
 
-// This closes the phone keyboard when the customer starts scrolling.
-window.addEventListener("scroll", function () {
+// This closes the phone keyboard when the customer taps or drags outside the search box.
+document.addEventListener("touchstart", function (event) {
   // This finds the search box.
   const inventorySearch = document.getElementById("inventory-search");
 
-  // This checks if the search box exists and is currently being typed in.
-  if (inventorySearch && document.activeElement === inventorySearch) {
-    // This removes focus from the search box, which closes the mobile keyboard.
+  // This stops the function if the search box does not exist.
+  if (!inventorySearch) {
+    return;
+  }
+
+  // This checks if the customer touched inside the search box.
+  const touchedSearchBox = inventorySearch.contains(event.target);
+
+  // This checks if the search box is currently active.
+  const searchBoxIsActive = document.activeElement === inventorySearch;
+
+  // This closes the keyboard only when the customer touches outside the search box.
+  if (searchBoxIsActive && !touchedSearchBox) {
     inventorySearch.blur();
   }
 });
+
+// This closes the phone keyboard when the customer starts dragging the page.
+document.addEventListener("touchmove", function () {
+  // This finds the search box.
+  const inventorySearch = document.getElementById("inventory-search");
+
+  // This stops the function if the search box does not exist.
+  if (!inventorySearch) {
+    return;
+  }
+
+  // This checks if the search box is currently active.
+  const searchBoxIsActive = document.activeElement === inventorySearch;
+
+  // This closes the keyboard when the customer drags/scrolls.
+  if (searchBoxIsActive) {
+    inventorySearch.blur();
+  }
+}, { passive: true });
