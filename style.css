@@ -1123,3 +1123,89 @@ body {
 }
 
 /* Send List to Stand form ends here. */
+
+/* Compact sticky search and My List bar starts here. */
+
+#sticky-shop-bar {
+  padding: 8px;
+  gap: 8px;
+  background-color: #111111;
+}
+
+#sticky-shop-bar #inventory-search {
+  min-height: 58px;
+  padding: 12px 14px;
+  font-size: 20px;
+  border-radius: 16px;
+}
+
+#sticky-shop-bar #floating-list-button {
+  min-height: 58px;
+  min-width: 135px;
+  padding: 8px 10px;
+  border-radius: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "label count"
+    "help help"
+    "total total";
+  gap: 2px 8px;
+  align-items: center;
+}
+
+#sticky-shop-bar #floating-list-label {
+  grid-area: label;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+}
+
+#sticky-shop-bar #floating-list-help {
+  grid-area: help;
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  opacity: 0.85;
+  text-align: center;
+}
+
+#sticky-shop-bar #floating-item-count {
+  grid-area: count;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+  text-align: right;
+}
+
+#sticky-shop-bar #floating-total-text {
+  grid-area: total;
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* On very small phones, keep the search and My List button side by side. */
+@media (max-width: 480px) {
+  #sticky-shop-bar {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  #sticky-shop-bar #inventory-search {
+    width: auto;
+    min-width: 0;
+  }
+
+  #sticky-shop-bar #floating-list-button {
+    width: 145px;
+    flex-shrink: 0;
+  }
+}
+
+/* Compact sticky search and My List bar ends here. */
