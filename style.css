@@ -1124,18 +1124,33 @@ body {
 
 /* Send List to Stand form ends here. */
 
-/* Professional compact sticky search and My List bar starts here. */
+/* Fixed top search and My List bar starts here. */
 
 #sticky-shop-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+
+  width: 100%;
+  max-width: 760px;
+
   padding: 8px;
   gap: 8px;
   background-color: #111111;
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* This adds room so the fixed search/My List bar does not cover the products. */
+#full-inventory-section {
+  padding-top: 132px;
 }
 
 /* Search bar */
@@ -1227,4 +1242,4 @@ body {
   color: #07182e;
 }
 
-/* Professional compact sticky search and My List bar ends here. */
+/* Fixed top search and My List bar ends here. */
