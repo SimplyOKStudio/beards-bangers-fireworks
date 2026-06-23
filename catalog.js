@@ -5686,3 +5686,8 @@ function findFireworkById(fireworkId) {
   // This returns undefined if nothing was found.
   return undefined;
 }
+
+// These lines make sure the staff checkout page can use the shared catalog data.
+window.taxRate = taxRate;
+window.fireworks = fireworks;
+window.findFireworkById = findFireworkById;
