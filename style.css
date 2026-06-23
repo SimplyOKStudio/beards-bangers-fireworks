@@ -1046,3 +1046,80 @@ body {
     width: 100%;
   }
 }
+
+/* Send List to Stand form starts here. */
+
+#stand-list-form {
+  margin-top: 22px;
+  padding: 22px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+}
+
+#stand-list-form h2 {
+  margin-bottom: 12px;
+}
+
+.form-intro {
+  font-size: 21px;
+  line-height: 1.45;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff3d2;
+}
+
+.form-field input {
+  display: block;
+  width: 100%;
+  min-height: 62px;
+  padding: 14px 16px;
+  font-size: 22px;
+  border-radius: 12px;
+  border: 3px solid #f0b72f;
+  background-color: #fff3d2;
+  color: #07182e;
+}
+
+.form-field input::placeholder {
+  color: #6b7280;
+}
+
+.submission-rules {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background-color: #0b2447;
+  border-radius: 14px;
+  border: 1px solid #426ca3;
+}
+
+.submission-rules p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.submission-rules p:last-child {
+  margin-bottom: 0;
+}
+
+#submit-stand-list-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 18px;
+  font-size: 24px;
+  border-radius: 16px;
+}
+
+/* Send List to Stand form ends here. */

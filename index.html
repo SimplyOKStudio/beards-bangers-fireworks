@@ -197,6 +197,7 @@
     </button>
 
     <!-- This form sends the customer's list to Netlify Forms. -->
+        <!-- This form sends the customer's list to Netlify Forms. -->
     <form
       id="stand-list-form"
       name="fireworks-list"
@@ -221,34 +222,22 @@
       <h2>Send List to Stand</h2>
 
       <!-- This explains what the form does. -->
-      <p>
-        Enter your name or nickname and email so we can contact you about your list.
+      <p class="form-intro">
+        Enter your email so we can send your ticket number and contact you if anything is unavailable.
       </p>
-
-      <!-- Customer name or nickname starts here. -->
-      <label for="customer-name">Customer name or nickname</label>
-      <input
-        id="customer-name"
-        name="customerName"
-        type="text"
-        required
-        placeholder="Example: Kevin, Mom, Red Truck"
-      >
 
       <!-- Customer email starts here. -->
-      <label for="customer-email">Email address</label>
-      <input
-        id="customer-email"
-        name="email"
-        type="email"
-        required
-        placeholder="you@example.com"
-      >
+      <div class="form-field">
+        <label for="customer-email">Email address:</label>
 
-      <!-- This text explains why email is required. -->
-      <p class="small-form-note">
-        Email is required so we can send your ticket number and contact you if anything is unavailable.
-      </p>
+        <input
+          id="customer-email"
+          name="email"
+          type="email"
+          required
+          placeholder="you@example.com"
+        >
+      </div>
 
       <!-- These hidden fields are filled by JavaScript right before the form sends. -->
       <input id="submitted-ticket-number" name="ticketNumber" type="hidden">
@@ -262,11 +251,10 @@
       <div class="submission-rules">
         <p>
           Need to change your list? Reply to your confirmation email with your ticket number.
-          We will confirm availability before checkout.
         </p>
 
         <p>
-          Want to place another list? Please return to our website and submit a new list so we can create a new ticket number.
+          Want to place another list? Please return to our website and submit a new list.
         </p>
 
         <p>
