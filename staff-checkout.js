@@ -446,7 +446,7 @@ function scrollToStaffOrder() {
 
   const headingPosition = currentOrderHeading.getBoundingClientRect().top + window.scrollY;
 
-  const extraSpaceAboveHeading = 130;
+  const extraSpaceAboveHeading = 220;
 
   window.scrollTo({
     top: headingPosition - extraSpaceAboveHeading,
@@ -459,10 +459,25 @@ function startStaffCheckoutPage() {
   const staffSearch = document.getElementById("staff-product-search");
 
   if (staffSearch) {
-    staffSearch.addEventListener("input", function () {
-      updateStaffPage();
+  staffSearch.addEventListener("input", function () {
+    updateStaffPage();
+
+    const productResults = document.getElementById("staff-product-results");
+
+    if (!productResults) {
+      return;
+    }
+
+    const resultsPosition = productResults.getBoundingClientRect().top + window.scrollY;
+
+    const extraSpaceAboveResults = 170;
+
+    window.scrollTo({
+      top: resultsPosition - extraSpaceAboveResults,
+      behavior: "smooth"
     });
-  }
+  });
+}
 
   loadStaffOrder();
 }
