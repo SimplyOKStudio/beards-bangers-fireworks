@@ -306,14 +306,16 @@ function calculateStaffTotals() {
   };
 }
 
-// This updates the My List button at the top.
 function updateStaffFloatingListButton() {
+  const floatingLabel = document.getElementById("staff-floating-list-label");
   const floatingCount = document.getElementById("staff-floating-list-count");
   const floatingTotal = document.getElementById("staff-floating-list-total");
 
   const totals = calculateStaffTotals();
 
   const itemWord = totals.itemCount === 1 ? "item" : "items";
+
+  floatingLabel.textContent = staffTicketNumber;
 
   floatingCount.textContent = totals.itemCount + " " + itemWord;
 
@@ -435,13 +437,21 @@ function removeStaffFirework(fireworkId) {
   }
 }
 
-// This scrolls staff to the current order.
 function scrollToStaffOrder() {
   const currentOrderHeading = document.getElementById("staff-current-order-heading");
 
-  if (currentOrderHeading) {
-    currentOrderHeading.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!currentOrderHeading) {
+    return;
   }
+
+  const headingPosition = currentOrderHeading.getBoundingClientRect().top + window.scrollY;
+
+  const extraSpaceAboveHeading = 130;
+
+  window.scrollTo({
+    top: headingPosition - extraSpaceAboveHeading,
+    behavior: "smooth"
+  });
 }
 
 // This starts the staff checkout page.
