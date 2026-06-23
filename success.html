@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>List Sent | Beard's Bangers Fireworks</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Beard's Bangers Fireworks</h1>
+    <p>The heroes get the glory. We bring the boom.</p>
+  </header>
+
+  <main>
+    <section class="confirmation-page">
+      <h2>Your list was sent!</h2>
+
+      <p>
+        Thank you. Your fireworks list has been sent to the stand.
+      </p>
+
+      <p id="success-ticket-number">
+        Your ticket number will appear here if available.
+      </p>
+
+      <p>
+        Need to change your list? Reply to your confirmation email with your ticket number.
+      </p>
+
+      <p>
+        Submitting a list does not complete a purchase. Availability and final total are confirmed at checkout.
+      </p>
+
+      <a class="return-home-button" href="index.html">
+        Return to Fireworks List
+      </a>
+    </section>
+  </main>
+
+  <script>
+    // This gets the last ticket number saved before the form submitted.
+    const lastTicketNumber = sessionStorage.getItem("lastTicketNumber");
+
+    // This finds the paragraph where the ticket number should appear.
+    const ticketNumberText = document.getElementById("success-ticket-number");
+
+    // This shows the ticket number if it exists.
+    if (lastTicketNumber) {
+      ticketNumberText.textContent = "Your ticket number is: " + lastTicketNumber;
+    } else {
+      ticketNumberText.textContent = "Please check your email or ask the stand for help if you do not see your ticket number.";
+    }
+  </script>
+</body>
+</html>

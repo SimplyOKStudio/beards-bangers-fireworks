@@ -1264,3 +1264,48 @@ body {
 }
 
 /* Clean sticky search, Done button, and My List bar ends here. */
+
+/* Success page styling starts here. */
+
+.confirmation-page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.confirmation-page h2 {
+  font-size: 34px;
+  margin-bottom: 18px;
+  color: #fff3d2;
+}
+
+.confirmation-page p {
+  font-size: 21px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+#success-ticket-number {
+  font-size: 26px;
+  font-weight: 900;
+  color: #f0b72f;
+}
+
+.return-home-button {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 16px 22px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+  border-radius: 16px;
+  font-size: 21px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Success page styling ends here. */
