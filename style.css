@@ -1309,3 +1309,37 @@ body {
 }
 
 /* Success page styling ends here. */
+
+/* Human confirmation checkbox starts here. */
+
+.human-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 14px;
+
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+
+  font-size: 18px;
+  line-height: 1.35;
+  color: #fff3d2;
+}
+
+.human-check input {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin-top: 2px;
+  accent-color: #f0b72f;
+}
+
+.human-check span {
+  display: block;
+}
+
+/* Human confirmation checkbox ends here. */

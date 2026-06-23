@@ -274,6 +274,20 @@
         </p>
       </div>
 
+      <!-- This simple checkbox helps prevent accidental or bot-like submissions. -->
+    <label class="human-check">
+      <input
+        id="human-confirmation"
+        name="humanConfirmation"
+        type="checkbox"
+        required
+      >
+
+      <span>
+        I understand this sends my fireworks list to the stand for review at checkout.
+      </span>
+    </label>
+
       <!-- This submits the list to Netlify. -->
       <button id="submit-stand-list-button" type="submit">
         Submit List
