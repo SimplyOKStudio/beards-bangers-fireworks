@@ -1457,3 +1457,127 @@ body {
 }
 
 /* Staff checkout editable buttons end here. */
+
+/* Staff product search and add section starts here. */
+
+.staff-product-tools {
+  margin-top: 20px;
+  margin-bottom: 26px;
+  padding: 18px;
+  background-color: #07182e;
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+}
+
+.staff-product-tools h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #fff3d2;
+}
+
+#staff-product-search {
+  width: 100%;
+  min-height: 58px;
+  margin-bottom: 14px;
+  padding: 12px 16px;
+
+  font-size: 21px;
+
+  border-radius: 14px;
+  border: 3px solid #f0b72f;
+  background-color: #fff3d2;
+  color: #07182e;
+}
+
+.staff-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.staff-category-button {
+  padding: 10px 12px;
+
+  font-size: 16px;
+  font-weight: 900;
+
+  border-radius: 999px;
+  border: 2px solid #f0b72f;
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+.staff-category-button.active-staff-category {
+  background-color: #f0b72f;
+  color: #07182e;
+  border-color: #fff3d2;
+}
+
+.staff-product-results {
+  display: grid;
+  gap: 12px;
+}
+
+.staff-product-card {
+  padding: 14px;
+  background-color: #12345f;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-product-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #fff3d2;
+}
+
+.staff-product-card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.staff-add-option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  background-color: #0b2447;
+  border-radius: 12px;
+}
+
+.staff-add-option-label {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+.staff-add-option-price {
+  font-size: 16px;
+  color: #fff3d2;
+}
+
+.staff-add-option-row button {
+  min-width: 78px;
+  padding: 10px 12px;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  border-radius: 12px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+.staff-current-order-heading {
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+/* Staff product search and add section ends here. */
