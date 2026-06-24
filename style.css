@@ -2013,3 +2013,26 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Staff page scroll lock and larger category buttons ends here. */
+
+/* Staff page normal scrolling restore starts here. */
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body main {
+  overflow: visible;
+}
+
+.staff-shop-panel {
+  margin-bottom: 80px;
+  padding-bottom: 120px;
+}
+
+.staff-page-end-cap {
+  margin-bottom: 120px;
+}
+
+/* Staff page normal scrolling restore ends here. */
