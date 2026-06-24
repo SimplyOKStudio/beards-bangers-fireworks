@@ -453,6 +453,62 @@ function removeStaffFirework(fireworkId) {
   updateStaffPage();
 }
 
+// This builds a clean final order summary at the bottom of the staff checkout page.
+function generateFinalStaffOrder() {
+  const finalOrderBox = document.getElementById("final-staff-order-box");
+
+  if (!finalOrderBox) {
+    return;
+  }
+
+  const selectedIds = Object.keys(staffSelectedFireworks);
+
+  let finalOrderLines = [];
+
+  finalOrderLines.push("Ticket: " + staffTicketNumber);
+  finalOrderLines.push("");
+
+  selectedIds.forEach(function (fireworkId) {
+    const firework = findFireworkById(fireworkId);
+
+    if (!firework) {
+      return;
+    }
+
+    const quantity = staffSelectedFireworks[fireworkId];
+
+    if (quantity <= 0) {
+      return;
+    }
+
+    const itemTotal = quantity * firework.price;
+
+    finalOrderLines.push(
+      quantity + " x " + firework.name + " - $" + itemTotal.toFixed(2)
+    );
+  });
+
+  const totals = calculateStaffTotals();
+
+  finalOrderLines.push("");
+  finalOrderLines.push("Subtotal: $" + totals.subtotal.toFixed(2));
+  finalOrderLines.push("Estimated Tax: $" + totals.estimatedTax.toFixed(2));
+  finalOrderLines.push("Estimated Total: $" + totals.estimatedTotal.toFixed(2));
+
+  finalOrderBox.classList.remove("hidden");
+
+  finalOrderBox.innerHTML = `
+    <h2>Final Order</h2>
+
+    <pre>${finalOrderLines.join("\n")}</pre>
+  `;
+
+  finalOrderBox.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
 function scrollToStaffOrder() {
   const currentOrderHeading = document.getElementById("staff-current-order-heading");
 

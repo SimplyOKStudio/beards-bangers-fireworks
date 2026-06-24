@@ -7,7 +7,7 @@
 
   <title>Staff Checkout | Beard's Bangers Fireworks</title>
 
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 
 <body>
@@ -58,13 +58,25 @@
   <p id="staff-total-text">Estimated Total: $0.00</p>
 </div>
 
+<button
+  id="generate-final-order-button"
+  type="button"
+  onclick="generateFinalStaffOrder()"
+>
+  Generate Final Order
+</button>
+
+<div id="final-staff-order-box" class="final-staff-order-box hidden">
+  Final order will appear here.
+</div>
+
 <div class="staff-page-end-cap">
   End of staff checkout list
 </div>
     </section>
   </main>
 
-    <script src="catalog.js?v=16"></script>
-    <script src="staff-checkout.js?v=16"></script>
+    <script src="catalog.js?v=17"></script>
+    <script src="staff-checkout.js?v=17"></script>
 </body>
 </html>
