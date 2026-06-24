@@ -9,6 +9,8 @@ let activeStaffCategory = "All";
 
 let staffSearchScrollTimer;
 
+let pendingStaffRemoveId = null;
+
 // These are quick-pick products for staff.
 const staffPopularPickIds = [
   "starshot-rockets",
@@ -363,13 +365,13 @@ function updateStaffOrderList() {
   ${createStaffQuantityControls(firework.id)}
 
   <button
-    class="staff-trash-button"
-    type="button"
-    onclick="removeStaffFirework('${firework.id}')"
-    aria-label="Remove ${firework.name}"
-  >
-    🗑️
-  </button>
+  class="staff-trash-button ${pendingStaffRemoveId === firework.id ? "staff-trash-confirm" : ""}"
+  type="button"
+  onclick="removeStaffFirework('${firework.id}')"
+  aria-label="Remove ${firework.name}"
+>
+  ${pendingStaffRemoveId === firework.id ? "Sure?" : "🗑️"}
+</button>
 </div>
 
 <p>Item Total: $${itemTotal.toFixed(2)}</p>
@@ -427,23 +429,28 @@ function subtractStaffFirework(fireworkId) {
   updateStaffPage();
 }
 
-// This removes one item completely.
 function removeStaffFirework(fireworkId) {
-  const firework = findFireworkById(fireworkId);
+  if (pendingStaffRemoveId !== fireworkId) {
+    pendingStaffRemoveId = fireworkId;
 
-  if (!firework) {
-    delete staffSelectedFireworks[fireworkId];
     updateStaffPage();
+
+    setTimeout(function () {
+      if (pendingStaffRemoveId === fireworkId) {
+        pendingStaffRemoveId = null;
+
+        updateStaffPage();
+      }
+    }, 3000);
+
     return;
   }
 
-  const shouldRemove = confirm("Remove " + firework.name + " from this staff order?");
+  delete staffSelectedFireworks[fireworkId];
 
-  if (shouldRemove === true) {
-    delete staffSelectedFireworks[fireworkId];
+  pendingStaffRemoveId = null;
 
-    updateStaffPage();
-  }
+  updateStaffPage();
 }
 
 function scrollToStaffOrder() {
