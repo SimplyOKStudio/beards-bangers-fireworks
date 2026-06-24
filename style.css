@@ -1946,3 +1946,70 @@ body {
 }
 
 /* Staff checkout bottom safety ends here. */
+
+/* Staff page scroll lock and larger category buttons starts here. */
+
+body.staff-checkout-body {
+  height: 100dvh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body.staff-checkout-body header {
+  flex: 0 0 auto;
+}
+
+body.staff-checkout-body main {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+
+  padding-bottom: 24px;
+}
+
+body.staff-checkout-body .staff-shop-panel {
+  margin-bottom: 0;
+  padding-bottom: 120px;
+}
+
+body.staff-checkout-body #staff-category-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+
+  margin-top: 14px !important;
+  margin-bottom: 16px !important;
+  padding: 12px !important;
+
+  background-color: #07182e !important;
+  border: 2px solid #426ca3 !important;
+  border-radius: 18px !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  min-height: 62px !important;
+  padding: 16px 20px !important;
+
+  font-size: 20px !important;
+  font-weight: 950 !important;
+  line-height: 1.1 !important;
+
+  border-radius: 18px !important;
+  border: 3px solid #f0b72f !important;
+
+  background-color: #12345f !important;
+  color: #fff3d2 !important;
+
+  cursor: pointer !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border-color: #fff3d2 !important;
+}
+
+/* Staff page scroll lock and larger category buttons ends here. */
