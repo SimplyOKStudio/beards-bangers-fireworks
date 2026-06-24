@@ -2110,3 +2110,41 @@ body {
 }
 
 /* Staff order button spacing polish ends here. */
+
+/* Staff totals readability polish starts here. */
+
+.staff-total-box {
+  padding: 22px;
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+}
+
+.staff-total-box p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1.2;
+
+  color: #fff3d2;
+  border-bottom: 1px solid rgba(240, 183, 47, 0.35);
+}
+
+.staff-total-box p:last-child {
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 0;
+
+  font-size: 31px;
+  color: #f0b72f;
+  border-bottom: none;
+}
+
+/* Staff totals readability polish ends here. */
