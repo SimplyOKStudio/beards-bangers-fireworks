@@ -2036,3 +2036,25 @@ body main {
 }
 
 /* Staff page normal scrolling restore ends here. */
+
+/* Staff checkout emergency overscroll fix starts here. */
+
+html {
+  overscroll-behavior-y: none;
+}
+
+body {
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
+.staff-shop-panel {
+  padding-bottom: 40px !important;
+  margin-bottom: 0 !important;
+}
+
+.staff-page-end-cap {
+  margin-bottom: 24px !important;
+}
+
+/* Staff checkout emergency overscroll fix ends here. */

@@ -502,5 +502,47 @@ function startStaffCheckoutPage() {
   loadStaffOrder();
 }
 
+// This prevents mobile browsers from pulling past the top or bottom of the staff page.
+let staffTouchStartY = 0;
+
+document.addEventListener("touchstart", function (event) {
+  if (event.touches.length !== 1) {
+    return;
+  }
+
+  staffTouchStartY = event.touches[0].clientY;
+}, { passive: true });
+
+document.addEventListener("touchmove", function (event) {
+  if (event.touches.length !== 1) {
+    return;
+  }
+
+  const currentTouchY = event.touches[0].clientY;
+
+  const isPullingDown = currentTouchY > staffTouchStartY;
+
+  const isPushingUp = currentTouchY < staffTouchStartY;
+
+  const pageScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  const pageHeight = document.documentElement.scrollHeight;
+
+  const screenHeight = window.innerHeight;
+
+  const isAtTop = pageScrollTop <= 0;
+
+  const isAtBottom = Math.ceil(pageScrollTop + screenHeight) >= pageHeight;
+
+  if (isAtTop && isPullingDown) {
+    event.preventDefault();
+    return;
+  }
+
+  if (isAtBottom && isPushingUp) {
+    event.preventDefault();
+  }
+}, { passive: false });
+
 // This runs when the page opens.
 startStaffCheckoutPage();
