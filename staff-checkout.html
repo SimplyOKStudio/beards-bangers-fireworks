@@ -7,7 +7,7 @@
 
   <title>Staff Checkout | Beard's Bangers Fireworks</title>
 
-  <link rel="stylesheet" href="style.css?v=17">
+  <link rel="stylesheet" href="style.css?v=18">
 </head>
 
 <body>
@@ -58,16 +58,10 @@
   <p id="staff-total-text">Estimated Total: $0.00</p>
 </div>
 
-<button
-  id="generate-final-order-button"
-  type="button"
-  onclick="generateFinalStaffOrder()"
->
-  Generate Final Order
-</button>
-
-<div id="final-staff-order-box" class="final-staff-order-box hidden">
-  Final order will appear here.
+<div id="final-staff-order-box" class="final-staff-order-box">
+  <h2>Final Order Summary</h2>
+  <p>Auto-updates as you edit this ticket.</p>
+  <pre id="final-staff-order-text">Loading final order...</pre>
 </div>
 
 <div class="staff-page-end-cap">
@@ -76,7 +70,7 @@
     </section>
   </main>
 
-    <script src="catalog.js?v=17"></script>
-    <script src="staff-checkout.js?v=17"></script>
+    <script src="catalog.js?v=18"></script>
+    <script src="staff-checkout.js?v=18"></script>
 </body>
 </html>

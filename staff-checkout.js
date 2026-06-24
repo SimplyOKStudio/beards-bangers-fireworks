@@ -392,6 +392,56 @@ function updateStaffOrderList() {
   totalText.textContent = "Estimated Total: $" + totals.estimatedTotal.toFixed(2);
 }
 
+// This updates the final order summary at the bottom of the staff checkout page.
+function updateFinalStaffOrderSummary() {
+  const finalOrderText = document.getElementById("final-staff-order-text");
+
+  if (!finalOrderText) {
+    return;
+  }
+
+  const selectedIds = Object.keys(staffSelectedFireworks);
+
+  let finalOrderLines = [];
+
+  finalOrderLines.push("Ticket: " + staffTicketNumber);
+  finalOrderLines.push("");
+
+  selectedIds.forEach(function (fireworkId) {
+    const firework = findFireworkById(fireworkId);
+
+    if (!firework) {
+      return;
+    }
+
+    const quantity = staffSelectedFireworks[fireworkId];
+
+    if (quantity <= 0) {
+      return;
+    }
+
+    const itemTotal = quantity * firework.price;
+
+    finalOrderLines.push(
+      quantity + " x " + firework.name + " - $" + itemTotal.toFixed(2)
+    );
+  });
+
+  const totals = calculateStaffTotals();
+
+  if (totals.itemCount === 0) {
+    finalOrderText.textContent = "No items are currently in this order.";
+    return;
+  }
+
+  finalOrderLines.push("");
+  finalOrderLines.push("Subtotal: $" + totals.subtotal.toFixed(2));
+  finalOrderLines.push("Estimated Tax: $" + totals.estimatedTax.toFixed(2));
+  finalOrderLines.push("Estimated Total: $" + totals.estimatedTotal.toFixed(2));
+
+  finalOrderText.textContent = finalOrderLines.join("\n");
+}
+
 // This updates the whole staff page.
 function updateStaffPage() {
   displayStaffCategoryButtons();
@@ -401,6 +451,8 @@ function updateStaffPage() {
   updateStaffOrderList();
 
   updateStaffFloatingListButton();
+
+  updateFinalStaffOrderSummary();
 }
 
 // This adds one item.

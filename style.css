@@ -2268,3 +2268,45 @@ body {
 }
 
 /* Staff final order summary ends here. */
+
+/* Staff auto final order summary starts here. */
+
+.final-staff-order-box {
+  margin-top: 18px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+
+  color: #fff3d2;
+}
+
+.final-staff-order-box h2 {
+  margin-bottom: 6px;
+
+  font-size: 28px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.final-staff-order-box p {
+  margin-bottom: 14px;
+
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff3d2;
+}
+
+.final-staff-order-box pre {
+  white-space: pre-wrap;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 850;
+
+  color: #fff3d2;
+}
+
+/* Staff auto final order summary ends here. */
