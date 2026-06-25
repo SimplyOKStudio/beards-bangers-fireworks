@@ -796,68 +796,6 @@ function prepareStandListSubmission() {
   return true;
 }
 
-// Keyboard close helper starts here.
-
-// This closes the phone keyboard when the customer starts touching or scrolling outside the search box.
-function closeSearchKeyboardIfNeeded(event) {
-  // This finds the search box.
-  const inventorySearch = document.getElementById("inventory-search");
-
-  // This stops the function if the search box does not exist.
-  if (!inventorySearch) {
-    return;
-  }
-
-  // This checks if the customer is currently typing in the search box.
-  const searchBoxIsActive = document.activeElement === inventorySearch;
-
-  // This stops the function if the search box is not active.
-  if (!searchBoxIsActive) {
-    return;
-  }
-
-  // This checks whether the customer touched inside the search box.
-  const touchedInsideSearchBox =
-    event &&
-    event.target &&
-    inventorySearch.contains(event.target);
-
-  // This keeps the keyboard open if the customer touched inside the search box.
-  if (touchedInsideSearchBox) {
-    return;
-  }
-
-  // This removes focus from the search box.
-  // On phones, this should close the keyboard.
-  inventorySearch.blur();
-
-  // This also tells the browser to move focus away from the input.
-  document.body.focus();
-}
-
-// This catches the first finger touch outside the search box.
-document.addEventListener("touchstart", closeSearchKeyboardIfNeeded, true);
-
-// This catches the drag motion when the customer starts scrolling.
-document.addEventListener("touchmove", closeSearchKeyboardIfNeeded, true);
-
-// This catches newer phone browsers that use pointer events.
-document.addEventListener("pointerdown", closeSearchKeyboardIfNeeded, true);
-
-// This catches mouse clicks for desktop testing.
-document.addEventListener("mousedown", closeSearchKeyboardIfNeeded, true);
-
-// This is a backup for when scrolling has already started.
-window.addEventListener(
-  "scroll",
-  function () {
-    closeSearchKeyboardIfNeeded(null);
-  },
-  true
-);
-
-// Keyboard close helper ends here.
-
 // Search Done button helper starts here.
 
 // This finds the Done button beside the search box.
