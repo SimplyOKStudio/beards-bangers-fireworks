@@ -341,19 +341,29 @@ function addFirework(fireworkId) {
 
 // This function subtracts one firework from the customer's list.
 function subtractFirework(fireworkId) {
-  // This checks if this firework is not already in the selected list.
+  // This stops the function if this firework is not already in the selected list.
   if (selectedFireworks[fireworkId] === undefined) {
-    // This starts the quantity at 0 if it does not exist yet.
-    selectedFireworks[fireworkId] = 0;
+    return;
   }
 
-    // This only subtracts if the quantity is above 0.
+  // This only subtracts if the quantity is above 0.
   if (selectedFireworks[fireworkId] > 0) {
     // This subtracts 1 from the selected firework quantity.
     selectedFireworks[fireworkId] = selectedFireworks[fireworkId] - 1;
 
     // This plays a small haptic tap when an item is subtracted.
     playHapticTap();
+  }
+
+  // This removes the firework from the selected list if the quantity reaches 0.
+  if (selectedFireworks[fireworkId] <= 0) {
+    // This deletes the zero-quantity item completely.
+    delete selectedFireworks[fireworkId];
+
+    // This clears the pending remove button if this was the item waiting for confirmation.
+    if (pendingCustomerRemoveId === fireworkId) {
+      pendingCustomerRemoveId = null;
+    }
   }
 
   // This updates the quantity number beside the firework in the main product list.
@@ -588,13 +598,30 @@ if (popularPicksContainer && bundlePackagesContainer && bigShowFinaleContainer) 
   displayTopSections();
 }
 
-// This opens the Send List to Stand form.
-function showStandListForm() {
-  // This gets the selected firework ids from the customer's list.
+// This counts only fireworks with a quantity above 0.
+function getSelectedFireworkCount() {
+  // This starts the count at 0.
+  let selectedItemCount = 0;
+
+  // This gets all selected firework ids from the selectedFireworks object.
   const selectedIds = Object.keys(selectedFireworks);
 
-  // This checks if the customer has not selected anything yet.
-  if (selectedIds.length === 0) {
+  // This loops through every selected firework id.
+  selectedIds.forEach(function (fireworkId) {
+    // This adds the quantity only if it is above 0.
+    if (selectedFireworks[fireworkId] > 0) {
+      selectedItemCount = selectedItemCount + selectedFireworks[fireworkId];
+    }
+  });
+
+  // This returns the real selected item count.
+  return selectedItemCount;
+}
+
+// This opens the Send List to Stand form.
+function showStandListForm() {
+  // This checks if the customer has no real selected items.
+  if (getSelectedFireworkCount() === 0) {
     // This tells the customer they need at least one item first.
     alert("Please add at least one firework to your list before sending it to the stand.");
 
@@ -719,11 +746,8 @@ function buildStaffCheckoutLink(ticketNumber) {
 
 // This prepares the hidden Netlify form fields before the list is submitted.
 function prepareStandListSubmission() {
-  // This gets the selected firework ids from the customer's list.
-  const selectedIds = Object.keys(selectedFireworks);
-
-  // This checks if the customer has not selected anything yet.
-  if (selectedIds.length === 0) {
+  // This checks if the customer has no real selected items.
+  if (getSelectedFireworkCount() === 0) {
     // This tells the customer they need at least one item first.
     alert("Please add at least one firework to your list before submitting.");
 

@@ -2966,3 +2966,38 @@ body {
 }
 
 /* Customer selected list layout fix ends here. */
+
+/* Customer remove button no-shift fix starts here. */
+
+.customer-list-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+.customer-trash-button {
+  width: 104px;
+  min-width: 104px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+.customer-trash-button.customer-trash-confirm {
+  width: 104px;
+  min-width: 104px;
+  height: 52px;
+  min-height: 52px;
+}
+
+/* Customer remove button no-shift fix ends here. */
