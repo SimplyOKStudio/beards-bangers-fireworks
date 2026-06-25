@@ -370,7 +370,7 @@ function updateStaffOrderList() {
   onclick="removeStaffFirework('${firework.id}')"
   aria-label="Remove ${firework.name}"
 >
-  ${pendingStaffRemoveId === firework.id ? "Sure?" : "🗑️"}
+  ${pendingStaffRemoveId === firework.id ? "Remove?" : "🗑️"}
 </button>
 </div>
 
