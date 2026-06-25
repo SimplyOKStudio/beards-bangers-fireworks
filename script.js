@@ -583,8 +583,10 @@ inventorySearch.addEventListener("keydown", function (event) {
 // This runs the displayFireworks function when the page loads.
 displayFireworks();
 
-// This runs the displayTopSections function when the page loads.
-displayTopSections();
+// This only runs the old top sections if those boxes still exist on the page.
+if (popularPicksContainer && bundlePackagesContainer && bigShowFinaleContainer) {
+  displayTopSections();
+}
 
 // This opens the Send List to Stand form.
 function showStandListForm() {
