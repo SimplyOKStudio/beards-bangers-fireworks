@@ -2670,3 +2670,40 @@ body {
 }
 
 /* Staff remove button, quantity centering, and final summary color fix ends here. */
+
+/* Customer-facing legal footer notice starts here. */
+
+.site-footer-notice {
+  margin: 24px 14px 150px 14px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+
+  color: #fff3d2;
+}
+
+.site-footer-notice h2 {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.site-footer-notice p {
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 700;
+
+  color: #fff3d2;
+}
+
+.site-footer-notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* Customer-facing legal footer notice ends here. */
