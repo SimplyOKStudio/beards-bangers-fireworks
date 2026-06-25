@@ -443,6 +443,141 @@ function updateFinalStaffOrderSummary() {
 }
 
 // This updates the whole staff page.
+
+// This makes product text safe before putting it into the final order summary.
+function escapeStaffText(text) {
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+// This updates the final order summary at the bottom of the staff checkout page.
+function updateFinalStaffOrderSummary() {
+  const finalOrderReadable = document.getElementById("final-staff-order-readable");
+
+  if (!finalOrderReadable) {
+    return;
+  }
+
+  const selectedIds = Object.keys(staffSelectedFireworks);
+
+  const totals = calculateStaffTotals();
+
+  if (totals.itemCount === 0) {
+    finalOrderReadable.innerHTML = `
+      <div class="final-order-ticket-line">Ticket: ${escapeStaffText(staffTicketNumber)}</div>
+      <div class="final-order-empty-line">No items are currently in this order.</div>
+    `;
+
+    return;
+  }
+
+  let finalOrderHtml = [];
+
+  finalOrderHtml.push(`
+    <div class="final-order-ticket-line">
+      Ticket: ${escapeStaffText(staffTicketNumber)}
+    </div>
+  `);
+
+  selectedIds.forEach(function (fireworkId) {
+    const firework = findFireworkById(fireworkId);
+
+    if (!firework) {
+      return;
+    }
+
+    const quantity = staffSelectedFireworks[fireworkId];
+
+    if (quantity <= 0) {
+      return;
+    }
+
+    const itemTotal = quantity * firework.price;
+
+    finalOrderHtml.push(`
+      <div class="final-order-item-line">
+        <span>${quantity} x ${escapeStaffText(firework.name)}</span>
+        <strong>$${itemTotal.toFixed(2)}</strong>
+      </div>
+    `);
+  });
+
+  finalOrderHtml.push(`
+    <div class="final-order-money-line">
+      <span>Subtotal:</span>
+      <strong>$${totals.subtotal.toFixed(2)}</strong>
+    </div>
+  `);
+
+  finalOrderHtml.push(`
+    <div class="final-order-money-line">
+      <span>Estimated Tax:</span>
+      <strong>$${totals.estimatedTax.toFixed(2)}</strong>
+    </div>
+  `);
+
+  finalOrderHtml.push(`
+    <div class="final-order-total-line">
+      <span>Estimated Total:</span>
+      <strong>$${totals.estimatedTotal.toFixed(2)}</strong>
+    </div>
+  `);
+
+  finalOrderReadable.innerHTML = finalOrderHtml.join("");
+}
+
+// This copies the final order summary text.
+function copyFinalStaffOrder() {
+  const finalOrderReadable = document.getElementById("final-staff-order-readable");
+  const copyButton = document.getElementById("copy-final-order-button");
+
+  if (!finalOrderReadable) {
+    return;
+  }
+
+  const finalOrderText = finalOrderReadable.innerText;
+
+  navigator.clipboard.writeText(finalOrderText).then(function () {
+    if (!copyButton) {
+      return;
+    }
+
+    copyButton.textContent = "Copied!";
+
+    setTimeout(function () {
+      copyButton.textContent = "Copy Final Order";
+    }, 1800);
+  });
+}
+
+// This clears the staff search box and shows the current category again.
+function clearStaffSearch() {
+  const staffSearch = document.getElementById("staff-product-search");
+
+  if (!staffSearch) {
+    return;
+  }
+
+  staffSearch.value = "";
+
+  staffSearch.blur();
+
+  updateStaffPage();
+}
+
+// This scrolls back to the top of the staff checkout page.
+function scrollToStaffTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
 function updateStaffPage() {
   displayStaffCategoryButtons();
 
