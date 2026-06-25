@@ -2520,3 +2520,35 @@ body {
 }
 
 /* Staff checkout final polish ends here. */
+
+/* Staff search and clear button alignment fix starts here. */
+
+.staff-search-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.staff-search-row #staff-product-search {
+  height: 68px;
+  min-height: 68px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#staff-clear-search-button {
+  height: 68px;
+  min-height: 68px;
+  margin: 0;
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* Staff search and clear button alignment fix ends here. */
