@@ -2707,3 +2707,158 @@ body {
 }
 
 /* Customer-facing legal footer notice ends here. */
+
+/* Customer clear search, back to top, and trash remove polish starts here. */
+
+#search-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: stretch;
+}
+
+#search-row #inventory-search {
+  height: 56px;
+  min-height: 56px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#customer-clear-search-button,
+#search-done-button {
+  height: 56px;
+  min-height: 56px;
+  margin: 0;
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+#search-done-button.hidden {
+  display: none;
+}
+
+.customer-list-action-row {
+  display: grid;
+  grid-template-columns: 1fr 112px;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.customer-list-quantity-row {
+  display: grid;
+  grid-template-columns: 58px 86px 58px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 16px;
+
+  width: auto;
+}
+
+.customer-list-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+.customer-list-quantity-row span {
+  width: 86px;
+  min-width: 86px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 950;
+  line-height: 1;
+
+  color: #fff3d2;
+}
+
+.customer-trash-button {
+  justify-self: center;
+
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 16px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.customer-trash-button.customer-trash-confirm {
+  width: 108px;
+  min-width: 108px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 10px;
+
+  font-size: 19px;
+  font-weight: 950;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.customer-bottom-action-buttons {
+  margin: 18px 14px 0 14px;
+}
+
+#customer-back-to-top-button {
+  width: 100%;
+  padding: 18px;
+
+  font-size: 23px;
+  font-weight: 950;
+
+  border-radius: 18px;
+  border: 3px solid #fff3d2;
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+/* Customer clear search, back to top, and trash remove polish ends here. */

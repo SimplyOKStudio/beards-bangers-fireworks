@@ -17,7 +17,7 @@
   <title>Fireworks Stand List</title>
 
   <!-- This connects our CSS file so we can style the page. -->
-<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="style.css?v=23">
 </head>
 
 <body>
@@ -144,6 +144,11 @@
 
     <!-- This search box lets customers quickly find fireworks by name or category. -->
     <input id="inventory-search" type="text" placeholder="Search fireworks...">
+
+    <!-- This button clears the search and shows the selected category again. -->
+    <button id="customer-clear-search-button" type="button" onclick="clearCustomerSearch()">
+      Clear
+    </button>
 
     <!-- This button closes the phone keyboard after searching. -->
     <button id="search-done-button" class="hidden" type="button" onclick="finishSearch()">
@@ -313,6 +318,18 @@
   </section>
   <!-- My Fireworks List section ends here. -->
 
+    <!-- Customer back to top button starts here. -->
+  <div class="customer-bottom-action-buttons">
+    <button
+      id="customer-back-to-top-button"
+      type="button"
+      onclick="scrollCustomerToTop()"
+    >
+      Back to Top
+    </button>
+  </div>
+  <!-- Customer back to top button ends here. -->
+
     <!-- Customer legal and safety footer notice starts here. -->
   <footer class="site-footer-notice">
     <h2>Legal &amp; Safety Notice</h2>
@@ -332,8 +349,8 @@
   <!-- Customer legal and safety footer notice ends here. -->
 
   <!-- This connects our JavaScript file so the buttons can do things. -->
-  <script src="catalog.js"></script>
-  <script src="script.js"></script>
+  <script src="catalog.js?v=23"></script>
+<script src="script.js?v=23"></script>
 </body>
 
 </html>

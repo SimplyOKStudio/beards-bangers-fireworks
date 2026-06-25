@@ -116,6 +116,9 @@ const floatingItemCount = document.getElementById("floating-item-count");
 // This finds the floating estimated total text.
 const floatingTotalText = document.getElementById("floating-total-text");
 
+// This stores which customer list item is waiting for remove confirmation.
+let pendingCustomerRemoveId = null;
+
 // This creates the plus and minus button rows for a firework card.
 // Some fireworks have one buying option.
 // Other fireworks have multiple buying options, like EACH or 1 box.
@@ -362,23 +365,41 @@ function subtractFirework(fireworkId) {
 
 // This function removes one firework completely from My Fireworks List.
 function removeFirework(fireworkId) {
-  // This finds the full firework info using the id.
-  const firework = findFireworkById(fireworkId);
+  // This checks if this item is not already waiting for confirmation.
+  if (pendingCustomerRemoveId !== fireworkId) {
+    // This marks this item as waiting for confirmation.
+    pendingCustomerRemoveId = fireworkId;
 
-  // This asks the customer/team member to confirm before removing the item.
-  const shouldRemove = confirm("Remove " + firework.name + " from list?");
-
-  // This checks if they clicked OK.
-  if (shouldRemove === true) {
-    // This deletes the firework from the selected list completely.
-    delete selectedFireworks[fireworkId];
-
-    // This updates the quantity number beside the firework in the main product list.
-    updateQuantityText(fireworkId);
-
-    // This updates the My Fireworks List area.
+    // This updates the My Fireworks List area so the button changes to Remove?.
     updateCustomerList();
+
+    // This gives the customer 3 seconds to confirm the removal.
+    setTimeout(function () {
+      // This checks if the same item is still waiting for confirmation.
+      if (pendingCustomerRemoveId === fireworkId) {
+        // This cancels the pending removal.
+        pendingCustomerRemoveId = null;
+
+        // This changes the button back to the trash can.
+        updateCustomerList();
+      }
+    }, 3000);
+
+    // This stops here on the first tap.
+    return;
   }
+
+  // This deletes the firework from the selected list completely on the second tap.
+  delete selectedFireworks[fireworkId];
+
+  // This clears the pending removal.
+  pendingCustomerRemoveId = null;
+
+  // This updates the quantity number beside the firework in the main product list.
+  updateQuantityText(fireworkId);
+
+  // This updates the My Fireworks List area.
+  updateCustomerList();
 }
 
 // This updates every visible quantity number for one firework.
@@ -433,13 +454,26 @@ totalItems = totalItems + quantity;
         <h3>${firework.name}</h3>
         <p>$${firework.price.toFixed(2)} each</p>
 
-        <button onclick="subtractFirework('${firework.id}')">-</button>
-        <span>${quantity}</span>
-        <button onclick="addFirework('${firework.id}')">+</button>
+        <div class="customer-list-action-row">
+          <div class="customer-list-quantity-row">
+            <button type="button" onclick="subtractFirework('${firework.id}')">-</button>
+
+            <span>${quantity}</span>
+
+            <button type="button" onclick="addFirework('${firework.id}')">+</button>
+          </div>
+
+          <button
+            class="customer-trash-button ${pendingCustomerRemoveId === firework.id ? "customer-trash-confirm" : ""}"
+            type="button"
+            onclick="removeFirework('${firework.id}')"
+            aria-label="Remove ${firework.name}"
+          >
+            ${pendingCustomerRemoveId === firework.id ? "Remove?" : "🗑️"}
+          </button>
+        </div>
 
         <p>Item Total: $${itemTotal.toFixed(2)}</p>
-
-        <button onclick="removeFirework('${firework.id}')">Remove</button>
       </div>
     `);
   });
@@ -473,6 +507,26 @@ floatingItemCount.textContent = totalItems + " items";
 
 // This updates the floating total.
 floatingTotalText.textContent = "$" + estimatedTotal.toFixed(2);
+}
+
+// This clears the customer search box and shows the selected category again.
+function clearCustomerSearch() {
+  // This clears the search text.
+  inventorySearch.value = "";
+
+  // This closes the phone keyboard.
+  inventorySearch.blur();
+
+  // This rebuilds the firework list.
+  displayFireworks();
+}
+
+// This scrolls the customer back to the top of the page.
+function scrollCustomerToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 // This scrolls the customer down to the My Fireworks List section.
