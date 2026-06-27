@@ -3143,3 +3143,24 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Shopping tip ends here. */
+
+/* Stand info box starts here. */
+
+.stand-info-box {
+  margin: 14px;
+  padding: 14px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stand-info-box p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+/* Stand info box ends here. */
