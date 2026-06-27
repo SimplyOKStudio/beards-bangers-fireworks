@@ -3051,3 +3051,62 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Staff category buttons match customer category buttons ends here. */
+
+/* Staff category buttons exact customer-style match starts here. */
+
+body.staff-checkout-body .staff-category-buttons,
+body.staff-checkout-body #staff-category-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px 22px !important;
+
+  margin-top: 18px !important;
+  margin-bottom: 22px !important;
+  padding: 0 !important;
+
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+body.staff-checkout-body .staff-category-button,
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 142px !important;
+  padding: 18px 14px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-size: 28px !important;
+  font-weight: 950 !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+
+  white-space: normal !important;
+
+  border-radius: 22px !important;
+  border: 4px solid #4f83c5 !important;
+  background-color: #1b4378 !important;
+  color: #fff3d2 !important;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+body.staff-checkout-body .staff-category-button.active-staff-category,
+body.staff-checkout-body .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body .staff-category-button.active-staff-category:active,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:active {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border: 4px solid #fff3d2 !important;
+  box-shadow: 0 4px 18px rgba(240, 183, 47, 0.35) !important;
+}
+
+/* Staff category buttons exact customer-style match ends here. */
