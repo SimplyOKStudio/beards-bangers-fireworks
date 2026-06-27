@@ -3164,3 +3164,27 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Stand info box ends here. */
+
+/* Success page ticket number starts here. */
+
+.success-ticket-box {
+  margin: 18px 0;
+  padding: 14px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.success-ticket-box p {
+  margin: 6px 0;
+}
+
+.success-ticket-number {
+  font-size: 28px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+/* Success page ticket number ends here. */

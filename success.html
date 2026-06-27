@@ -66,18 +66,18 @@
   </main>
 
   <script>
-    // This gets the last ticket number saved before the form submitted.
-    const lastTicketNumber = sessionStorage.getItem("lastTicketNumber");
+  // This gets the last ticket number saved before the form submitted.
+  const lastTicketNumber = sessionStorage.getItem("lastTicketNumber");
 
-    // This finds the paragraph where the ticket number should appear.
-    const ticketNumberText = document.getElementById("success-ticket-number");
+  // This finds the paragraph where the ticket number should appear.
+  const ticketNumberText = document.getElementById("success-ticket-number");
 
-    // This shows the ticket number if it exists.
-    if (lastTicketNumber) {
-      ticketNumberText.textContent = "Your ticket number is: " + lastTicketNumber;
-    } else {
-      ticketNumberText.textContent = "Please check your email or ask the stand for help if you do not see your ticket number.";
-    }
-  </script>
+  // This shows only the ticket number because the label is already written above it.
+  if (lastTicketNumber && ticketNumberText) {
+    ticketNumberText.textContent = lastTicketNumber;
+  } else if (ticketNumberText) {
+    ticketNumberText.textContent = "Please check your confirmation email or ask the stand for help if you do not see your ticket number.";
+  }
+</script>
 </body>
 </html>
