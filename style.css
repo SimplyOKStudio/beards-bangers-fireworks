@@ -3126,3 +3126,20 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Pickup timing notice ends here. */
+
+/* Shopping tip starts here. */
+
+.shopping-tip {
+  margin: 10px 14px 18px 14px;
+  padding: 12px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Shopping tip ends here. */
