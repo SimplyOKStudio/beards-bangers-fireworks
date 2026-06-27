@@ -5723,6 +5723,214 @@ function applyCatalogPriceCorrections() {
 
 applyCatalogPriceCorrections();
 
+// Catalog option cleanup block starts here.
+// This cleans up items where the catalog price is for a pack/box/bag,
+// not for one individual sparkler/candle/piece.
+
+function setCatalogItemAsSingleOption(fireworkId, unitLabel, price) {
+  const firework = fireworks.find(function (catalogItem) {
+    return catalogItem.id === fireworkId;
+  });
+
+  if (firework === undefined) {
+    return;
+  }
+
+  firework.unitLabel = unitLabel;
+  firework.price = price;
+  delete firework.options;
+}
+
+// Gold Sparklers - 20 inch:
+// Remove the $30 bundle option and leave only 1 pack of 4 for $5.
+setCatalogItemAsSingleOption(
+  "gold-sparklers-20-inch",
+  "1 PACK OF 4 SPARKLERS",
+  5.00
+);
+
+// Gold Magic Sparklers - 20 inch:
+// This should be sold as 1 pack of 6, not 1 individual sparkler.
+setCatalogItemAsSingleOption(
+  "gold-magic-sparklers-20-inch",
+  "1 PACK OF 6",
+  7.50
+);
+
+// Sparkler pack/bag cleanup.
+setCatalogItemAsSingleOption(
+  "morning-glory-sparklers-36-count",
+  "1 BAG OF 36",
+  5.00
+);
+
+setCatalogItemAsSingleOption(
+  "black-cat-neon-sparklers",
+  "1 PACK OF 5",
+  3.50
+);
+
+// Parachute pack/box cleanup.
+setCatalogItemAsSingleOption(
+  "princess-parachute",
+  "1 BOX OF 2",
+  20.00
+);
+
+setCatalogItemAsSingleOption(
+  "base-jump-parachute-5-shot",
+  "1 PACK OF 4",
+  20.00
+);
+
+// Roman candle pack cleanup.
+setCatalogItemAsSingleOption(
+  "roman-candle-5-ball",
+  "1 PACK OF 6",
+  4.50
+);
+
+setCatalogItemAsSingleOption(
+  "americas-candle-5-ball",
+  "1 PACK OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "brothers-blackjack-candle-5-ball",
+  "1 PACK OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "contraband-candle-5-ball",
+  "1 PACK OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "brothers-crazy-aces-candle-5-ball",
+  "1 PACK OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "dragon-tails-candle-5-ball",
+  "1 PACK OF 5",
+  15.00
+);
+
+setCatalogItemAsSingleOption(
+  "black-cat-gatlin-pack-5-ball",
+  "1 PACK OF 8",
+  28.00
+);
+
+setCatalogItemAsSingleOption(
+  "black-cat-premium-candle-5-ball",
+  "1 PACK OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "thundermania-candle-8-ball",
+  "1 PACK OF 4",
+  8.00
+);
+
+setCatalogItemAsSingleOption(
+  "roman-candle-10-ball",
+  "1 PACK OF 6",
+  7.50
+);
+
+setCatalogItemAsSingleOption(
+  "boombomb-candle-10-ball",
+  "1 PACK OF 6",
+  9.00
+);
+
+setCatalogItemAsSingleOption(
+  "camo-pack-candle-10-ball",
+  "1 PACK OF 12",
+  18.00
+);
+
+setCatalogItemAsSingleOption(
+  "brothers-cherry-on-top-candle-10-ball",
+  "1 PACK OF 4",
+  6.00
+);
+
+setCatalogItemAsSingleOption(
+  "crackling-candle-10-ball",
+  "1 PACK OF 6",
+  9.00
+);
+
+setCatalogItemAsSingleOption(
+  "exploding-candle-10-ball",
+  "1 PACK OF 4",
+  6.00
+);
+
+setCatalogItemAsSingleOption(
+  "black-cat-handful-candle-10-ball",
+  "1 PACK OF 5",
+  7.50
+);
+
+setCatalogItemAsSingleOption(
+  "wild-side-candle-10-ball",
+  "1 PACK OF 8",
+  12.00
+);
+
+// Flying item pack/box cleanup.
+setCatalogItemAsSingleOption(
+  "color-spaceship-2-pack",
+  "1 PACKAGE OF 3",
+  4.50
+);
+
+setCatalogItemAsSingleOption(
+  "brothers-lady-bugs",
+  "1 PACK OF 3",
+  7.50
+);
+
+setCatalogItemAsSingleOption(
+  "brothers-magic-crystal",
+  "1 BOX OF 4",
+  10.00
+);
+
+setCatalogItemAsSingleOption(
+  "pigs-can-fly",
+  "1 BOX OF 4",
+  12.00
+);
+
+setCatalogItemAsSingleOption(
+  "sky-smoke",
+  "1 BOX OF 4",
+  9.00
+);
+
+setCatalogItemAsSingleOption(
+  "tiger-tails",
+  "1 BOX OF 6",
+  9.00
+);
+
+setCatalogItemAsSingleOption(
+  "black-cat-uav",
+  "1 PACK OF 3",
+  6.00
+);
+
+// Catalog option cleanup block ends here.
+
 // Catalog price correction block ends here.
 
 // This function finds one firework or one buying option by its id.
