@@ -217,7 +217,7 @@
       data-netlify="true"
       netlify-honeypot="bot-field"
       class="hidden"
-      onsubmit="return prepareStandListSubmission()"
+        onsubmit="return submitStandListForm(event)"()"
     >
       <!-- This hidden field tells Netlify which form is being submitted. -->
       <input type="hidden" name="form-name" value="fireworks-list">
@@ -350,7 +350,7 @@
 
   <!-- This connects our JavaScript file so the buttons can do things. -->
   <script src="catalog.js?v=25"></script>
-<script src="script.js?v=28"></script>
+<script src="script.js?v=29"></script>
 </body>
 
 </html>

@@ -796,6 +796,61 @@ function prepareStandListSubmission() {
   return true;
 }
 
+// This safely submits the stand list without leaving the browser on a resubmittable form page.
+function submitStandListForm(event) {
+  // This stops the browser's normal form submit.
+  event.preventDefault();
+
+  // This prepares the hidden form fields and checks for empty lists.
+  const formIsReady = prepareStandListSubmission();
+
+  // This stops if the form is not ready.
+  if (formIsReady !== true) {
+    return false;
+  }
+
+  // This finds the form.
+  const standListForm = document.getElementById("stand-list-form");
+
+  // This finds the submit button.
+  const submitButton = document.getElementById("submit-stand-list-button");
+
+  // This disables the submit button so the customer cannot double-submit.
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+  }
+
+  // This packages the form data for Netlify.
+  const formData = new FormData(standListForm);
+
+  // This sends the form to Netlify in the background.
+  fetch("/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(function () {
+      // This sends the customer to the success page as a normal read-only page.
+      window.location.replace("/success.html");
+    })
+    .catch(function () {
+      // This warns the customer if something went wrong.
+      alert("Something went wrong while sending your list. Please try again or show your list to a team member.");
+
+      // This re-enables the button so they can try again.
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit List";
+      }
+    });
+
+  // This prevents the browser from doing the old submit behavior.
+  return false;
+}
+
 // Search Done button helper starts here.
 
 // This finds the Done button beside the search box.
