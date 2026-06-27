@@ -166,6 +166,38 @@ function createBuyingOptionsHtml(firework) {
   `;
 }
 
+// This checks whether a firework should show inside the selected customer category.
+function fireworkMatchesCustomerCategory(firework, selectedCategory) {
+  // The All button shows everything.
+  if (selectedCategory === "All") {
+    return true;
+  }
+
+  // The Cakes button should only show true cake items.
+  // This prevents Saturn Missiles, Fountains, and other cross-tagged items from cluttering Cakes.
+  if (selectedCategory === "Cakes") {
+    return firework.category === "Cakes";
+  }
+
+  // These special sections are allowed to use shopTypes because they are highlight tags.
+  if (
+    selectedCategory === "Popular Picks" ||
+    selectedCategory === "Big Show Finale" ||
+    selectedCategory === "Patriotic" ||
+    selectedCategory === "Bundle Packages"
+  ) {
+    return firework.shopTypes !== undefined && firework.shopTypes.includes(selectedCategory);
+  }
+
+  // Normal category buttons should mostly follow the item's main category.
+  if (firework.category === selectedCategory) {
+    return true;
+  }
+
+  // This fallback lets useful secondary tags still work for categories like Flying Items.
+  return firework.shopTypes !== undefined && firework.shopTypes.includes(selectedCategory);
+}
+
 // This displays the fireworks in the Full Inventory section.
 function displayFireworks() {
   // This clears the current Full Inventory cards before rebuilding them.
@@ -215,11 +247,29 @@ function displayFireworks() {
     });
 
   // This checks if the firework belongs to the selected category button.
-  const selectedCategoryMatches =
-    activeCategory === "All" ||
-    activeCategory === "Popular Picks" ||
-    firework.category === activeCategory ||
+let selectedCategoryMatches = false;
+
+if (activeCategory === "All") {
+  selectedCategoryMatches = true;
+} else if (activeCategory === "Cakes") {
+  selectedCategoryMatches = firework.category === "Cakes";
+} else if (
+  activeCategory === "Popular Picks" ||
+  activeCategory === "Big Show Finale" ||
+  activeCategory === "Patriotic" ||
+  activeCategory === "Bundle Packages"
+) {
+  selectedCategoryMatches =
+    firework.shopTypes !== undefined &&
     firework.shopTypes.includes(activeCategory);
+} else {
+  selectedCategoryMatches =
+    firework.category === activeCategory ||
+    (
+      firework.shopTypes !== undefined &&
+      firework.shopTypes.includes(activeCategory)
+    );
+}
 
   // This combines all the search checks.
   const searchMatches =
