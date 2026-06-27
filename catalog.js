@@ -5506,6 +5506,16 @@ const fireworks = [
   },
 
   {
+  itemNumber: 9999,
+  id: "the-godfather",
+  name: "THE GODFATHER",
+  price: 1000.00,
+  unitLabel: "1 BUNDLE",
+  category: "Bundle Packages",
+  shopTypes: ["Bundle Packages", "Assortments", "Big Show Finale"]
+},
+
+  {
     itemNumber: 2786,
     id: "bring-the-rain-rockets",
     name: "BRING THE RAIN ROCKET",
