@@ -5642,6 +5642,89 @@ const fireworks = [
   }
 ];
 
+// Catalog price correction block starts here.
+// These prices were corrected to match the catalog Unit Price / Bundle Price check.
+// This lets us patch launch-night price mismatches without manually editing 48 separate catalog entries.
+
+const catalogOptionPriceCorrections = {
+  "x-wing-missile-4-inch-piece": 3.50,
+  "x-wing-missile-6-inch-piece": 3.75,
+  "assorted-missile-10-inch-piece": 8.50,
+  "assorted-missile-12-inch-piece": 9.00,
+  "strike-eagle-missile-piece": 9.00,
+
+  "single-night-parachute-piece": 2.50,
+  "giant-parachute-40-inch-piece": 7.50,
+  "oh-chute-parachute-piece": 10.00,
+  "princess-parachute-piece": 20.00,
+  "base-jump-parachute-5-shot-piece": 20.00,
+
+  "colored-sparklers-8-inch-box": 2.00,
+  "gold-sparklers-8-inch-box": 2.00,
+  "colored-sparklers-10-inch-box": 2.50,
+  "gold-sparklers-10-inch-box": 2.50,
+  "gold-magic-sparklers-20-inch-piece": 7.50,
+  "black-cat-morning-glory-sparklers-bundle": 1.25,
+  "morning-glory-sparklers-bundle": 1.25,
+  "morning-glory-sparklers-36-count-piece": 5.00,
+  "black-cat-neon-sparklers-piece": 3.50,
+
+  "roman-candle-5-ball-piece": 4.50,
+  "americas-candle-5-ball-piece": 12.00,
+  "brothers-blackjack-candle-5-ball-piece": 12.00,
+  "contraband-candle-5-ball-piece": 12.00,
+  "brothers-crazy-aces-candle-5-ball-piece": 12.00,
+  "dragon-tails-candle-5-ball-piece": 15.00,
+  "black-cat-gatlin-pack-5-ball-candle": 28.00,
+  "black-cat-premium-candle-5-ball-piece": 12.00,
+  "thundermania-candle-8-ball-piece": 8.00,
+
+  "roman-candle-10-ball-piece": 7.50,
+  "boombomb-candle-10-ball-piece": 9.00,
+  "camo-pack-candle-10-ball-piece": 18.00,
+  "brothers-cherry-on-top-candle-10-ball-piece": 6.00,
+  "crackling-candle-10-ball-piece": 9.00,
+  "exploding-candle-10-ball-piece": 6.00,
+  "black-cat-handful-candle-10-ball-piece": 7.50,
+  "wild-side-candle-10-ball-piece": 12.00,
+
+  "color-spaceship-2-pack-piece": 4.50,
+  "two-stage-turbo-phantom-piece": 3.00,
+  "brothers-lady-bugs-piece": 7.50,
+  "brothers-magic-crystal-piece": 10.00,
+  "pigs-can-fly-piece": 12.00,
+  "sky-smoke-piece": 9.00,
+  "tiger-tails-piece": 9.00,
+  "black-cat-uav-piece": 6.00
+};
+
+const catalogItemPriceCorrections = {
+  "young-man": 16.00,
+  "black-cat-terminator-cakes-15-shot": 120.00,
+  "hardcore-cycles-16-shot": 200.00,
+  "royal-assorted-cakes-16-shot": 200.00
+};
+
+function applyCatalogPriceCorrections() {
+  fireworks.forEach(function (firework) {
+    if (catalogItemPriceCorrections[firework.id] !== undefined) {
+      firework.price = catalogItemPriceCorrections[firework.id];
+    }
+
+    if (firework.options !== undefined) {
+      firework.options.forEach(function (option) {
+        if (catalogOptionPriceCorrections[option.id] !== undefined) {
+          option.price = catalogOptionPriceCorrections[option.id];
+        }
+      });
+    }
+  });
+}
+
+applyCatalogPriceCorrections();
+
+// Catalog price correction block ends here.
+
 // This function finds one firework or one buying option by its id.
 function findFireworkById(fireworkId) {
   // This first checks normal one-option fireworks.
