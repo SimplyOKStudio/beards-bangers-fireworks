@@ -996,7 +996,2195 @@ body {
   padding-bottom: 130px;
 }
 
-/* This hides the My List bar while the customer is typing in search. */
-body.search-is-active #floating-list-button {
+/* Keeps the search bar and My List button visible while customers scroll. */
+#sticky-shop-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #111;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Makes the search box take most of the top bar space. */
+#sticky-shop-bar #inventory-search {
+  flex: 1;
+  margin: 0;
+}
+
+/* Changes the old floating button into a top-bar button. */
+#sticky-shop-bar #floating-list-button {
+  position: static;
+  width: auto;
+  min-width: 115px;
+  margin: 0;
+  padding: 8px 10px;
+}
+
+/* Keeps the My List button readable without getting too tall. */
+#sticky-shop-bar #floating-list-button span {
+  display: block;
+  line-height: 1.15;
+}
+
+/* Makes the helper text smaller so the top bar stays compact. */
+#sticky-shop-bar #floating-list-help {
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+/* Makes the top bar stack nicely on very small phones. */
+@media (max-width: 480px) {
+  #sticky-shop-bar {
+    flex-direction: column;
+  }
+
+  #sticky-shop-bar #floating-list-button {
+    width: 100%;
+  }
+}
+
+/* Send List to Stand form starts here. */
+
+#stand-list-form {
+  margin-top: 22px;
+  padding: 22px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+}
+
+#stand-list-form h2 {
+  margin-bottom: 12px;
+}
+
+.form-intro {
+  font-size: 21px;
+  line-height: 1.45;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff3d2;
+}
+
+.form-field input {
+  display: block;
+  width: 100%;
+  min-height: 62px;
+  padding: 14px 16px;
+  font-size: 22px;
+  border-radius: 12px;
+  border: 3px solid #f0b72f;
+  background-color: #fff3d2;
+  color: #07182e;
+}
+
+.form-field input::placeholder {
+  color: #6b7280;
+}
+
+.submission-rules {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background-color: #0b2447;
+  border-radius: 14px;
+  border: 1px solid #426ca3;
+}
+
+.submission-rules p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.submission-rules p:last-child {
+  margin-bottom: 0;
+}
+
+#submit-stand-list-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 18px;
+  font-size: 24px;
+  border-radius: 16px;
+}
+
+/* Send List to Stand form ends here. */
+
+/* Clean sticky search, Done button, and My List bar starts here. */
+
+#sticky-shop-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 8px;
+  gap: 8px;
+  background-color: #111111;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* This keeps the search bar and Done button on one clean row. */
+#search-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+/* Search bar */
+#search-row #inventory-search {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 16px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 56px;
+  border-radius: 16px;
+}
+
+/* Done Searching button */
+#search-done-button {
+  width: 86px;
+  min-width: 86px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 10px;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  border-radius: 16px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+/* This keeps hidden things hidden. */
+#search-done-button.hidden {
   display: none;
 }
+
+/* My List button */
+#sticky-shop-bar #floating-list-button {
+  width: 100%;
+  height: 56px;
+  min-height: 56px;
+  padding: 6px 14px;
+  border-radius: 16px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "label count total"
+    "help help help";
+  column-gap: 12px;
+  row-gap: 2px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+/* My List text */
+#sticky-shop-bar #floating-list-label {
+  grid-area: label;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  color: #07182e;
+}
+
+/* Item count */
+#sticky-shop-bar #floating-item-count {
+  grid-area: count;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  color: #07182e;
+}
+
+/* Total */
+#sticky-shop-bar #floating-total-text {
+  grid-area: total;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  color: #07182e;
+}
+
+/* Tap helper */
+#sticky-shop-bar #floating-list-help {
+  grid-area: help;
+  display: block;
+  margin: 0;
+  min-width: 0;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.85;
+  color: #07182e;
+}
+
+/* Clean sticky search, Done button, and My List bar ends here. */
+
+/* Success page styling starts here. */
+
+.confirmation-page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.confirmation-page h2 {
+  font-size: 34px;
+  margin-bottom: 18px;
+  color: #fff3d2;
+}
+
+.confirmation-page p {
+  font-size: 21px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+#success-ticket-number {
+  font-size: 26px;
+  font-weight: 900;
+  color: #f0b72f;
+}
+
+.return-home-button {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 16px 22px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+  border-radius: 16px;
+  font-size: 21px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Success page styling ends here. */
+
+/* Human confirmation checkbox starts here. */
+
+.human-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+
+  color: #fff3d2;
+}
+
+.human-check input {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin-top: 4px;
+  accent-color: #f0b72f;
+}
+
+.human-check span {
+  display: block;
+  flex: 1;
+  min-width: 0;
+
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+  text-align: left;
+  color: #fff3d2;
+}
+
+/* Human confirmation checkbox ends here. */
+
+/* Staff checkout proof-of-life styling starts here. */
+
+.staff-checkout-panel {
+  max-width: 760px;
+  margin: 28px auto;
+  padding: 22px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+}
+
+.staff-checkout-panel h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #fff3d2;
+}
+
+.staff-checkout-note {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.staff-order-card {
+  margin-bottom: 14px;
+  padding: 16px;
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-order-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff3d2;
+}
+
+.staff-order-card p {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.staff-total-box {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #07182e;
+  border: 2px solid #f0b72f;
+  border-radius: 14px;
+}
+
+.staff-total-box p {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+/* Staff checkout proof-of-life styling ends here. */
+
+/* Staff checkout editable buttons start here. */
+
+.staff-quantity-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.staff-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  font-size: 30px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+.staff-quantity-row span {
+  min-width: 42px;
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+.staff-remove-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+/* Staff checkout editable buttons end here. */
+
+/* Staff product search and add section starts here. */
+
+.staff-product-tools {
+  margin-top: 20px;
+  margin-bottom: 26px;
+  padding: 18px;
+  background-color: #07182e;
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+}
+
+.staff-product-tools h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #fff3d2;
+}
+
+#staff-product-search {
+  width: 100%;
+  min-height: 58px;
+  margin-bottom: 14px;
+  padding: 12px 16px;
+
+  font-size: 21px;
+
+  border-radius: 14px;
+  border: 3px solid #f0b72f;
+  background-color: #fff3d2;
+  color: #07182e;
+}
+
+.staff-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.staff-category-button {
+  padding: 10px 12px;
+
+  font-size: 16px;
+  font-weight: 900;
+
+  border-radius: 999px;
+  border: 2px solid #f0b72f;
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+.staff-category-button.active-staff-category {
+  background-color: #f0b72f;
+  color: #07182e;
+  border-color: #fff3d2;
+}
+
+.staff-product-results {
+  display: grid;
+  gap: 12px;
+}
+
+.staff-product-card {
+  padding: 14px;
+  background-color: #12345f;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-product-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #fff3d2;
+}
+
+.staff-product-card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.staff-add-option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  background-color: #0b2447;
+  border-radius: 12px;
+}
+
+.staff-add-option-label {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+.staff-add-option-price {
+  font-size: 16px;
+  color: #fff3d2;
+}
+
+.staff-add-option-row button {
+  min-width: 78px;
+  padding: 10px 12px;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  border-radius: 12px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+.staff-current-order-heading {
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+/* Staff product search and add section ends here. */
+
+/* Staff main-site-style checkout starts here. */
+
+.staff-shop-panel {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 16px;
+  background-color: #12345f;
+  border: 2px solid #f0b72f;
+  border-radius: 18px;
+}
+
+#staff-sticky-shop-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 8px;
+  margin-bottom: 14px;
+
+  background-color: #111111;
+  border-radius: 16px;
+  border: 2px solid #111111;
+}
+
+#staff-product-search {
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 16px;
+
+  font-size: 20px;
+
+  border-radius: 16px;
+  border: 3px solid #f0b72f;
+  background-color: #fff3d2;
+  color: #07182e;
+}
+
+#staff-floating-list-button {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+
+  width: 100%;
+  padding: 12px 14px;
+
+  border-radius: 16px;
+  border: 3px solid #f0b72f;
+  background-color: #0b2447;
+  color: #fff3d2;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#staff-floating-list-label {
+  text-align: left;
+}
+
+#staff-floating-list-count {
+  text-align: center;
+}
+
+#staff-floating-list-total {
+  text-align: right;
+  color: #f0b72f;
+}
+
+.staff-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.staff-category-button {
+  padding: 10px 12px;
+
+  font-size: 16px;
+  font-weight: 900;
+
+  border-radius: 999px;
+  border: 2px solid #f0b72f;
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+.staff-category-button.active-staff-category {
+  background-color: #f0b72f;
+  color: #07182e;
+  border-color: #fff3d2;
+}
+
+.staff-product-results {
+  display: grid;
+  gap: 14px;
+}
+
+.staff-product-card {
+  padding: 16px;
+
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 16px;
+}
+
+.staff-product-card h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #fff3d2;
+}
+
+.staff-product-category {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #f0b72f;
+  font-weight: 800;
+}
+
+.staff-product-option-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  background-color: #07182e;
+  border-radius: 14px;
+}
+
+.staff-product-option-label {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+.staff-product-option-price {
+  font-size: 16px;
+  color: #fff3d2;
+}
+
+.staff-product-quantity-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.staff-product-quantity-row button {
+  width: 46px;
+  height: 46px;
+
+  font-size: 28px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #f0b72f;
+  color: #07182e;
+  border: 3px solid #fff3d2;
+}
+
+.staff-product-quantity-row span {
+  min-width: 34px;
+
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff3d2;
+}
+
+#staff-current-order-heading {
+  margin-top: 28px;
+  margin-bottom: 12px;
+
+  font-size: 28px;
+  color: #fff3d2;
+}
+
+.staff-order-card {
+  margin-bottom: 14px;
+  padding: 16px;
+
+  background-color: #0b2447;
+  border: 1px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-order-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff3d2;
+}
+
+.staff-order-card p {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.staff-remove-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.staff-total-box {
+  margin-top: 20px;
+  padding: 16px;
+
+  background-color: #07182e;
+  border: 2px solid #f0b72f;
+  border-radius: 14px;
+}
+
+.staff-total-box p {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.staff-empty-message {
+  padding: 16px;
+  background-color: #0b2447;
+  border-radius: 14px;
+  font-size: 18px;
+}
+
+/* Staff main-site-style checkout ends here. */
+
+/* Staff order readability polish starts here. */
+
+.staff-order-card h3 {
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+}
+
+.staff-order-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.staff-trash-button {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 900;
+
+  border-radius: 14px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.staff-remove-button {
+  display: none;
+}
+
+/* Staff order readability polish ends here. */
+
+/* Staff category button polish starts here. */
+
+.staff-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 10px;
+
+  background-color: #07182e;
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+}
+
+.staff-category-button {
+  min-height: 48px;
+  padding: 12px 16px;
+
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1;
+
+  border-radius: 999px;
+  border: 3px solid #f0b72f;
+  background-color: #12345f;
+  color: #fff3d2;
+
+  box-shadow: none;
+}
+
+.staff-category-button.active-staff-category {
+  background-color: #f0b72f;
+  color: #07182e;
+  border-color: #fff3d2;
+}
+
+.staff-trash-confirm {
+  width: 76px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+/* Staff category button polish ends here. */
+
+/* Staff checkout bottom safety starts here. */
+
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
+.staff-shop-panel {
+  padding-bottom: 140px;
+}
+
+.staff-page-end-cap {
+  margin-top: 18px;
+  margin-bottom: 80px;
+  padding: 18px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+
+  color: #fff3d2;
+  background-color: #07182e;
+
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+}
+
+.staff-total-box {
+  margin-bottom: 0;
+}
+
+/* Staff checkout bottom safety ends here. */
+
+/* Staff page scroll lock and larger category buttons starts here. */
+
+body.staff-checkout-body {
+  height: 100dvh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body.staff-checkout-body header {
+  flex: 0 0 auto;
+}
+
+body.staff-checkout-body main {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+
+  padding-bottom: 24px;
+}
+
+body.staff-checkout-body .staff-shop-panel {
+  margin-bottom: 0;
+  padding-bottom: 120px;
+}
+
+body.staff-checkout-body #staff-category-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+
+  margin-top: 14px !important;
+  margin-bottom: 16px !important;
+  padding: 12px !important;
+
+  background-color: #07182e !important;
+  border: 2px solid #426ca3 !important;
+  border-radius: 18px !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  min-height: 62px !important;
+  padding: 16px 20px !important;
+
+  font-size: 20px !important;
+  font-weight: 950 !important;
+  line-height: 1.1 !important;
+
+  border-radius: 18px !important;
+  border: 3px solid #f0b72f !important;
+
+  background-color: #12345f !important;
+  color: #fff3d2 !important;
+
+  cursor: pointer !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border-color: #fff3d2 !important;
+}
+
+/* Staff page scroll lock and larger category buttons ends here. */
+
+/* Staff page normal scrolling restore starts here. */
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body main {
+  overflow: visible;
+}
+
+.staff-shop-panel {
+  margin-bottom: 80px;
+  padding-bottom: 120px;
+}
+
+.staff-page-end-cap {
+  margin-bottom: 120px;
+}
+
+/* Staff page normal scrolling restore ends here. */
+
+/* Staff checkout emergency overscroll fix starts here. */
+
+html {
+  overscroll-behavior-y: none;
+}
+
+body {
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
+.staff-shop-panel {
+  padding-bottom: 40px !important;
+  margin-bottom: 0 !important;
+}
+
+.staff-page-end-cap {
+  margin-bottom: 24px !important;
+}
+
+/* Staff checkout emergency overscroll fix ends here. */
+
+/* Staff order button spacing polish starts here. */
+
+.staff-order-action-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.staff-order-action-row .staff-product-quantity-row {
+  display: grid;
+  grid-template-columns: 64px 70px 64px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.staff-order-action-row .staff-product-quantity-row button {
+  width: 58px;
+  height: 58px;
+
+  font-size: 34px;
+  font-weight: 950;
+}
+
+.staff-order-action-row .staff-product-quantity-row span {
+  min-width: 70px;
+
+  text-align: center;
+  font-size: 32px;
+  font-weight: 950;
+}
+
+.staff-trash-button {
+  width: 58px;
+  height: 58px;
+
+  font-size: 26px;
+  border-radius: 16px;
+}
+
+.staff-trash-confirm {
+  width: 84px;
+  font-size: 16px;
+}
+
+/* Staff order button spacing polish ends here. */
+
+/* Staff totals readability polish starts here. */
+
+.staff-total-box {
+  padding: 22px;
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+}
+
+.staff-total-box p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1.2;
+
+  color: #fff3d2;
+  border-bottom: 1px solid rgba(240, 183, 47, 0.35);
+}
+
+.staff-total-box p:last-child {
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 0;
+
+  font-size: 31px;
+  color: #f0b72f;
+  border-bottom: none;
+}
+
+/* Staff totals readability polish ends here. */
+
+/* Staff quantity row alignment polish starts here. */
+
+.staff-order-action-row {
+  display: grid;
+  grid-template-columns: 1fr 64px;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.staff-order-action-row .staff-product-quantity-row {
+  display: grid;
+  grid-template-columns: 62px 72px 62px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  width: 100%;
+}
+
+.staff-order-action-row .staff-product-quantity-row button {
+  width: 56px;
+  height: 56px;
+
+  font-size: 28px;
+  font-weight: 950;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-order-action-row .staff-product-quantity-row span {
+  min-width: 72px;
+
+  text-align: center;
+  font-size: 34px;
+  font-weight: 950;
+  line-height: 1;
+  color: #fff3d2;
+}
+
+.staff-trash-button {
+  width: 56px;
+  height: 56px;
+
+  font-size: 25px;
+  border-radius: 16px;
+}
+
+.staff-order-card h3 {
+  font-size: 27px;
+  font-weight: 950;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+}
+
+.staff-order-card p {
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+/* Staff quantity row alignment polish ends here. */
+
+/* Staff final order summary starts here. */
+
+#generate-final-order-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 18px;
+
+  font-size: 24px;
+  font-weight: 950;
+
+  border-radius: 18px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+.final-staff-order-box {
+  margin-top: 18px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+
+  color: #fff3d2;
+}
+
+.final-staff-order-box h2 {
+  margin-bottom: 12px;
+
+  font-size: 28px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.final-staff-order-box pre {
+  white-space: pre-wrap;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 800;
+
+  color: #fff3d2;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Staff final order summary ends here. */
+
+/* Staff auto final order summary starts here. */
+
+.final-staff-order-box {
+  margin-top: 18px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+
+  color: #fff3d2;
+}
+
+.final-staff-order-box h2 {
+  margin-bottom: 6px;
+
+  font-size: 28px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.final-staff-order-box p {
+  margin-bottom: 14px;
+
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff3d2;
+}
+
+.final-staff-order-box pre {
+  white-space: pre-wrap;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 850;
+
+  color: #fff3d2;
+}
+
+/* Staff auto final order summary ends here. */
+
+/* Staff checkout final polish starts here. */
+
+.staff-search-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+#staff-clear-search-button {
+  height: 56px;
+  padding: 0 16px;
+
+  font-size: 18px;
+  font-weight: 950;
+
+  border-radius: 16px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+.staff-order-action-row {
+  display: grid;
+  grid-template-columns: 1fr 58px;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.staff-order-action-row .staff-product-quantity-row {
+  display: grid;
+  grid-template-columns: 58px 80px 58px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  width: 100%;
+}
+
+.staff-order-action-row .staff-product-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+}
+
+.staff-order-action-row .staff-product-quantity-row span {
+  min-width: 80px;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 950;
+  line-height: 1;
+
+  color: #fff3d2;
+}
+
+.staff-trash-button {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+.staff-order-card h3 {
+  font-size: 29px;
+  font-weight: 950;
+  line-height: 1.12;
+  letter-spacing: 0.3px;
+}
+
+.staff-order-card p {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.final-staff-order-box {
+  margin-top: 18px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 3px solid #f0b72f;
+  border-radius: 18px;
+
+  color: #fff3d2;
+}
+
+.final-staff-order-box h2 {
+  margin-bottom: 6px;
+
+  font-size: 30px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.final-staff-order-box p {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff3d2;
+}
+
+.final-order-ticket-line {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+
+  font-size: 24px;
+  font-weight: 950;
+
+  color: #f0b72f;
+  border-bottom: 1px solid rgba(240, 183, 47, 0.35);
+}
+
+.final-order-item-line {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: 19px;
+  font-weight: 850;
+  line-height: 1.25;
+
+  border-bottom: 1px solid rgba(255, 243, 210, 0.18);
+}
+
+.final-order-money-line {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+
+  padding-top: 10px;
+
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.final-order-total-line {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+
+  margin-top: 12px;
+  padding-top: 14px;
+
+  font-size: 30px;
+  font-weight: 950;
+  line-height: 1.15;
+
+  color: #f0b72f;
+  border-top: 2px solid rgba(240, 183, 47, 0.55);
+}
+
+.final-order-empty-line {
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.staff-bottom-action-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+#copy-final-order-button,
+#staff-back-to-top-button {
+  width: 100%;
+  padding: 18px;
+
+  font-size: 23px;
+  font-weight: 950;
+
+  border-radius: 18px;
+  border: 3px solid #fff3d2;
+}
+
+#copy-final-order-button {
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+#staff-back-to-top-button {
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+/* Staff checkout final polish ends here. */
+
+/* Staff search and clear button alignment fix starts here. */
+
+.staff-search-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.staff-search-row #staff-product-search {
+  height: 68px;
+  min-height: 68px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#staff-clear-search-button {
+  height: 68px;
+  min-height: 68px;
+  margin: 0;
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* Staff search and clear button alignment fix ends here. */
+
+/* Staff remove button, quantity centering, and final summary color fix starts here. */
+
+.staff-order-action-row {
+  display: grid;
+  grid-template-columns: 1fr 112px;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.staff-order-action-row .staff-product-quantity-row {
+  display: grid;
+  grid-template-columns: 58px 86px 58px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 16px;
+
+  width: auto;
+}
+
+.staff-order-action-row .staff-product-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+}
+
+.staff-order-action-row .staff-product-quantity-row span {
+  width: 86px;
+  min-width: 86px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 950;
+  line-height: 1;
+
+  color: #fff3d2;
+}
+
+.staff-trash-button {
+  justify-self: center;
+
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 16px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.staff-trash-button.staff-trash-confirm {
+  width: 108px;
+  min-width: 108px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 10px;
+
+  font-size: 19px;
+  font-weight: 950;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.final-order-item-line,
+.final-order-item-line span,
+.final-order-item-line strong,
+.final-order-money-line,
+.final-order-money-line span,
+.final-order-money-line strong {
+  color: #fff3d2;
+}
+
+.final-order-ticket-line {
+  color: #f0b72f;
+}
+
+.final-order-total-line,
+.final-order-total-line span,
+.final-order-total-line strong {
+  color: #f0b72f;
+}
+
+.final-order-total-line {
+  font-size: 34px;
+  font-weight: 950;
+}
+
+/* Staff remove button, quantity centering, and final summary color fix ends here. */
+
+/* Customer-facing legal footer notice starts here. */
+
+.site-footer-notice {
+  margin: 24px 14px 150px 14px;
+  padding: 18px;
+
+  background-color: #07182e;
+  border: 2px solid #426ca3;
+  border-radius: 16px;
+
+  color: #fff3d2;
+}
+
+.site-footer-notice h2 {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+.site-footer-notice p {
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 700;
+
+  color: #fff3d2;
+}
+
+.site-footer-notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* Customer-facing legal footer notice ends here. */
+
+/* Customer clear search, back to top, and trash remove polish starts here. */
+
+#search-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: stretch;
+}
+
+#search-row #inventory-search {
+  height: 56px;
+  min-height: 56px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#customer-clear-search-button,
+#search-done-button {
+  height: 56px;
+  min-height: 56px;
+  margin: 0;
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+#search-done-button.hidden {
+  display: none;
+}
+
+.customer-list-action-row {
+  display: grid;
+  grid-template-columns: 1fr 112px;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.customer-list-quantity-row {
+  display: grid;
+  grid-template-columns: 58px 86px 58px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 16px;
+
+  width: auto;
+}
+
+.customer-list-quantity-row button {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+.customer-list-quantity-row span {
+  width: 86px;
+  min-width: 86px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 950;
+  line-height: 1;
+
+  color: #fff3d2;
+}
+
+.customer-trash-button {
+  justify-self: center;
+
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 16px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.customer-trash-button.customer-trash-confirm {
+  width: 108px;
+  min-width: 108px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0 10px;
+
+  font-size: 19px;
+  font-weight: 950;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.customer-bottom-action-buttons {
+  margin: 18px 14px 0 14px;
+}
+
+#customer-back-to-top-button {
+  width: 100%;
+  padding: 18px;
+
+  font-size: 23px;
+  font-weight: 950;
+
+  border-radius: 18px;
+  border: 3px solid #fff3d2;
+  background-color: #12345f;
+  color: #fff3d2;
+}
+
+/* Customer clear search, back to top, and trash remove polish ends here. */
+
+/* Customer selected list layout fix starts here. */
+
+.customer-list-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+  overflow: visible;
+}
+
+.customer-list-quantity-row {
+  display: grid;
+  grid-template-columns: 48px 64px 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.customer-list-quantity-row button {
+  width: 48px;
+  min-width: 48px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+  border: 3px solid #fff3d2;
+  background-color: #f0b72f;
+  color: #07182e;
+}
+
+.customer-list-quantity-row span {
+  width: 64px;
+  min-width: 64px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 34px;
+  font-weight: 950;
+  line-height: 1;
+
+  color: #fff3d2;
+}
+
+.customer-trash-button {
+  flex: 0 0 auto;
+
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 950;
+  line-height: 1;
+
+  border-radius: 15px;
+  background-color: #d7372f;
+  color: #fff3d2;
+  border: 3px solid #fff3d2;
+}
+
+.customer-trash-button.customer-trash-confirm {
+  width: 104px;
+  min-width: 104px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0 8px;
+
+  font-size: 17px;
+  font-weight: 950;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* Customer selected list layout fix ends here. */
+
+/* Customer remove button no-shift fix starts here. */
+
+.customer-list-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+.customer-trash-button {
+  width: 104px;
+  min-width: 104px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+.customer-trash-button.customer-trash-confirm {
+  width: 104px;
+  min-width: 104px;
+  height: 52px;
+  min-height: 52px;
+}
+
+/* Customer remove button no-shift fix ends here. */
+
+/* Staff category buttons match customer category buttons starts here. */
+
+body.staff-checkout-body #staff-category-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+
+  margin-top: 14px !important;
+  margin-bottom: 18px !important;
+  padding: 0 !important;
+
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  width: calc(50% - 6px) !important;
+  min-height: 72px !important;
+  padding: 18px 12px !important;
+
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+
+  border-radius: 18px !important;
+  border: 2px solid #4f83c5 !important;
+  background-color: #1b4378 !important;
+  color: #fff3d2 !important;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button:hover {
+  background-color: #25528e !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:active {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border: 2px solid #fff3d2 !important;
+  box-shadow: 0 4px 14px rgba(240, 183, 47, 0.35) !important;
+}
+
+/* Staff category buttons match customer category buttons ends here. */
+
+/* Staff category buttons exact customer-style match starts here. */
+
+body.staff-checkout-body .staff-category-buttons,
+body.staff-checkout-body #staff-category-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px 22px !important;
+
+  margin-top: 18px !important;
+  margin-bottom: 22px !important;
+  padding: 0 !important;
+
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+body.staff-checkout-body .staff-category-button,
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 142px !important;
+  padding: 18px 14px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-size: 28px !important;
+  font-weight: 950 !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+
+  white-space: normal !important;
+
+  border-radius: 22px !important;
+  border: 4px solid #4f83c5 !important;
+  background-color: #1b4378 !important;
+  color: #fff3d2 !important;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+body.staff-checkout-body .staff-category-button.active-staff-category,
+body.staff-checkout-body .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body .staff-category-button.active-staff-category:active,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:active {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border: 4px solid #fff3d2 !important;
+  box-shadow: 0 4px 18px rgba(240, 183, 47, 0.35) !important;
+}
+
+/* Staff category buttons exact customer-style match ends here. */
+
+/* Pickup timing notice starts here. */
+
+.pickup-timing-notice {
+  margin: 14px 0;
+  padding: 12px;
+  background-color: #fff3d2;
+  color: #07182e;
+  border: 2px solid #f0b72f;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+/* Pickup timing notice ends here. */
+
+/* Shopping tip starts here. */
+
+.shopping-tip {
+  margin: 10px 14px 18px 14px;
+  padding: 12px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Shopping tip ends here. */
+
+/* Stand info box starts here. */
+
+.stand-info-box {
+  margin: 14px;
+  padding: 14px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stand-info-box p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+/* Stand info box ends here. */
+
+/* Success page ticket number starts here. */
+
+.success-ticket-box {
+  margin: 18px 0;
+  padding: 14px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.success-ticket-box p {
+  margin: 6px 0;
+}
+
+.success-ticket-number {
+  font-size: 28px;
+  font-weight: 950;
+  color: #f0b72f;
+}
+
+/* Success page ticket number ends here. */

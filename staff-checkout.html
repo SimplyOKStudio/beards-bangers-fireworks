@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Staff Checkout | Beard's Bangers Fireworks</title>
+
+  <link rel="stylesheet" href="style.css?v=24">
+</head>
+
+<body>
+  <header>
+    <h1>Staff Checkout</h1>
+    <p>Beard's Bangers Fireworks</p>
+  </header>
+
+  <main>
+    <section class="staff-shop-panel">
+      <h2 id="staff-ticket-heading">Loading order...</h2>
+
+      <p class="staff-checkout-note">
+        Staff tool: review, edit, and add items to a submitted customer list.
+      </p>
+
+      <div id="staff-category-buttons" class="staff-category-buttons">
+  Loading categories...
+</div>
+
+        <div id="staff-sticky-shop-bar">
+    <div class="staff-search-row">
+  <input
+    id="staff-product-search"
+    type="text"
+    placeholder="Search fireworks..."
+  >
+
+  <button
+    id="staff-clear-search-button"
+    type="button"
+    onclick="clearStaffSearch()"
+  >
+    Clear
+  </button>
+</div>
+
+    <button id="staff-floating-list-button" type="button" onclick="scrollToStaffOrder()">
+        <span id="staff-floating-list-label">My List</span>
+        <span id="staff-floating-list-count">0 items</span>
+        <span id="staff-floating-list-total">$0.00</span>
+    </button>
+    </div>
+
+      <div id="staff-product-results" class="staff-product-results">
+        Loading products...
+      </div>
+
+      <h2 id="staff-current-order-heading">Current Order</h2>
+
+      <div id="staff-order-list">
+        Loading selected fireworks...
+      </div>
+
+      <div class="staff-total-box">
+  <p id="staff-subtotal-text">Subtotal: $0.00</p>
+  <p id="staff-tax-text">Estimated Tax: $0.00</p>
+  <p id="staff-total-text">Estimated Total: $0.00</p>
+</div>
+
+<div id="final-staff-order-box" class="final-staff-order-box">
+  <h2>Final Order Summary</h2>
+
+  <p>Auto-updates as you edit this ticket.</p>
+
+  <div id="final-staff-order-readable">
+    Loading final order...
+  </div>
+</div>
+
+<div class="staff-bottom-action-buttons">
+  <button
+    id="copy-final-order-button"
+    type="button"
+    onclick="copyFinalStaffOrder()"
+  >
+    Copy Final Order
+  </button>
+
+  <button
+    id="staff-back-to-top-button"
+    type="button"
+    onclick="scrollToStaffTop()"
+  >
+    Back to Top
+  </button>
+</div>
+
+<div class="staff-page-end-cap">
+  End of staff checkout list
+</div>
+    </section>
+  </main>
+
+    <script src="catalog.js?v=24"></script>
+    <script src="staff-checkout.js?v=23"></script>
+</body>
+</html>
