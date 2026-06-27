@@ -686,7 +686,7 @@ function buildSubmittedListText() {
   });
 
   // This combines all lines into one text block.
-  return submittedLines.join("\n\n\n");
+  return submittedLines.join("\n\n");
 }
 
 // This calculates the current list money totals for the form submission.
