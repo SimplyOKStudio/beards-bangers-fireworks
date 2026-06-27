@@ -3110,3 +3110,19 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Staff category buttons exact customer-style match ends here. */
+
+/* Pickup timing notice starts here. */
+
+.pickup-timing-notice {
+  margin: 14px 0;
+  padding: 12px;
+  background-color: #fff3d2;
+  color: #07182e;
+  border: 2px solid #f0b72f;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+/* Pickup timing notice ends here. */
