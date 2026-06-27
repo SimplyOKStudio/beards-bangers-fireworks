@@ -5,7 +5,7 @@ let staffSelectedFireworks = {};
 let staffTicketNumber = "No ticket number";
 
 // This keeps track of the selected staff category.
-let activeStaffCategory = "All";
+let activeStaffCategory = "Popular Picks";
 
 let staffSearchScrollTimer;
 
@@ -32,26 +32,28 @@ const staffPopularPickIds = [
 ];
 
 // These are the staff category buttons.
+// They match the customer-facing category buttons exactly.
 const staffCategoryNames = [
-  "All",
   "Popular Picks",
-  "Firecrackers",
-  "Punks",
   "Pop Bottle Rockets",
-  "Rockets",
-  "Missiles",
-  "Reloadable Shells",
+  "Daytime Fun",
+  "Novelties",
+  "Sparklers",
+  "Smoke",
+  "Ground Spinners",
+  "Flying Items",
+  "Fountains",
+  "Firecrackers",
+  "Roman Candles",
+  "Saturn Missiles",
   "Cakes",
   "Big Show Finale",
-  "Fountains",
-  "Smoke",
-  "Roman Candles",
-  "Sparklers",
-  "Novelties",
-  "Flying Items",
+  "Girandola",
+  "Reloadable Shells",
+  "Patriotic",
   "Bundle Packages",
-  "Assortments",
-  "Patriotic"
+  "Punks",
+  "All"
 ];
 
 // This reads the submitted order from the staff checkout link.

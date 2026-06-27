@@ -3001,3 +3001,53 @@ body {
 }
 
 /* Customer remove button no-shift fix ends here. */
+
+/* Staff category buttons match customer category buttons starts here. */
+
+body.staff-checkout-body #staff-category-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+
+  margin-top: 14px !important;
+  margin-bottom: 18px !important;
+  padding: 0 !important;
+
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button {
+  width: calc(50% - 6px) !important;
+  min-height: 72px !important;
+  padding: 18px 12px !important;
+
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+
+  border-radius: 18px !important;
+  border: 2px solid #4f83c5 !important;
+  background-color: #1b4378 !important;
+  color: #fff3d2 !important;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button:hover {
+  background-color: #25528e !important;
+}
+
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:hover,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:focus,
+body.staff-checkout-body #staff-category-buttons .staff-category-button.active-staff-category:active {
+  background-color: #f0b72f !important;
+  color: #07182e !important;
+  border: 2px solid #fff3d2 !important;
+  box-shadow: 0 4px 14px rgba(240, 183, 47, 0.35) !important;
+}
+
+/* Staff category buttons match customer category buttons ends here. */
