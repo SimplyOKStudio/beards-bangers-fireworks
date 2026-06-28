@@ -7,7 +7,7 @@
 
   <title>Staff Checkout | Beard's Bangers Fireworks</title>
 
-  <link rel="stylesheet" href="style.css?v=24">
+  <link rel="stylesheet" href="style.css?v=25">
 </head>
 
 <body>
@@ -56,6 +56,45 @@
         Loading products...
       </div>
 
+      <div class="staff-manual-item-box">
+        <h2>Add Manual Item</h2>
+
+        <p>
+          Use this only for items that are not listed on the website.
+        </p>
+
+        <input
+          id="manual-staff-item-name"
+          type="text"
+          placeholder="Item name"
+        >
+
+        <input
+          id="manual-staff-item-price"
+          type="number"
+          min="0"
+          step="0.01"
+          placeholder="Price"
+        >
+
+        <input
+          id="manual-staff-item-quantity"
+          type="number"
+          min="1"
+          step="1"
+          value="1"
+          placeholder="Qty"
+        >
+
+        <button
+          id="add-manual-staff-item-button"
+          type="button"
+          onclick="addManualStaffItem()"
+        >
+          Add Manual Item
+        </button>
+      </div>
+
       <h2 id="staff-current-order-heading">Current Order</h2>
 
       <div id="staff-order-list">
@@ -64,6 +103,17 @@
 
       <div class="staff-total-box">
   <p id="staff-subtotal-text">Subtotal: $0.00</p>
+
+  <button
+    id="staff-discount-button"
+    type="button"
+    onclick="toggleStaffDiscount()"
+  >
+    Apply 10% Discount
+  </button>
+
+  <p id="staff-discount-text">Discount: $0.00</p>
+  <p id="staff-taxable-subtotal-text">Taxable Subtotal: $0.00</p>
   <p id="staff-tax-text">Estimated Tax: $0.00</p>
   <p id="staff-total-text">Estimated Total: $0.00</p>
 </div>
@@ -103,6 +153,6 @@
   </main>
 
     <script src="catalog.js?v=25"></script>
-    <script src="staff-checkout.js?v=23"></script>
+    <script src="staff-checkout.js?v=24"></script>
 </body>
 </html>

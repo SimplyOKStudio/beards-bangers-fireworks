@@ -3188,3 +3188,52 @@ body.staff-checkout-body #staff-category-buttons .staff-category-button.active-s
 }
 
 /* Success page ticket number ends here. */
+
+/* Staff manual item and discount controls start here. */
+
+.staff-manual-item-box {
+  margin: 18px 0;
+  padding: 14px;
+  background-color: #07182e;
+  color: #fff3d2;
+  border: 2px solid #426ca3;
+  border-radius: 14px;
+}
+
+.staff-manual-item-box h2 {
+  margin-top: 0;
+}
+
+.staff-manual-item-box p {
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.staff-manual-item-box input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #426ca3;
+  font-size: 16px;
+}
+
+#add-manual-staff-item-button,
+#staff-discount-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f0b72f;
+  color: #07182e;
+  font-size: 16px;
+  font-weight: 950;
+}
+
+#staff-discount-button {
+  margin-bottom: 10px;
+}
+
+/* Staff manual item and discount controls end here. */
