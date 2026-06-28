@@ -1,6 +1,14 @@
 // This stores the staff-side version of the customer's order.
 let staffSelectedFireworks = {};
 
+// This stores staff-only manual items that are not in the main catalog.
+let manualStaffFireworks = {};
+
+// This keeps track of the next manual item number.
+let manualStaffItemCounter = 1;
+
+// This stores the optional staff discount.
+let staffDiscountRate = 0;
 // This stores the ticket number from the submitted order.
 let staffTicketNumber = "No ticket number";
 
@@ -174,6 +182,17 @@ function staffProductMatchesSearch(firework, searchText) {
   return nameMatches || categoryMatches || shopTypeMatches || optionMatches;
 }
 
+// This finds catalog items and staff-only manual items.
+function getStaffCheckoutFireworkById(fireworkId) {
+  const catalogFirework = findFireworkById(fireworkId);
+
+  if (catalogFirework) {
+    return catalogFirework;
+  }
+
+  return manualStaffFireworks[fireworkId];
+}
+
 // This gets the current quantity for one product or option.
 function getStaffQuantity(fireworkId) {
   return staffSelectedFireworks[fireworkId] || 0;
@@ -274,7 +293,7 @@ function displayStaffProducts() {
   productResults.innerHTML = productCards.join("");
 }
 
-// This calculates subtotal, tax, total, and item count.
+// This calculates subtotal, discount, tax, total, and item count.
 function calculateStaffTotals() {
   let subtotal = 0;
 
@@ -283,7 +302,7 @@ function calculateStaffTotals() {
   const selectedIds = Object.keys(staffSelectedFireworks);
 
   selectedIds.forEach(function (fireworkId) {
-    const firework = findFireworkById(fireworkId);
+    const firework = getStaffCheckoutFireworkById(fireworkId);
 
     if (!firework) {
       return;
@@ -300,12 +319,18 @@ function calculateStaffTotals() {
     itemCount = itemCount + quantity;
   });
 
-  const estimatedTax = subtotal * taxRate;
+  const discountAmount = subtotal * staffDiscountRate;
 
-  const estimatedTotal = subtotal + estimatedTax;
+  const taxableSubtotal = subtotal - discountAmount;
+
+  const estimatedTax = taxableSubtotal * taxRate;
+
+  const estimatedTotal = taxableSubtotal + estimatedTax;
 
   return {
     subtotal: subtotal,
+    discountAmount: discountAmount,
+    taxableSubtotal: taxableSubtotal,
     estimatedTax: estimatedTax,
     estimatedTotal: estimatedTotal,
     itemCount: itemCount
@@ -333,8 +358,11 @@ function updateStaffOrderList() {
   const ticketHeading = document.getElementById("staff-ticket-heading");
   const orderList = document.getElementById("staff-order-list");
   const subtotalText = document.getElementById("staff-subtotal-text");
+  const discountText = document.getElementById("staff-discount-text");
+  const taxableSubtotalText = document.getElementById("staff-taxable-subtotal-text");
   const taxText = document.getElementById("staff-tax-text");
   const totalText = document.getElementById("staff-total-text");
+  const discountButton = document.getElementById("staff-discount-button");
 
   ticketHeading.textContent = "Ticket: " + staffTicketNumber;
 
@@ -343,7 +371,7 @@ function updateStaffOrderList() {
   const selectedIds = Object.keys(staffSelectedFireworks);
 
   selectedIds.forEach(function (fireworkId) {
-    const firework = findFireworkById(fireworkId);
+    const firework = getStaffCheckoutFireworkById(fireworkId);
 
     if (!firework) {
       return;
@@ -390,8 +418,14 @@ function updateStaffOrderList() {
   const totals = calculateStaffTotals();
 
   subtotalText.textContent = "Subtotal: $" + totals.subtotal.toFixed(2);
+  discountText.textContent = "Discount: -$" + totals.discountAmount.toFixed(2);
+  taxableSubtotalText.textContent = "Taxable Subtotal: $" + totals.taxableSubtotal.toFixed(2);
   taxText.textContent = "Estimated Tax: $" + totals.estimatedTax.toFixed(2);
   totalText.textContent = "Estimated Total: $" + totals.estimatedTotal.toFixed(2);
+
+  if (discountButton) {
+    discountButton.textContent = staffDiscountRate > 0 ? "Remove 10% Discount" : "Apply 10% Discount";
+  }
 }
 
 // This updates the whole staff page.
@@ -464,6 +498,22 @@ function updateFinalStaffOrderSummary() {
       <strong>$${totals.subtotal.toFixed(2)}</strong>
     </div>
   `);
+
+  if (staffDiscountRate > 0) {
+    finalOrderHtml.push(`
+      <div class="final-order-money-line">
+        <span>10% Discount:</span>
+        <strong>-$${totals.discountAmount.toFixed(2)}</strong>
+      </div>
+    `);
+
+    finalOrderHtml.push(`
+      <div class="final-order-money-line">
+        <span>Taxable Subtotal:</span>
+        <strong>$${totals.taxableSubtotal.toFixed(2)}</strong>
+      </div>
+    `);
+  }
 
   finalOrderHtml.push(`
     <div class="final-order-money-line">
@@ -540,6 +590,72 @@ function updateStaffPage() {
   updateStaffFloatingListButton();
 
   updateFinalStaffOrderSummary();
+}
+
+// This adds one manual staff item that is not in the main catalog.
+function addManualStaffItem() {
+  const manualNameInput = document.getElementById("manual-staff-item-name");
+  const manualPriceInput = document.getElementById("manual-staff-item-price");
+  const manualQuantityInput = document.getElementById("manual-staff-item-quantity");
+
+  if (!manualNameInput || !manualPriceInput || !manualQuantityInput) {
+    return;
+  }
+
+  const manualName = manualNameInput.value.trim();
+
+  const manualPrice = Number(manualPriceInput.value);
+
+  const manualQuantity = Number(manualQuantityInput.value);
+
+  if (manualName.length === 0) {
+    alert("Please enter a manual item name.");
+    return;
+  }
+
+  if (!manualPrice || manualPrice <= 0) {
+    alert("Please enter a manual item price.");
+    return;
+  }
+
+  if (!manualQuantity || manualQuantity <= 0) {
+    alert("Please enter a manual item quantity.");
+    return;
+  }
+
+  const manualItemId = "manual-staff-item-" + Date.now() + "-" + manualStaffItemCounter;
+
+  manualStaffItemCounter = manualStaffItemCounter + 1;
+
+  manualStaffFireworks[manualItemId] = {
+    id: manualItemId,
+    name: "MANUAL ITEM - " + manualName,
+    price: manualPrice,
+    unitLabel: "MANUAL ITEM",
+    category: "Manual Item",
+    shopTypes: ["Manual Item"]
+  };
+
+  staffSelectedFireworks[manualItemId] = manualQuantity;
+
+  manualNameInput.value = "";
+  manualPriceInput.value = "";
+  manualQuantityInput.value = "1";
+
+  updateStaffPage();
+
+  scrollToStaffOrder();
+}
+
+// This turns the staff 10% discount on or off.
+function toggleStaffDiscount() {
+  if (staffDiscountRate > 0) {
+    staffDiscountRate = 0;
+  } else {
+    staffDiscountRate = 0.10;
+  }
+
+  updateStaffPage();
 }
 
 // This adds one item.
