@@ -5943,6 +5943,107 @@ setCatalogItemAsSingleOption(
 
 // Catalog price correction block ends here.
 
+// Day two catalog hotfix block starts here.
+// This fixes one wording issue and adds newly confirmed stand items.
+
+function updateCatalogItemText(fireworkId, newName, newUnitLabel) {
+  const firework = fireworks.find(function (catalogItem) {
+    return catalogItem.id === fireworkId;
+  });
+
+  if (firework === undefined) {
+    return;
+  }
+
+  firework.name = newName;
+  firework.unitLabel = newUnitLabel;
+}
+
+// Morning Glory Sparklers:
+// This is a pack of 36 inch sparklers, not a 36-count bag.
+updateCatalogItemText(
+  "morning-glory-sparklers-36-count",
+  "MORNING GLORY SPARKLERS - 36 INCH",
+  "1 PACK OF 36 INCH SPARKLERS"
+);
+
+fireworks.push(
+  {
+    itemNumber: 9998,
+    id: "icee-fountain",
+    name: "ICEE FOUNTAIN",
+    price: 20.00,
+    unitLabel: "EACH",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 9997,
+    id: "hyper-chill",
+    name: "HYPER CHILL",
+    price: 15.00,
+    unitLabel: "EACH",
+    category: "Fountains",
+    shopTypes: ["Fountains"]
+  },
+  {
+    itemNumber: 9992,
+    id: "super-strobe-pop-bottle-rockets",
+    name: "SUPER STROBE",
+    price: 30.00,
+    unitLabel: "1 PACK OF 2 POP BOTTLE ROCKETS",
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 9991,
+    id: "street-strobe-pop-bottle-rockets",
+    name: "STREET STROBE",
+    price: 30.00,
+    unitLabel: "1 PACK OF 2 POP BOTTLE ROCKETS",
+    category: "Pop Bottle Rockets",
+    shopTypes: ["Pop Bottle Rockets", "Flying Items"]
+  },
+  {
+    itemNumber: 9996,
+    id: "earth-explorer-series-4-cake-set",
+    name: "EARTH EXPLORER SERIES - 4 CAKE SET",
+    price: 200.00,
+    unitLabel: "1 SET OF 4 CAKES",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 9995,
+    id: "backyard-bully",
+    name: "BACKYARD BULLY",
+    price: 70.00,
+    unitLabel: "EACH",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 9994,
+    id: "bulldog-bash",
+    name: "BULLDOG BASH",
+    price: 70.00,
+    unitLabel: "EACH",
+    category: "Cakes",
+    shopTypes: ["Cakes", "Big Show Finale"]
+  },
+  {
+    itemNumber: 9993,
+    id: "uss-hornet",
+    name: "USS HORNET",
+    price: 75.00,
+    unitLabel: "EACH",
+    category: "Flying Items",
+    shopTypes: ["Flying Items", "Novelties"]
+  }
+);
+
+// Day two catalog hotfix block ends here.
+
 // This function finds one firework or one buying option by its id.
 function findFireworkById(fireworkId) {
   // This first checks normal one-option fireworks.
