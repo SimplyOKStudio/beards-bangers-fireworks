@@ -5597,15 +5597,6 @@ const fireworks = [
     shopTypes: ["Rockets", "Flying Items"]
   },
   {
-    itemNumber: 2795,
-    id: "street-strobe-rocket",
-    name: "STREET STROBE ROCKET",
-    price: 30.00,
-    unitLabel: "1 PACK",
-    category: "Rockets",
-    shopTypes: ["Rockets", "Flying Items"]
-  },
-  {
     itemNumber: 2796,
     id: "strobe-rocket-g-and-a",
     name: "STROBE ROCKET",
